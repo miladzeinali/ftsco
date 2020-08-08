@@ -28,6 +28,7 @@ class StrutHandlerImagesAdmin(admin.ModelAdmin):
     list_display = ('id','struthandler')
     search_fields = ('id','struthandler')
 
+
 admin.site.register(TyreHandler,TyreHandlerAdmin)
 admin.site.register(CylinderHandler,CylinderHandlerAdmin)
 admin.site.register(StrutHandler,StrutHandlerAdmin)
