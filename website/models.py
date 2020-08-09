@@ -2,6 +2,8 @@ from django.db import models
 from ckeditor.fields import RichTextField
 
 
+
+
 class TyreHandler(models.Model):
     name = models.CharField(max_length=15, null=True, blank=True)
     code = models.CharField(max_length=15, null=True, blank=True)
@@ -46,6 +48,8 @@ class CylinderHandler(models.Model):
     description = RichTextField(blank=True, null=True)
     price_Toman = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
     price_Dollar = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
+
+
 class StrutHandler(models.Model):
     name=models.CharField(max_length=15,null=True,blank=True)
     code=models.CharField(max_length=15,null=True,blank=True)
@@ -64,4 +68,22 @@ class StrutHandler(models.Model):
     description=RichTextField(blank=True,null=True)
     price_Toman=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
     price_Dollar=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
+
+
+
+class tyreHandlerImages(models.Model):
+    tyreHandler=models.ForeignKey(TyreHandler,on_delete=models.CASCADE)
+    image=models.ImageField(upload_to='tyreHandlerImagesProduct/')
+
+class CylinderHandlerImages(models.Model):
+    cylinderhandler=models.ForeignKey(CylinderHandler,on_delete=models.CASCADE)
+    image=models.ImageField(upload_to='cylinderhandlerImagesProduct/')
+
+class StrutHandlerImages(models.Model):
+    struthandler=models.ForeignKey(StrutHandler,on_delete=models.CASCADE)
+    image=models.ImageField(upload_to='struthandlerImagesProduct/')
+
+
+
+
 
