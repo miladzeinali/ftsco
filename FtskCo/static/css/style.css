@@ -1,10 +1,71 @@
+@font-face {
+    font-family: 'Myfont';
+    src: url('../font/Yekan.eot');
+    src: url('../font/Yekan.svg');
+    src: url('../font/Yekan.ttf');
+    src: url('../font/Yekan.woff');
+    /*src: url('../font/IRAN Sans Regular.svg');*/
+    /*src: url('../font/IRAN Sans Regular.eot');*/
+    /*src: url('../font/IRAN Sans Regular.ttf');*/
+    /*src: url('../font/IRAN Sans Regular.woff');*/
+    /*src: url('../font/IRAN Sans Regular.woff2');*/
+}
+
+h1,
+h2,
+h3,
+p,
+h4,
+h5,
+textarea,
+a,
+button,
+tr,
+th,
+form,
+li {
+    font-family: MyFont !important;
+}
 section {
     padding: 60px 0;
     overflow: hidden;
 }
+.section-title {
+  padding-bottom: 40px;
+}
 
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #ffde9e;
+  margin: 4px 10px;
+}
+
+.section-title p {
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #151515;
+}
 .header-area .header-top {
-    background: #140C40;
+    background: #dd0000;
     padding: 0px 0px;
 }
 
@@ -13,7 +74,7 @@ section {
 }
 
 .header-area .header-top .header-info-left ul li {
-    color: #fff;
+    color: #000000;
     display: inline-block;
     margin-left: 30px;
     font-size: 15px;
@@ -67,9 +128,11 @@ section {
         padding: 17px 0px;
     }
 }
-
+.header-bottom{
+    background: #ffce00;
+}
 .header-area .header-sticky.sticky-bar {
-    background: #fff;
+    background: #ffce00;
 }
 
 .header-area .header-sticky.sticky-bar .main-menu nav > ul > li > a {
@@ -164,7 +227,8 @@ section {
 }
 
 .main-header .main-menu ul li:hover > a {
-    color: #FF3514;
+    color: #dd0000;
+    text-decoration: none;
 }
 
 .main-header .main-menu ul li:last-child a {
@@ -180,7 +244,7 @@ section {
     content: "";
     width: 100%;
     height: 2px;
-    background: #f04e3c;
+    background: #dd0000;
     bottom: 0;
     margin: 0 auto;
     left: 0;
@@ -322,7 +386,7 @@ section {
     margin: 0 auto;
     width: 64px;
     height: 64px;
-    background: #ffc451;
+    background: #ffce00;
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -375,7 +439,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  background: #ffc451;
+  background: #ffce00;
   color: #151515;
   float: left;
   width: 44px;
@@ -485,7 +549,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #ffc451;
+  background: #ffce00;
   border: 0;
   padding: 10px 24px;
   color: #151515;
@@ -525,7 +589,7 @@ section {
 }
 
 #footer .footer-top .footer-info h3 span {
-  color: #ffc451;
+  color: #ffce00;
 }
 
 #footer .footer-top .footer-info p {
@@ -552,7 +616,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #ffc451;
+  background: #ffce00;
   color: #151515;
   text-decoration: none;
 }
@@ -577,7 +641,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #ffc451;
+  color: #ffce00;
   font-size: 18px;
   line-height: 1;
 }
@@ -600,7 +664,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #ffc451;
+  color: #ffce00;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -626,14 +690,14 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #ffc451;
+  background: #ffce00;
   color: #151515;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
 }
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
-  background: #ffcd6b;
+  background: #ffce00;
 }
 
 #footer .copyright {
