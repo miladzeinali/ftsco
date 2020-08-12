@@ -10,14 +10,14 @@ def home(request):
 def tyreHandler(request):
     tyrehandlers=TyreHandler.objects.all()
     count=len(tyrehandlers)
-    return render(request,'webproduct/tyrehandlers.html',{'tyrehandlers':tyrehandlers,'count':count})
+    return render(request, 'webproduct/listproduct.html', {'products':tyrehandlers, 'count':count})
 
 def cylinderHandler(request):
     cylinderhandlers=CylinderHandler.objects.all()
     count=len(cylinderhandlers)
-    return render(request,'webproduct/cylinderhandlers.html',{'cylinderhandlers':cylinderhandlers,'count':count})
+    return render(request,'webproduct/listproduct.html',{'products':cylinderhandlers,'count':count})
 
 def strutHandler(request):
     struthandlers=StrutHandler.objects.all()
     count=len(struthandlers)
-    return render(request,'webproduct/struthandlers.html',{'struthandlers':struthandlers,'count':count})
+    return render(request,'webproduct/listproduct.html',{'products':struthandlers,'count':count})
