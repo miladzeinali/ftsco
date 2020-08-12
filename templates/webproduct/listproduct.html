@@ -7,16 +7,16 @@
     {% for product in products %}
 
     <div class="tyrehandler row ">
-        <div class="col-picture card  col-lg-4">
-            <img
-                    src="{{ product.image.url }}"
-                    alt="TODO" class="ng-scope"><!-- end ngIf: machine.primary -->
+            <div class="col-arrow col-lg-2  d-flex align-items-center order-3 order-lg-1">
+            <div>
+                <button class="btn"><a href=""><i class="fa fa-angle-right ml-3"></i>جزییات</a></button>
+            </div>
         </div>
-        <div class="col-description col-lg-5">
+        <div class="col-description col-lg-5 order-2 order-lg-2">
             <h2 class="ng-binding ng-scope">
                 {{ product.name }}</h2>
             <div class="row">
-                <div class="col-description- col-6 text-center">
+                <div class="col-description-1 col-6 ">
                     <div
                             class="ng-binding ng-scope">
                         <strong translate="SEARCH.LENGTH.TEXT" class="ng-scope">سال ساخت</strong><strong> : </strong>{{ product.model_Year }}
@@ -36,11 +36,10 @@
                             </div>
 
         </div>
-        <div class="col-arrow col-lg-2  d-flex align-items-center ">
-            <div>
-                <button class="btn"><a href="">جزییات<i class="fa fa-angle-left mr-3"></i></a></button>
-            </div>
+            <div class="col-picture card  col-lg-4 order-1 order-lg-3">
+            <img src="{{ product.image.url }}">
         </div>
+
     </div>
         {% endfor %}
 
