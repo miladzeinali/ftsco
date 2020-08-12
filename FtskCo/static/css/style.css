@@ -1162,31 +1162,39 @@ section {
     color: #00bdaa; }
 /*tyrrehandler-----------------------*/
 .tyrehandler {
-border: 1px solid #000000;
+/*border: 1px solid #000000;*/
     width: 75%;
     height: auto;
-    background: #0c5460;
+    background: #f8f9fa;
     margin: 20px auto 40px;
+    border-radius: 10px;
 }
 .tyrehandler .col-picture {
-    background: #71dd8a;
-    border: 1px solid #dd0000;
+    background: #ffffff;
+    /*border: 1px solid #dd0000;*/
     margin: 10px;
 }
 .tyrehandler .col-picture img {
     width: 200px;
 }
 .tyrehandler .col-description {
-    background: #ffce00;
-    border: 1px solid #dd0000;
+    /*background: #ffce00;*/
+    /*border: 1px solid #dd0000;*/
     margin: 10px;
 }
 .tyrehandler .col-description h2{
     color: #dd0000;
+    text-align: left;
+}
+.tyrehandler .col-description-1{
+    text-align: left;
+}
+.tyrehandler .col-description-2{
+    text-align: left;
 }
 .tyrehandler .col-arrow  {
     margin: 10px;
-    background: white;
+    /*background: white;*/
 }
 .tyrehandler .col-arrow div  {
     color: #ffce00;
