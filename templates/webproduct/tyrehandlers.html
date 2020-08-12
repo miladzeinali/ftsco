@@ -2,76 +2,38 @@
 {% block header %}
     {% include 'partial/_header.html' %}
 {% endblock %}
-{% for foo in tyrehandler %}
 
-    {{ foo.name }}<br/>
-    {{ foo.model_Year }}<br/>
-    {{ foo.id }}<br/>
-{% endfor %}
 {% block content %}
+    {% for tyrehandler in tyrehandlers %}
+
     <div class="tyrehandler row ">
         <div class="col-picture card  col-lg-4">
             <img
-                    src="https://auqudifjvo.cloudimg.io/width/768/x/https://technical-datasheet-api.manitou.com/api/media/e/8/f/0/e8f08f32eab78b67ed0add8c46d3992fe05d288a_manitou_card_construction_telehandler_MHT10230_main_visual.png"
+                    src="{{ tyrehandler.image.url }}"
                     alt="TODO" class="ng-scope"><!-- end ngIf: machine.primary -->
         </div>
         <div class="col-description col-lg-5">
-            <h2 class="ng-binding ng-scope">MHT-X
-                10230</h2>
+            <h2 class="ng-binding ng-scope">
+                {{ tyrehandler.name }}</h2>
             <div class="row">
                 <div class="col-description- col-6 text-center">
                     <div
                             class="ng-binding ng-scope">
-                        <strong translate="SEARCH.LENGTH.TEXT" class="ng-scope">Length</strong><strong> : </strong>22 ft
-                        11
-                        in<br>
+                        <strong translate="SEARCH.LENGTH.TEXT" class="ng-scope">سال ساخت</strong><strong> : </strong>{{ tyrehandler.model_Year }}
+                        <br>
                     </div>
                     <div
                             class="ng-binding ng-scope">
-                        <strong translate="SEARCH.WIDTH.TEXT" class="ng-scope">Width</strong><strong> : </strong>9 ft 4
-                        in<br>
+                        <strong translate="SEARCH.WIDTH.TEXT" class="ng-scope">ظرفیت (kg/lbs)</strong><strong> : </strong>{{ tyrehandler.capacity_Kg }}/{{ tyrehandler.capacity_Lbs }}
+                        <br>
                     </div>
                     <div
                             class="ng-binding ng-scope">
-                        <strong translate="SEARCH.HEIGHT.TEXT" class="ng-scope">Height</strong><strong> : </strong>10 ft<br>
+                        <strong translate="SEARCH.WIDTH.TEXT" class="ng-scope">توضیحات</strong><strong> : </strong>{{ tyrehandler.description|safe }}
+                        <br>
                     </div>
-
-                    <div
-                            class="ng-binding ng-scope">
-                        <strong translate="SEARCH.WEIGHT.TEXT" class="ng-scope">Weight</strong><strong> : </strong>6460
-                        lbs<br>
-                    </div>
-
                 </div>
-                <div class="col-description-2 col-6 text-center">
-
-                    <div
-                            class="ng-binding ng-scope">
-                        <strong translate="SEARCH.ENGINE_BRAND.TEXT" class="ng-scope">Engine</strong><strong>
-                        : </strong>Mercedes<br>
-                    </div>
-
-                    <div
-                            class="ng-binding ng-scope">
-                        <strong translate="SEARCH.ENGINE_POWER.TEXT" class="ng-scope">Power</strong><strong> : </strong>176
-                        Hp hp<br>
-                    </div>
-
-                    <div
-                            class="ng-binding ng-scope">
-                        <strong translate="SEARCH.LIFTING_CAPACITY.TEXT" class="ng-scope">Lifting
-                            capacity</strong><strong>
-                        : </strong>50706 lbs<br>
-                    </div>
-
-                    <div
-                            class="ng-binding ng-scope">
-                        <strong translate="SEARCH.HEIGHT_CAPACITY.TEXT" class="ng-scope">Lifting height</strong><strong>
-                        : </strong>31 ft 8 in<br>
-                    </div>
-
-                </div>
-            </div>
+                            </div>
 
         </div>
         <div class="col-arrow col-lg-2  d-flex align-items-center ">
@@ -80,6 +42,8 @@
             </div>
         </div>
     </div>
+        {% endfor %}
+
 
 
 {% endblock %}
