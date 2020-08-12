@@ -1160,7 +1160,45 @@ section {
   .testimony-wrap .position {
     font-size: 14px;
     color: #00bdaa; }
-/*.owl-carousel .owl-item,*/
-/*.owl-wrapper {*/
-/*    float: right;*/
-/*}*/
+/*tyrrehandler-----------------------*/
+.tyrehandler {
+border: 1px solid #000000;
+    width: 75%;
+    height: auto;
+    background: #0c5460;
+    margin: 20px auto 40px;
+}
+.tyrehandler .col-picture {
+    background: #71dd8a;
+    border: 1px solid #dd0000;
+    margin: 10px;
+}
+.tyrehandler .col-picture img {
+    width: 200px;
+}
+.tyrehandler .col-description {
+    background: #ffce00;
+    border: 1px solid #dd0000;
+    margin: 10px;
+}
+.tyrehandler .col-description h2{
+    color: #dd0000;
+}
+.tyrehandler .col-arrow  {
+    margin: 10px;
+    background: white;
+}
+.tyrehandler .col-arrow div  {
+    color: #ffce00;
+    margin-right: auto;
+
+}
+.tyrehandler .col-arrow div button {
+ background: #ffce00;
+}
+
+.tyrehandler .col-arrow div button a {
+ color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
