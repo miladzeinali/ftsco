@@ -85,5 +85,10 @@ class StrutHandlerImages(models.Model):
 
 
 
-
+class message(models.Model):
+    name=models.CharField(max_length=20)
+    phone=models.CharField(max_length=20)
+    email=models.EmailField()
+    title=models.CharField(max_length=20)
+    message=models.TextField(max_length=150)
 
