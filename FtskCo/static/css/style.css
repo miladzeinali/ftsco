@@ -1210,3 +1210,39 @@ section {
     text-decoration: none;
     font-size: 16px;
 }
+.product-headings {
+    background-color: #dd0000;
+}
+
+.product-headings .product-headings-category h3 {
+    color: #000000;
+    margin-right: 20px;
+}
+
+.product .bloc-product {
+    background: #fefa;
+}
+
+.product button {
+    background-color: #ffce00;
+}
+
+.product p {
+    font-size: 16px;
+}
+
+.bloc-product img {
+    width: 350px;
+}
+
+.bloc-product .header .header-content-text {
+    background-color: #ffce00;
+}
+
+.bloc-product table {
+    text-align: center;
+}
+
+.bloc-product table thead {
+    background-color: #dd0000;
+}
