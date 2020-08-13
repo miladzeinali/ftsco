@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'pages/base.html' %}
+{% block header %}
+    {% include 'partial/_header.html' %}
+{% endblock %}
 
-</body>
-</html>
+{% block content %}
+    {% include 'partial/_detail.html' %}
+{% endblock %}
