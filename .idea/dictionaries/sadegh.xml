@@ -3,12 +3,19 @@
     <words>
       <w>boxicons</w>
       <w>ckeditor</w>
+      <w>cylinderdetail</w>
+      <w>cylinderhandler</w>
       <w>flaticon</w>
       <w>ftsk</w>
       <w>icofont</w>
       <w>nuovo</w>
+      <w>productcontrol</w>
       <w>slicknav</w>
+      <w>strutdetail</w>
+      <w>struthandler</w>
+      <w>tyredetail</w>
       <w>tyrehandler</w>
+      <w>webproduct</w>
     </words>
   </dictionary>
 </component>
