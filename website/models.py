@@ -1,10 +1,13 @@
 from django.db import models
 from ckeditor.fields import RichTextField
 
-
-
+class category(models.Model):
+    type=models.CharField(max_length=20)
+    def __str__(self):
+        return self.type
 
 class TyreHandler(models.Model):
+    type=models.ForeignKey(category,default=None,on_delete=models.CASCADE)
     name = models.CharField(max_length=15, null=True, blank=True)
     code = models.CharField(max_length=15, null=True, blank=True)
     model_Year = models.CharField(max_length=6, null=True, blank=True)
@@ -31,6 +34,7 @@ class TyreHandler(models.Model):
 
 
 class CylinderHandler(models.Model):
+    type=models.ForeignKey(category,default=None,on_delete=models.CASCADE)
     name = models.CharField(max_length=15, null=True, blank=True)
     code = models.CharField(max_length=15, null=True, blank=True)
     model_Year = models.CharField(max_length=6, null=True, blank=True)
@@ -51,6 +55,7 @@ class CylinderHandler(models.Model):
 
 
 class StrutHandler(models.Model):
+    type=models.ForeignKey(category,default=None,on_delete=models.CASCADE)
     name=models.CharField(max_length=15,null=True,blank=True)
     code=models.CharField(max_length=15,null=True,blank=True)
     model_Year=models.CharField(max_length=6,null=True,blank=True)
