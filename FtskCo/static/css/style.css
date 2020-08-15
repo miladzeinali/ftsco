@@ -1165,7 +1165,7 @@ section {
 /*border: 1px solid #000000;*/
     width: 75%;
     height: auto;
-    background: #f8f9fa;
+    background: #edeee9;
     margin: 20px auto 40px;
     border-radius: 10px;
 }
@@ -1182,15 +1182,18 @@ section {
     /*border: 1px solid #dd0000;*/
     margin: 10px;
 }
+.tyrehandler strong {
+  font-size: 13px;
+}
 .tyrehandler .col-description h2{
     color: #dd0000;
-    text-align: left;
+    text-align: right;
 }
 .tyrehandler .col-description-1{
-    text-align: left;
+    text-align: right;
 }
 .tyrehandler .col-description-2{
-    text-align: left;
+    text-align: right;
 }
 .tyrehandler .col-arrow  {
     margin: 10px;

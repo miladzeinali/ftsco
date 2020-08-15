@@ -39,7 +39,8 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="{% url 'website:message' %}" method="post" role="form" class="php-email-form">
+                {% csrf_token %}
               <div class="form-row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="نام" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -47,6 +48,10 @@
                 </div>
                 <div class="col-md-6 form-group">
                   <input type="email" class="form-control" name="email" id="email" placeholder="ایمیل شما" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+                  <div class="col-md-6 form-group">
+                  <input type="number" class="form-control" name="phone"  placeholder="شماره تماس" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
               </div>

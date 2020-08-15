@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from .models import TyreHandler, CylinderHandler, StrutHandler
+from django.shortcuts import render,redirect
+from .models import TyreHandler, CylinderHandler, StrutHandler,message
 
 
 # Create your views here.
@@ -49,3 +49,16 @@ def cylinderhandler_detail(request, id):
 def struthandler_detail(request, id):
     struthandler = StrutHandler.objects.get(id=id)
     return render(request, 'webproduct/strutdetail.html', {'struthandler': struthandler})
+
+def contact(request):
+    return render(request,'pages/contact.html',{})
+
+def messages(request):
+    print(request.POST)
+    name=request.POST['name']
+    email=request.POST['email']
+    subject=request.POST['subject']
+    messages=request.POST['message']
+    phone=request.POST['phone']
+    message.objects.create(name=name,email=email,message=messages,title=subject,phone=phone)
+    return redirect('website:home')
