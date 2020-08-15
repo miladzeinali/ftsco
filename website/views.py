@@ -6,7 +6,7 @@ from .models import TyreHandler, CylinderHandler, StrutHandler,message
 
 
 def home(request):
-    return render(request, 'pages/home.html', {'alo': []})
+    return render(request, 'pages/home.html', {})
 
 
 def tyreHandler(request):
@@ -62,3 +62,6 @@ def messages(request):
     phone=request.POST['phone']
     message.objects.create(name=name,email=email,message=messages,title=subject,phone=phone)
     return redirect('website:home')
+
+def about(request):
+    return render(request,'pages/about.html',{})
