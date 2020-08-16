@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import TyreHandler,CylinderHandler,StrutHandler,tyreHandlerImages,\
-    StrutHandlerImages,CylinderHandlerImages,category
+    StrutHandlerImages,CylinderHandlerImages,category,message
 # Register your models here.
 
 
@@ -32,6 +32,10 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display = ('id','type')
     search_fields = ('id','type')
 
+class messageAdmin(admin.ModelAdmin):
+    list_display = ('id','name','phone','message')
+    search_fields = ('id','name','phone','message')
+
 admin.site.register(TyreHandler,TyreHandlerAdmin)
 admin.site.register(CylinderHandler,CylinderHandlerAdmin)
 admin.site.register(StrutHandler,StrutHandlerAdmin)
@@ -39,4 +43,4 @@ admin.site.register(tyreHandlerImages,tyreHandlerImagesAdmin)
 admin.site.register(StrutHandlerImages,StrutHandlerImagesAdmin)
 admin.site.register(CylinderHandlerImages,cylinderhandlerImagesAdmin)
 admin.site.register(category,CategoryAdmin)
-
+admin.site.register(message,messageAdmin)

@@ -39,7 +39,7 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li class="active"><a href="{% url 'website:home' %}">خانه</a></li>
-                                            <li><a href="about.html">درباره ما</a></li>
+                                            <li><a href="{% url 'website:about' %}">درباره ما</a></li>
                                             <li><a href="services.html">خدمات</a></li>
                                             <li><a href="project.html">پروژه ها</a></li>
                                             <li><a href="blog.html">محصولات</a>
@@ -49,7 +49,7 @@
                                                     <li><a href={% url 'website:struth' %}>استروت هندلر</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact.html">تماس با ما</a></li>
+                                            <li><a href="{% url 'website:contact' %}">تماس با ما</a></li>
                                         </ul>
                                     </nav>
                                 </div>

@@ -11,4 +11,7 @@ urlpatterns = [
     path('products/tyrehandlers/<int:id>/', views.tyrehandler_detail, name='tyrehdetail'),
     path('products/struthandlers/<int:id>/', views.struthandler_detail, name='strutdetail'),
     path('products/cylinderhandlers/<int:id>/', views.cylinderhandler_detail, name='cylinderdetail'),
+    path('contact/',views.contact,name='contact'),
+    path('about/',views.about,name='about'),
+    path('contact/messages/',views.messages,name='message'),
 ]
