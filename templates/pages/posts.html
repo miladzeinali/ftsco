@@ -1,0 +1,29 @@
+{% extends 'pages/base.html' %}
+{% block header %}
+    {% include 'partial/_header.html' %}
+{% endblock %}
+{% block content %}
+    <div class="history">
+        <div class="history-year">
+            <span class="">2013</span>
+        </div>
+        <div class="bloc ">
+            <div class="row">
+                <div class="history-picture col-lg-4 d-flex justify-content-center">
+                    <img alt="historicItem.title"
+                         src="https://images.prismic.io/manitou/910b0dc4b89561fd3f0b2c2cad4b60eaaf0c4fea_2013_yanmar.jpg?auto=compress,format">
+                </div>
+                <div class="history-content ">
+                    <h2 class="border-bottom ">Yanmar becomes a shareholder</h2>
+                    <p>.history .history-picture {
+                        float: right;
+                        width: 31.66666667%;
+                        }</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block footer %}
+    {% include 'partial/_footer.html' %}
+{% endblock %}
