@@ -338,12 +338,56 @@ section {
 }
 
 .carousel-caption {
-    /*padding-bottom: 200px;*/
-    color: #4df91a;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    right: 0;
+    /*left: 0;*/
+    top: 0;
+    /*transform: translate3d(0px, 0px, 0px);*/
+    /*transform: matrix(1, 0, 0, 1, 0, 0);*/
+
+}
+
+.shape {
+    text-align: center;
+    background-color: rgb(0, 5, 9);
+    width: 280px;
+    height: 600px;
+    line-height: 60px;
+    color: white;
+    margin: 0;
+    position: relative;
+    opacity: 0.5;
+}
+
+.shape:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-bottom: 600vh solid rgb(0, 5, 9);
+    border-left: 220px solid transparent;
+    position: absolute;
+    right: 100%;
+    top: 0px;
+    /*opacity: 0.5;*/
+}
+
+.div-animate {
+    position: absolute;
+    overflow: visible;
+    right: 0;
+    bottom: 20px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-top: 660px solid red;
+    border-left: 620px solid transparent;
+    opacity: 0.5;
 }
 
 .carousel-caption h1 {
-    font-size: 40px;
+    font-size: 240%;
 }
 
 /*--------------------------------------------------------------
@@ -982,6 +1026,7 @@ section {
 .owl-carousel.home-slider .slider-item .slider-text .breadcrumbs span a {
     color: #fff;
 }
+
 .owl-stage-outer {
     position: relative;
     overflow: hidden;
@@ -1234,10 +1279,12 @@ section {
 .bloc-product table thead {
     background-color: #dd0000;
 }
+
 .history .history-year {
     margin-top: 20px;
     text-align: center;
 }
+
 .history .history-year span {
     background: #f5f5f5;
     border: 1px solid #f0f0f0;
@@ -1250,14 +1297,16 @@ section {
 .bloc {
     background: #fff;
     border-radius: 4px;
-    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
     padding: 20px;
 }
+
 .history .history-picture {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 /*.history .history-picture {*/
 /*    float:right;*/
 /*    width: 41.667%;*/
@@ -1268,19 +1317,23 @@ section {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 .history .history-picture img {
     display: block;
     width: 100%;
     height: auto;
     padding-bottom: 20px;
 }
+
 .history .history-content {
-   float: right;
+    float: right;
 }
+
 .history .history-picture + .history-content, .history .history-media + .history-content {
     position: relative;
     min-height: 1px;
     padding-left: 10px;
     padding-right: 10px;
+
 }
 
