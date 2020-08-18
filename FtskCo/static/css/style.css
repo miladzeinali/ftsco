@@ -375,7 +375,12 @@ section {
     top: 0px;
     /*opacity: 0.5;*/
 }
-
+@media (min-width: 990px) {
+    .shape {
+        width: 700px;
+        height: 800px;
+    }
+}
 .div-animate {
     position: absolute;
     overflow: visible;
