@@ -97,3 +97,9 @@ class message(models.Model):
     title=models.CharField(max_length=20)
     message=models.TextField(max_length=150)
 
+class post(models.Model):
+    image=models.ImageField(upload_to='post_images')
+    title=models.CharField(max_length=50)
+    text=models.TextField(max_length=300)
+
+

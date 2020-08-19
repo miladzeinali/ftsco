@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from .models import TyreHandler, CylinderHandler, StrutHandler,message
+from .models import TyreHandler, CylinderHandler, StrutHandler,message,post
 
 
 # Create your views here.
@@ -58,3 +58,7 @@ def messages(request):
 
 def about(request):
     return render(request,'pages/about.html',{})
+
+def history(request):
+    posts=post.objects.all()
+    return render(request,'pages/posts.html',{'posts':posts})

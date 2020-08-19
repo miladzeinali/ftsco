@@ -14,4 +14,5 @@ urlpatterns = [
     path('contact/',views.contact,name='contact'),
     path('about/',views.about,name='about'),
     path('contact/messages/',views.messages,name='message'),
+    path('posts/',views.history,name='post'),
 ]
