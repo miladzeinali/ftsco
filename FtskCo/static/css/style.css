@@ -907,7 +907,7 @@ section {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-top: -10px;
-    color: #00bdaa !important;
+    color: #ffce00 !important;
     -moz-transition: all 0.7s ease;
     -o-transition: all 0.7s ease;
     -webkit-transition: all 0.7s ease;
@@ -1177,7 +1177,7 @@ section {
 }
 
 .testimony-section .owl-dots .owl-dot.active {
-    background: #00bdaa;
+    background: #ffce00;
 }
 
 .testimony-wrap {
