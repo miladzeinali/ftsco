@@ -136,18 +136,21 @@ section {
 .header-bottom {
     background: #ffce00;
 }
+
 @media (min-width: 990px ) {
-    .header-bottom .logo img{
-     width: 130px;
-}
+    .header-bottom .logo img {
+        width: 130px;
+    }
 
 }
+
 @media (max-width: 990px ) {
-    .header-bottom .logo img{
-     width: 80px;
-}
+    .header-bottom .logo img {
+        width: 80px;
+    }
 
 }
+
 .header-area .header-sticky.sticky-bar {
     background: #ffce00;
 }
@@ -386,12 +389,14 @@ section {
     top: 0px;
     /*opacity: 0.5;*/
 }
+
 @media (min-width: 990px) {
     .shape {
         width: 700px;
         height: 800px;
     }
 }
+
 .div-animate {
     position: absolute;
     overflow: visible;
@@ -470,8 +475,8 @@ section {
 
 .services .icon-box .icon img {
     color: #151515;
-    width: 200px;
-    height: 100px;
+    width: 90px;
+    height: 80px;
     transition: ease-in-out 0.3s;
 }
 
@@ -729,6 +734,7 @@ section {
 #footer .footer-top .footer-info {
     margin-bottom: 30px;
 }
+
 #footer .footer-top .footer-info .logo img {
     width: 80px;
     font-size: 28px;
@@ -738,6 +744,7 @@ section {
     font-weight: 700;
     text-transform: uppercase;
 }
+
 #footer .footer-top .footer-info h3 {
     font-size: 28px;
     margin: 0 0 20px 0;
@@ -870,6 +877,7 @@ section {
     font-size: 13px;
     color: #fff;
 }
+
 /*.ftco-animate {*/
 /*  opacity: 0;*/
 /*  visibility: hidden; }*/
@@ -957,7 +965,7 @@ section {
 
 .owl-carousel.home-slider {
     position: relative;
-    height: 730px;
+    height: 650px;
     z-index: 0;
     top: -60px;
 }
@@ -972,7 +980,7 @@ section {
 }
 
 @media (max-width: 1199.98px) {
-    .owl-carousel.home-slider .slider-item {
+    .owl-carousel .home-slider .slider-item {
         background-position: center center !important;
     }
 }
@@ -1051,14 +1059,33 @@ section {
     direction: rtl;
 }
 
+.owl-carousel.home-slider .owl-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .owl-carousel .home-slider .owl-dots {
+        bottom: 130px;
+    }
+}
+
+
 .user-img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
+
 .ftco-animate {
-  opacity: 0;
-  visibility: hidden; }
+    opacity: 0;
+    visibility: hidden;
+}
+
 .testimony-section {
     position: relative;
 }
