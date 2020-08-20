@@ -547,9 +547,14 @@ section {
     color: #151515;
 }
 
-.cta .services-content span {
-    /*font-size: 80px;*/
-    border-radius: 50%;
+.cta .services-content svg {
+    font-size: 80px;
+    /*border-radius: 50%;*/
+    color: #dd0000;
+}
+.cta .services-content i {
+    font-size: 80px;
+    /*border-radius: 50%;*/
     color: #dd0000;
 }
 .cta .services-content .icon img {
