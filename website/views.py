@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from .models import TyreHandler, CylinderHandler, StrutHandler,message,post
+from .models import TyreHandler, CylinderHandler, StrutHandler,message,post,BeltHandler,Wheelmotor,PipeHandler
 
 
 # Create your views here.
@@ -23,6 +23,21 @@ def strutHandler(request):
     count = len(struthandlers)
     return render(request, 'webproduct/listproduct.html', {'products': struthandlers, 'count': count})
 
+def pipehandler(request):
+    pipehandler = PipeHandler.objects.all()
+    count = len(pipehandler)
+    return render(request, 'webproduct/listproduct.html', {'products': pipehandler, 'count': count})
+
+def wheelmotor(request):
+    wheelmotor = Wheelmotor.objects.all()
+    count = len(wheelmotor)
+    return render(request, 'webproduct/listproduct.html', {'products': wheelmotor, 'count': count})
+
+def belthandler(request):
+    belthandler = BeltHandler.objects.all()
+    count = len(belthandler)
+    return render(request, 'webproduct/listproduct.html', {'products': belthandler, 'count': count})
+
 def productcontrol(request, id, type):
     if type == 'cylinderhandler':
         return cylinderhandler_detail(request, id)
@@ -30,6 +45,12 @@ def productcontrol(request, id, type):
         return struthandler_detail(request, id)
     elif type == 'tyrehandler':
         return tyrehandler_detail(request, id)
+    elif type == 'belthandler':
+        return belthandler_detail(request, id)
+    elif type == 'wheelmotor':
+        return wheelmotor_detail(request, id)
+    elif type == 'pipehandler':
+        return pipehandler_detail(request, id)
 
 def tyrehandler_detail(request, id):
     tyrehandler = TyreHandler.objects.get(id=id)
@@ -42,6 +63,20 @@ def cylinderhandler_detail(request, id):
 def struthandler_detail(request, id):
     struthandler = StrutHandler.objects.get(id=id)
     return render(request, 'webproduct/strutdetail.html', {'struthandler': struthandler})
+
+def belthandler_detail(request, id):
+    belthandler = BeltHandler.objects.get(id=id)
+    return render(request, 'webproduct/beltdetail.html', {'belthandler': belthandler})
+
+def wheelmotor_detail(request, id):
+    wheelmotor = Wheelmotor.objects.get(id=id)
+    return render(request, 'webproduct/wheeldetail.html', {'wheelmotor': wheelmotor})
+
+def pipehandler_detail(request, id):
+    pipehandler = PipeHandler.objects.get(id=id)
+    return render(request, 'webproduct/pipedetail.html', {'pipehandler': pipehandler})
+
+
 
 def contact(request):
     return render(request,'pages/contact.html',{})
