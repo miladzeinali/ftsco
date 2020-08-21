@@ -435,6 +435,7 @@ section {
 .about .content ul li {
     padding: 0 0 8px 26px;
     position: relative;
+    font-size: 14px;
 }
 
 .about .content ul i {
@@ -446,6 +447,7 @@ section {
 }
 .about .content p {
     text-align: justify;
+    font-size: 14px;
 }
 .about .content p:last-child {
     margin-bottom: 0;
@@ -1316,7 +1318,9 @@ section {
 .product button {
     background-color: #ffce00;
 }
-
+.product .cta-bloc span{
+    font-size: 15px;
+}
 .product p {
     font-size: 16px;
 }
@@ -1336,7 +1340,12 @@ section {
 .bloc-product table thead {
     background-color: #dd0000;
 }
-
+.bloc-product table th {
+   font-size: 13px;
+}
+.bloc-product table td {
+   font-size: 13px;
+}
 .history .history-year {
     margin-top: 20px;
     text-align: center;
