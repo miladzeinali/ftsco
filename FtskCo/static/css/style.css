@@ -435,6 +435,7 @@ section {
 .about .content ul li {
     padding: 0 0 8px 26px;
     position: relative;
+    font-size: 14px;
 }
 
 .about .content ul i {
@@ -444,7 +445,10 @@ section {
     top: -3px;
     color: #ffc451;
 }
-
+.about .content p {
+    text-align: justify;
+    font-size: 14px;
+}
 .about .content p:last-child {
     margin-bottom: 0;
 }
@@ -455,7 +459,7 @@ section {
 .services .icon-box {
     text-align: center;
     border: 1px solid #ebebeb;
-    padding: 80px 20px;
+    padding: 50px 20px;
     transition: all ease-in-out 0.3s;
     background: #fff;
 }
@@ -464,7 +468,7 @@ section {
     margin: 0 auto;
     width: 200px;
     height: 100px;
-    background: #ffce00;
+    /*background: #ffce00;*/
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -545,12 +549,21 @@ section {
     color: #151515;
 }
 
-.cta .services-content span {
-    /*font-size: 80px;*/
-    border-radius: 50%;
+.cta .services-content svg {
+    font-size: 80px;
+    /*border-radius: 50%;*/
     color: #dd0000;
 }
-
+.cta .services-content i {
+    font-size: 80px;
+    /*border-radius: 50%;*/
+    color: #dd0000;
+}
+.cta .services-content .icon img {
+    /*font-size: 80px;*/
+    width: 120px;
+    /*background: #ffce00;*/
+}
 @media (min-width: 576px) {
     .services-content .mt {
         margin-top: 300px;
@@ -1305,7 +1318,9 @@ section {
 .product button {
     background-color: #ffce00;
 }
-
+.product .cta-bloc span{
+    font-size: 15px;
+}
 .product p {
     font-size: 16px;
 }
@@ -1325,7 +1340,12 @@ section {
 .bloc-product table thead {
     background-color: #dd0000;
 }
-
+.bloc-product table th {
+   font-size: 13px;
+}
+.bloc-product table td {
+   font-size: 13px;
+}
 .history .history-year {
     margin-top: 20px;
     text-align: center;
