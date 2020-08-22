@@ -115,31 +115,36 @@ section {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     /* line 3, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_headerMenu.scss */
     .header-area .header-bottom {
-        padding: 17px 0px;
+        padding: 0px 0px;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     /* line 3, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_headerMenu.scss */
     .header-area .header-bottom {
-        padding: 17px 0px;
+        padding: 4px 0px;
     }
 }
 
 @media (max-width: 575px) {
     /* line 3, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_headerMenu.scss */
     .header-area .header-bottom {
-        padding: 17px 0px;
+        padding: 3px 0px;
     }
 }
 
 .header-bottom {
     background: #ffce00;
 }
+@media (min-width: 990px ) {
+    .header-bottom  {
+        height: 89px;
+    }
 
+}
 @media (min-width: 990px ) {
     .header-bottom .logo img {
-        width: 130px;
+        width: 100px;
     }
 
 }
@@ -739,12 +744,13 @@ section {
     padding: 0 0 30px 0;
     color: #fff;
     font-size: 14px;
+    /*height: 100px;*/
 }
 
 #footer .footer-top {
     background: #151515;
     border-bottom: 1px solid #222222;
-    padding: 60px 0 30px 0;
+    padding: 30px 0 20px 0;
 }
 
 #footer .footer-top .footer-info {
