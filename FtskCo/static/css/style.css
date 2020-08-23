@@ -615,7 +615,7 @@ section {
 .contact .info i {
     font-size: 20px;
     background: #dd0000;
-    color: #151515;
+    color: #fff;
     float: right;
     width: 44px;
     height: 44px;
@@ -713,7 +713,7 @@ section {
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-    border-color: #ffc451;
+    /*border-color: #ffc451;*/
 }
 
 .contact .php-email-form input {
@@ -728,9 +728,10 @@ section {
     background: #dd0000;
     border: 0;
     padding: 10px 24px;
-    color: #151515;
+    color: #fff;
     transition: 0.4s;
     border-radius: 4px;
+    font-size: 14px;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
@@ -1310,7 +1311,7 @@ section {
 }
 
 .tyrehandler .col-arrow div button a {
-    color: #000000;
+    color: #fff;
     text-decoration: none;
     font-size: 16px;
 }
@@ -1322,10 +1323,13 @@ section {
 }
 
 .product-headings .product-headings-category h3 {
-    color: #000000;
+    color: #fff;
     margin-right: 20px;
 }
-
+.product-headings h1 {
+    color: #fff;
+    margin-left: 20px;
+}
 .product .bloc-product {
     background:  #ffffff;
 }
@@ -1343,6 +1347,7 @@ section {
 }
 .product .cta-bloc span{
     font-size: 15px;
+    color: #fff;
 }
 .product p {
     font-size: 16px;
