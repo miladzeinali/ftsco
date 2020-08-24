@@ -134,7 +134,11 @@ section {
 }
 
 .header-bottom {
-    background: #f1fdff;
+/*<<<<<<< HEAD*/
+/*    background: #f1fdff;*/
+/*=======*/
+    background: #dd0000;
+/*>>>>>>> c49824a028e7b3d0aacfb49983026c659d3c8109*/
 }
 @media (min-width: 990px ) {
     .header-bottom  {
@@ -157,7 +161,7 @@ section {
 }
 
 .header-area .header-sticky.sticky-bar {
-    background: #ffce00;
+    background: #dd0000;
 }
 
 .header-area .header-sticky.sticky-bar .main-menu nav > ul > li > a {
@@ -232,7 +236,7 @@ section {
 }
 
 .main-header .main-menu ul li a {
-    color: #0d2d3e;
+    color: #fff;
     font-weight: 600;
     padding: 33px 2px;
     display: block;
@@ -252,7 +256,7 @@ section {
 }
 
 .main-header .main-menu ul li:hover > a {
-    color: #dd0000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -269,7 +273,7 @@ section {
     content: "";
     width: 100%;
     height: 2px;
-    background: #dd0000;
+    background: #fff;
     bottom: 0;
     margin: 0 auto;
     left: 0;
@@ -504,7 +508,7 @@ section {
 }
 
 .services .icon-box h4 a:hover {
-    color: #ffce00;
+    color: #dd0000;
 }
 
 .services .icon-box p {
@@ -614,8 +618,8 @@ section {
 
 .contact .info i {
     font-size: 20px;
-    background: #ffce00;
-    color: #151515;
+    background: #dd0000;
+    color: #fff;
     float: right;
     width: 44px;
     height: 44px;
@@ -713,7 +717,7 @@ section {
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-    border-color: #ffc451;
+    /*border-color: #ffc451;*/
 }
 
 .contact .php-email-form input {
@@ -725,12 +729,13 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-    background: #ffce00;
+    background: #dd0000;
     border: 0;
     padding: 10px 24px;
-    color: #151515;
+    color: #fff;
     transition: 0.4s;
     border-radius: 4px;
+    font-size: 14px;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
@@ -777,7 +782,7 @@ section {
 }
 
 #footer .footer-top .footer-info h3 span {
-    color: #ffce00;
+    color: #dd0000;
 }
 
 #footer .footer-top .footer-info p {
@@ -804,7 +809,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-    background: #ffce00;
+    background: #dd0000;
     color: #151515;
     text-decoration: none;
 }
@@ -829,7 +834,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
     padding-right: 2px;
-    color: #ffce00;
+    color: #dd0000;
     font-size: 18px;
     line-height: 1;
 }
@@ -854,7 +859,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-    color: #ffce00;
+    color: #dd0000;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -880,14 +885,14 @@ section {
     background: none;
     font-size: 16px;
     padding: 0 20px;
-    background: #ffce00;
+    background: #dd0000;
     color: #151515;
     transition: 0.3s;
     border-radius: 0 4px 4px 0;
 }
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
-    background: #ffce00;
+    background: #dd0000;
 }
 
 #footer .copyright {
@@ -931,7 +936,7 @@ section {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-top: -10px;
-    color: #ffce00 !important;
+    color: #dd0000 !important;
     -moz-transition: all 0.7s ease;
     -o-transition: all 0.7s ease;
     -webkit-transition: all 0.7s ease;
@@ -971,7 +976,7 @@ section {
 }
 
 .owl-carousel .owl-dots .owl-dot.active {
-    background: #ffce00;
+    background: #dd0000;
 }
 
 .owl-carousel:hover .owl-nav .owl-prev,
@@ -1201,7 +1206,7 @@ section {
 }
 
 .testimony-section .owl-dots .owl-dot.active {
-    background: #ffce00;
+    background: #dd0000;
 }
 
 .testimony-wrap {
@@ -1300,39 +1305,53 @@ section {
 }
 
 .tyrehandler .col-arrow div {
-    color: #ffce00;
+    color: #dd0000;
     margin-right: auto;
 
 }
 
 .tyrehandler .col-arrow div button {
-    background: #ffce00;
+    background: #dd0000;
 }
 
 .tyrehandler .col-arrow div button a {
-    color: #000000;
+    color: #fff;
     text-decoration: none;
     font-size: 16px;
 }
-
+#detail {
+    background: #fafafa;
+}
 .product-headings {
     background-color: #dd0000;
 }
 
 .product-headings .product-headings-category h3 {
-    color: #000000;
+    color: #fff;
     margin-right: 20px;
 }
-
-.product .bloc-product {
-    background: #fefa;
+.product-headings h1 {
+    color: #fff;
+    margin-left: 20px;
 }
-
+.product .bloc-product {
+    background:  #ffffff;
+}
+.product .bloc-product header .header-content{
+    border-top:  solid 1px black;
+    border-bottom: solid 1px  black;
+}
+.product .bloc-product .header-content .header-content-title {
+  font-size: 50px;
+    color: #dd0000;
+    margin: auto;
+}
 .product button {
-    background-color: #ffce00;
+    background-color: #dd0000;
 }
 .product .cta-bloc span{
     font-size: 15px;
+    color: #fff;
 }
 .product p {
     font-size: 16px;
@@ -1342,16 +1361,16 @@ section {
     width: 350px;
 }
 
-.bloc-product .header .header-content-text {
-    background-color: #ffce00;
-}
+/*.bloc-product .header .header-content-text {*/
+/*    background-color: #ffce00;*/
+/*}*/
 
 .bloc-product table {
     text-align: center;
 }
 
-.bloc-product table thead {
-    background-color: #dd0000;
+.bloc-product .thead {
+   background: #dd0000;
 }
 .bloc-product table th {
    font-size: 13px;
