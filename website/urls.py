@@ -21,4 +21,10 @@ urlpatterns = [
     path('about/',views.about,name='about'),
     path('contact/messages/',views.messages,name='message'),
     path('posts/',views.history,name='post'),
+    path('Surety/',views.surety,name='Surety'),
+    path('repair/',views.repair,name='repair'),
+    path('optimization/',views.optimization,name='optimization'),
+    path('customization/',views.customization,name='customization'),
+    path('supplycomp/',views.supplycomp,name='supplycomp'),
+
 ]

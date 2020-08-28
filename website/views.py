@@ -112,3 +112,19 @@ def about(request):
 def history(request):
     posts = post.objects.all()
     return render(request, 'pages/posts.html', {'posts': posts})
+
+def surety(request):
+    return render(request,'pages/guarantee.html',{})
+
+def repair(request):
+    return render(request,'pages/service_repair.html',{})
+
+def optimization(request):
+    return render(request,'pages/optimization.html',{})
+
+def customization(request):
+    return render(request,'pages/customization.html',{})
+
+def supplycomp(request):
+    return render(request,'pages/supply_comp.html',{})
+

@@ -31,7 +31,6 @@
                         <p> {{ cylinderhandler.name }}</p>
                         <div class="header-content pt-4">
 
-                            <p class="header-content-text"> مشخصات فنی :</p>
                             <h1 class="header-content-title">
 
 
@@ -54,12 +53,11 @@
                                 <tr><th>سال تولید</th><td>{{ cylinderhandler.model_Year }}</td></tr>
                                 <tr><th>ظرفیت/kg</th><td>{{cylinderhandler.capacity_Kg }}</tr>
                                 <tr><th>ظرفیت/lbs</th><td>{{cylinderhandler.capacity_Lbs}}</td></tr>
-                                <tr><th>قطر سیلندر هدف</th><td>mm ({{cylinderhandler.Cylinder_Diameter_mm_min}}/{{cylinderhandler.Cylinder_Diameter_mm_max}})</td></tr>
-                                <tr><th>قطر سیلندر هدف</th><td>{{cylinderhandler.Cylinder_Diameter_in_min}}</td></tr>
-                                <tr><th>Cylinder_Diameter_in_max</th><td>{{cylinderhandler.Cylinder_Diameter_in_max}}</td></tr>
-                                <tr><th> sideShift_Mm</th><td>{{cylinderhandler.sideShift_Mm}}</td></tr>
-                                <tr><th>sideShift_In</th><td>{{cylinderhandler.sideShift_In}}</td></tr>
-                                <tr><th>body_Rotation</th><td>{{cylinderhandler.body_Rotation}}</td></tr>
+                                <tr><th>قطر سیلندر هدف</th><td> ({{cylinderhandler.Cylinder_Diameter_mm_min}}/{{cylinderhandler.Cylinder_Diameter_mm_max}})</td></tr>
+                                <tr><th>قطر سیلندر هدف</th><td>in {{cylinderhandler.Cylinder_Diameter_in_min}}/{{cylinderhandler.Cylinder_Diameter_in_max}}</td></tr>
+                                <tr><th> انتقال به طرفین</th><td>   mm {{cylinderhandler.sideShift_Mm}}</td></tr>
+                                <tr><th>انتقال به طرفین</th><td> in {{cylinderhandler.sideShift_In}}</td></tr>
+                                <tr><th>دوران بدنه</th><td>{{cylinderhandler.body_Rotation}}</td></tr>
                                 <tr><th> Handler_tilting</th><td>{{cylinderhandler.Handler_tilting}}</td></tr>
                                 <tr><th>price_Toman</th><td>{{cylinderhandler.price_Toman}}</td></tr>
                                 <tr><th>price_Dollar</th><td>{{cylinderhandler.price_Dollar}}</td></tr>
