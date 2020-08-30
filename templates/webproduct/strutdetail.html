@@ -10,7 +10,7 @@
                 <div class="product-headings-category p-1">
                     <h3 class="">{{ struthandler.name }}</h3>
                 </div>
-                <h1 class="mr-lg-auto p-1">{{ cylinderhandler.code }}</h1>
+                <h1 class="mr-lg-auto p-1">{{ struthandler.code }}</h1>
             </div>
 
             <div class="product">
@@ -47,15 +47,13 @@
                                 <tr><th>کد محصول</th><td>{{ struthandler.code }}</td></tr>
                                 <tr><th>سال تولید</th><td>{{ struthandler.model_Year }}</td></tr>
                                 <tr><th>ظرفیت/kg</th><td>{{struthandler.capacity_Kg }}</tr>
-                                <tr><th>capacity_Lbs</th><td>{{struthandler.capacity_Lbs}}</td></tr>
-                                <tr><th>Cylinder_Diameter_mm_min</th><td>{{struthandler.Cylinder_Diameter_mm_min}}</td></tr>
-                                <tr><th> Cylinder_Diameter_mm_max</th><td>{{struthandler.Cylinder_Diameter_mm_max}}</td></tr>
-                                <tr><th>Cylinder_Diameter_in_min</th><td>{{struthandler.Cylinder_Diameter_in_min}}</td></tr>
-                                <tr><th>Cylinder_Diameter_in_max</th><td>{{struthandler.Cylinder_Diameter_in_max}}</td></tr>
-                                <tr><th> sideShift_Mm</th><td>{{struthandler.sideShift_Mm}}</td></tr>
-                                <tr><th>sideShift_In</th><td>{{struthandler.sideShift_In}}</td></tr>
-                                <tr><th>body_Rotation</th><td>{{struthandler.body_Rotation}}</td></tr>
-                                <tr><th> Handler_tilting</th><td>{{struthandler.Handler_tilting}}</td></tr>
+                                <tr><th>ظرفیت/lbs</th><td>{{struthandler.capacity_Lbs}}</td></tr>
+                                <tr><th>قطر سیلندر هدف</th><td>mm ({{struthandler.Cylinder_Diameter_mm_min}}/{{struthandler.Cylinder_Diameter_mm_max}})</td></tr>
+                                <tr><th>قطر سیلندر هدف</th><td>in ({{struthandler.Cylinder_Diameter_in_min}}/{{struthandler.Cylinder_Diameter_in_max}})</td></tr>
+                                <tr><th> انتقال به طرفین</th><td>   mm ({{struthandler.sideShift_Mm}})</td></tr>
+                                <tr><th>انتقال به طرفین</th><td> in ({{struthandler.sideShift_In}})</td></tr>
+                                <tr><th>دوران بدنه</th><td>{{struthandler.body_Rotation}}</td></tr>
+                                <tr><th> زاویه گرفتن</th><td>{{struthandler.Handler_tilting}}</td></tr>
                                 <tr><th>price_Toman</th><td>{{struthandler.price_Toman}}</td></tr>
                                 <tr><th>price_Dollar</th><td>{{struthandler.price_Dollar}}</td></tr>
                                 </tbody>
