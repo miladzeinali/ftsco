@@ -1414,6 +1414,10 @@ section {
 
 .bloc-product .thead {
    background: #dd0000;
+    height: 30px;
+}
+.bloc-product .thead p {
+    font-size: 12px;
 }
 .bloc-product table th {
    font-size: 13px;
