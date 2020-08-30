@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block content %}
-    <section class="mt-5" id="detail">
+    <section class="" id="detail">
         <div class=" container" >
             <div class="product-headings row d-flex justify-content-lg-start align-items-center mb-4">
                 <div class="product-headings-category p-1">
@@ -32,10 +32,7 @@
                         <div class="header-content pt-4">
 
                             <h1 class="header-content-title">
-
-
                                 {{ cylinderhandler.code }}
-
                             </h1>
                         </div>
                     </header>
@@ -47,6 +44,7 @@
                         </div>
                         <div class=" order-2 ">
                             <table class="table table-striped ">
+                                <div class="thead text-white"><p class="pr-3 pt-2">{{ cylinderhandler.name }}</p></div>
                                 <tbody>
                                 <tr><th>نام محصول</th><td>{{ cylinderhandler.name }}</td></tr>
                                 <tr><th>کد محصول</th><td>{{ cylinderhandler.code }}</td></tr>
