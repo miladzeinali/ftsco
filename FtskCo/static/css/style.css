@@ -575,8 +575,8 @@ section {
 
 .cta h3 {
     color: #fff;
-    font-size: 28px;
-    font-weight: 700;
+    /*font-size: 28px;*/
+    /*font-weight: 700;*/
 }
 
 .cta p {
@@ -623,31 +623,40 @@ section {
     width: 15rem;
     /*background: #ffce00;*/
 }
+.cta .services-content .card-body p{
+    font-size: 12px;
+}
 @media (min-width: 990px){
- .cta .services-content .services-img{
-     margin-top: 130px;
+ .cta .services-content .services-img img{
+     margin-top: -60px;
  }
 }
-@media (max-width: 768px)and (max-width: 990px){
- .cta .services-content .services-img{
-     margin-top: 110px;
- }
-}
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
     .cta .services-content .services-img{
      margin-top: 250px;
  }
 }
-@media (min-width: 576px) {
+@media (max-width: 768px)and (max-width: 990px){
+ .cta .services-content .services-img {
+     position: absolute;
+     margin-top: 200px;
+ }
+}
+@media (min-width: 576px) and (max-width: 767px){
     .services-content .mt {
-        margin-top: 300px;
+        margin-top: auto;
     }
 
     .services-content span {
         font-size: 80px;
     }
 }
-
+@media (min-width: 767px) {
+    .services-content .mt {
+        margin-top: 300px;
+    }
+}
 @media (max-width: 576px) {
     .services-content img {
         width: 140px;
@@ -658,16 +667,26 @@ section {
     }
 
     .services-content .mt {
-        margin-top: 80px;
+        margin-top: auto;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
     .services-content img {
-        width: 180px;
+        width: 140px;
     }
 }
-
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+    .services-content img {
+        width: 180px;
+        margin-top: 100px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .services-content .card-body h3 {
+      font-size: 16px;
+    }
+}
 /*--------------------------------------------------------------
 /*!*--------------------------------------------------------------*/
 /*--------------------------------------------------------------
