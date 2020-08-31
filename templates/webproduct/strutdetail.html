@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block content %}
-    <section class="">
+    <section class="" id="detail">
         <div class=" container">
             <div class="product-headings row d-flex justify-content-lg-start align-items-center mb-4">
                 <div class="product-headings-category p-1">
@@ -27,21 +27,23 @@
 
                 <div class="bloc-product mt-5">
                     <header class="header">
-                        <div class="header-content">
-                            <p class="header-content-text"></p>
+                         <p> {{ struthandler.name }}</p>
+                        <div class="header-content pt-4">
+
                             <h1 class="header-content-title">
                                 {{ struthandler.code }}
                             </h1>
                         </div>
                     </header>
-                    <div class="row">
-                <div class="col-lg-4 col-md-5 order-1 ">
-                            <div class="">
+                    <div class="">
+                <div class="order-1 ">
+                            <div class="d-flex justify-content-center">
                                 <img class="" src="https://adjeygjfyo.cloudimg.io/width/768/x/https://technical-datasheet-api.manitou.com/api/media/8/2/6/c/826c51658cc0ee353a1e108530c2c7f029efd71d_manitou_card_construction_telehandler_MHT10130_main_visual.png" alt="MHT-X 10130" onerror="this.onerror = null;this.src = 'https://manitou.cloud.akeneo.com/media/cache/preview/8/2/6/c/826c51658cc0ee353a1e108530c2c7f029efd71d_manitou_card_construction_telehandler_MHT10130_main_visual.png';">
                             </div>
                         </div>
-                        <div class="col-lg-8 order-2 col-md-7 ">
+                        <div class=" order-2 ">
                             <table class="table table-striped ">
+                                 <div class="thead text-white"><p class="pr-3 pt-2">{{ struthandler.name }}</p></div>
                                 <tbody>
                                 <tr><th>نام محصول</th><td>{{ struthandler.name }}</td></tr>
                                 <tr><th>کد محصول</th><td>{{ struthandler.code }}</td></tr>
