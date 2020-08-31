@@ -1,6 +1,9 @@
 from django.contrib import admin
 from .models import TyreHandler,CylinderHandler,StrutHandler,tyreHandlerImages,\
-    StrutHandlerImages,CylinderHandlerImages,category,message,post,Wheelmotor,PipeHandler,BeltHandler,WheelmotorImages,PipeHandlerImages,BeltHandlerImages
+    StrutHandlerImages,CylinderHandlerImages,category,message,post,\
+    Wheelmotor,PipeHandler,BeltHandler,\
+    WheelmotorImages,PipeHandlerImages,BeltHandlerImages,RodHandler,CableHandler,CableHandlerImages,RodHandlerImages
+
 # Register your models here.
 
 
@@ -28,6 +31,14 @@ class WheelmotorAdmin(admin.ModelAdmin):
     list_display = ('id','code','model_Year')
     search_fields = ('id','code','model_Year','name')
 
+class RodHandlerAdmin(admin.ModelAdmin):
+    list_display = ('id','code','model_Year')
+    search_fields = ('id','code','model_Year','name')
+
+class CableHandlerAdmin(admin.ModelAdmin):
+    list_display = ('id','code','model_Year')
+    search_fields = ('id','code','model_Year','name')
+
 class tyreHandlerImagesAdmin(admin.ModelAdmin):
     list_display = ('id','tyreHandler')
     search_fields = ('id','tyreHandler')
@@ -46,7 +57,19 @@ class BeltHandlerImagesAdmin(admin.ModelAdmin):
 class PipeHandlerImagesAdmin(admin.ModelAdmin):
     list_display = ('id',)
 
+class RodHandlerImagesAdmin(admin.ModelAdmin):
+    list_display = ('id',)
+
+class CableHandlerImagesAdmin(admin.ModelAdmin):
+    list_display = ('id',)
+
 class WheelmotorImagesAdmin(admin.ModelAdmin):
+    list_display = ('id',)
+
+class RodHandlerImagesAdmin(admin.ModelAdmin):
+    list_display = ('id',)
+
+class CableHandlerImagesAdmin(admin.ModelAdmin):
     list_display = ('id',)
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -65,8 +88,12 @@ admin.site.register(TyreHandler,TyreHandlerAdmin)
 admin.site.register(CylinderHandler,CylinderHandlerAdmin)
 admin.site.register(StrutHandler,StrutHandlerAdmin)
 admin.site.register(Wheelmotor,WheelmotorAdmin)
+admin.site.register(RodHandler,RodHandlerAdmin)
+admin.site.register(CableHandler,CableHandlerAdmin)
 admin.site.register(PipeHandler,PipeHandlerAdmin)
 admin.site.register(BeltHandler,BeltHandlerAdmin)
+admin.site.register(RodHandlerImages,RodHandlerImagesAdmin)
+admin.site.register(CableHandlerImages,CableHandlerImagesAdmin)
 admin.site.register(tyreHandlerImages,tyreHandlerImagesAdmin)
 admin.site.register(StrutHandlerImages,StrutHandlerImagesAdmin)
 admin.site.register(CylinderHandlerImages,cylinderhandlerImagesAdmin)
