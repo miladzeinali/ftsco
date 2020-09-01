@@ -558,7 +558,9 @@ section {
     font-size: 14px;
     margin-bottom: 0;
 }
-
+.services .icon-box span {
+    font-size: 95px;
+}
 .services .icon-box:hover {
     border-color: #fff;
     box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
