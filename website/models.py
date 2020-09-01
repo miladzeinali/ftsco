@@ -31,6 +31,9 @@ class TyreHandler(models.Model):
     description=models.TextField(max_length=200,null=True,blank=True)
     price_Toman = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
     price_Dollar = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
+    image1 = models.ImageField(null=True,blank=True,upload_to='tyreHandlerImagesProduct/')
+    image2 = models.ImageField(null=True,blank=True,upload_to='tyreHandlerImagesProduct/')
+    image3 = models.ImageField(null=True,blank=True,upload_to='tyreHandlerImagesProduct/')
 
 class CylinderHandler(models.Model):
     type=models.ForeignKey(category,default=None,on_delete=models.CASCADE)
@@ -51,6 +54,9 @@ class CylinderHandler(models.Model):
     description=models.TextField(max_length=200,null=True,blank=True)
     price_Toman = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
     price_Dollar = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
+    image1 = models.ImageField(null=True, blank=True, upload_to='cylinderhandlerImagesProduct/')
+    image2 = models.ImageField(null=True, blank=True, upload_to='cylinderhandlerImagesProduct/')
+    image3 = models.ImageField(null=True, blank=True, upload_to='cylinderhandlerImagesProduct/')
 
 class StrutHandler(models.Model):
     type=models.ForeignKey(category,default=None,on_delete=models.CASCADE)
@@ -71,6 +77,10 @@ class StrutHandler(models.Model):
     description=models.TextField(max_length=200,null=True,blank=True)
     price_Toman=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
     price_Dollar=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
+    image1 = models.ImageField(null=True, blank=True, upload_to='struthandlerImagesProduct/')
+    image2 = models.ImageField(null=True, blank=True, upload_to='struthandlerImagesProduct/')
+    image3 = models.ImageField(null=True, blank=True, upload_to='struthandlerImagesProduct/')
+
 
 class BeltHandler(models.Model):
     type=models.ForeignKey(category,default=None,on_delete=models.CASCADE)
@@ -86,6 +96,10 @@ class BeltHandler(models.Model):
     description=models.TextField(max_length=200,null=True,blank=True)
     price_Toman=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
     price_Dollar=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
+    image1 = models.ImageField(null=True, blank=True, upload_to='belthandlerImagesProduct/')
+    image2 = models.ImageField(null=True, blank=True, upload_to='belthandlerImagesProduct/')
+    image3 = models.ImageField(null=True, blank=True, upload_to='belthandlerImagesProduct/')
+
 
 class Wheelmotor(models.Model):
     type=models.ForeignKey(category,default=None,on_delete=models.CASCADE)
@@ -98,6 +112,10 @@ class Wheelmotor(models.Model):
     description=models.TextField(max_length=200,null=True,blank=True)
     price_Toman=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
     price_Dollar=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
+    image1 = models.ImageField(null=True, blank=True, upload_to='wheelmotorImagesProduct/')
+    image2 = models.ImageField(null=True, blank=True, upload_to='wheelmotorImagesProduct/')
+    image3 = models.ImageField(null=True, blank=True, upload_to='wheelmotorImagesProduct/')
+
 
 class PipeHandler(models.Model):
     type = models.ForeignKey(category, default=None, on_delete=models.CASCADE)
@@ -111,32 +129,48 @@ class PipeHandler(models.Model):
     description = models.TextField(max_length=200, null=True, blank=True)
     price_Toman = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
     price_Dollar = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
-
-class tyreHandlerImages(models.Model):
-    tyreHandler=models.ForeignKey(TyreHandler,on_delete=models.CASCADE)
-    image=models.ImageField(upload_to='tyreHandlerImagesProduct/')
-
-class CylinderHandlerImages(models.Model):
-    cylinderhandler=models.ForeignKey(CylinderHandler,on_delete=models.CASCADE)
-    image=models.ImageField(upload_to='cylinderhandlerImagesProduct/')
-
-class StrutHandlerImages(models.Model):
-    struthandler=models.ForeignKey(StrutHandler,on_delete=models.CASCADE)
-    image=models.ImageField(upload_to='struthandlerImagesProduct/')
-
-class BeltHandlerImages(models.Model):
-    struthandler=models.ForeignKey(BeltHandler,on_delete=models.CASCADE)
-    image=models.ImageField(upload_to='belthandlerImagesProduct/')
-
-class PipeHandlerImages(models.Model):
-    struthandler=models.ForeignKey(PipeHandler,on_delete=models.CASCADE)
-    image=models.ImageField(upload_to='pipehandlerImagesProduct/')
-
-class WheelmotorImages(models.Model):
-    struthandler=models.ForeignKey(Wheelmotor,on_delete=models.CASCADE)
-    image=models.ImageField(upload_to='wheelmotorImagesProduct/')
+    image1 = models.ImageField(null=True, blank=True, upload_to='pipehandlerImagesProduct/')
+    image2 = models.ImageField(null=True, blank=True, upload_to='pipehandlerImagesProduct/')
+    image3 = models.ImageField(null=True, blank=True, upload_to='pipehandlerImagesProduct/')
 
 
+class RodHandler(models.Model):
+    type=models.ForeignKey(category,default=None,on_delete=models.CASCADE)
+    name = models.CharField(max_length=15, null=True, blank=True)
+    code = models.CharField(max_length=15, null=True, blank=True)
+    model_Year = models.CharField(max_length=6, null=True, blank=True)
+    capacity_Kg=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
+    capacity_Lbs=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
+    Cylinder_Diameter_mm_min=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
+    Cylinder_Diameter_mm_max=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
+    Cylinder_Diameter_in_min=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
+    Cylinder_Diameter_in_max=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
+    range_daimeter=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
+    image = models.ImageField(null=True, blank=True, upload_to='rodhandler/')
+    description = models.TextField(max_length=200, null=True, blank=True)
+    price_Toman = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
+    price_Dollar = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
+    image1 = models.ImageField(null=True, blank=True, upload_to='rodhandlerImagesProduct/')
+    image2 = models.ImageField(null=True, blank=True, upload_to='rodhandlerImagesProduct/')
+    image3 = models.ImageField(null=True, blank=True, upload_to='rodhandlerImagesProduct/')
+
+
+class CableHandler(models.Model):
+    type=models.ForeignKey(category,default=None,on_delete=models.CASCADE)
+    name = models.CharField(max_length=15, null=True, blank=True)
+    code = models.CharField(max_length=15, null=True, blank=True)
+    model_Year = models.CharField(max_length=6, null=True, blank=True)
+    capacity_Kg=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
+    capacity_Lbs=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
+    Roll_Diameter_mm=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
+    Roll_Diameter_in=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
+    image = models.ImageField(null=True, blank=True, upload_to='cablehandler/')
+    description = models.TextField(max_length=200, null=True, blank=True)
+    price_Toman = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
+    price_Dollar = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
+    image1 = models.ImageField(null=True, blank=True, upload_to='cablehandlerImagesProduct/')
+    image2 = models.ImageField(null=True, blank=True, upload_to='cablehandlerImagesProduct/')
+    image3 = models.ImageField(null=True, blank=True, upload_to='cablehandlerImagesProduct/')
 
 class message(models.Model):
     name=models.CharField(max_length=20)
