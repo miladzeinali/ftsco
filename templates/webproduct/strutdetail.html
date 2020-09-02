@@ -60,6 +60,22 @@
                             </table>
 
                         </div>
+                        <div class="mt-5">
+                            <div class="d-flex justify-content-center">
+                               {% if struthandler.image1 %}
+                                                                <img class="p-2" src="{{ struthandler.image1.url }}"  alt="">
+
+                                {% endif %}
+                                {% if struthandler.image2 %}
+                                                                <img class="p-2" src="{{ struthandler.image2.url }}"  alt="">
+
+                                {% endif %}
+                                {% if struthandler.image3 %}
+                                                                <img class="p-2" src="{{ struthandler.image3.url }}"  alt="">
+
+                                {% endif %}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

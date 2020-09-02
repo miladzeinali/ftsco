@@ -57,6 +57,22 @@
                             </table>
 
                         </div>
+                             <div class="mt-5">
+                            <div class="d-flex justify-content-center">
+                               {% if pipehandler.image1 %}
+                                                                <img class="p-2" src="{{ pipehandler.image1.url }}"  alt="">
+
+                                {% endif %}
+                                {% if pipehandler.image2 %}
+                                                                <img class="p-2" src="{{ pipehandler.image2.url }}"  alt="">
+
+                                {% endif %}
+                                {% if pipehandler.image3 %}
+                                                                <img class="p-2" src="{{ pipehandler.image3.url }}"  alt="">
+
+                                {% endif %}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

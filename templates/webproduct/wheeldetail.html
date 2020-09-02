@@ -9,15 +9,15 @@
         <div class=" container" >
             <div class="product-headings row d-flex justify-content-lg-start align-items-center mb-4">
                 <div class="product-headings-category p-1">
-                    <h3 class="">{{ cylinderhandler.name }}</h3>
+                    <h3 class="">{{ wheelmotor.name }}</h3>
                 </div>
-                <h1 class="mr-lg-auto p-1">{{ cylinderhandler.code }}</h1>
+                <h1 class="mr-lg-auto p-1">{{ wheelmotor.code }}</h1>
             </div>
 
             <div class="product">
                 <div class="cta-bloc row">
                     <div class="product-description col-lg-8">
-                        {{ cylinderhandler.description|safe }}
+                        {{ wheelmotor.description|safe }}
                     </div>
                     <div class="col-lg-4">
                         <button type="button" class="btn btn-block mt-5">
@@ -29,11 +29,11 @@
                 <div class="bloc-product mt-5">
                     <div class="container">
                     <header class="header">
-                        <p> {{ cylinderhandler.name }}</p>
+                        <p> {{ wheelmotor.name }}</p>
                         <div class="header-content pt-4">
 
                             <h1 class="header-content-title">
-                                {{ cylinderhandler.code }}
+                                {{ wheelmotor.code }}
                             </h1>
                         </div>
                     </header>
@@ -47,19 +47,32 @@
                             <table class="table table-striped ">
                                 <div class="thead text-white"><p class="pr-3 pt-2">{{ cylinderhandler.name }}</p></div>
                                 <tbody>
-                                <tr><th>نام محصول</th><td>{{ cylinderhandler.name }}</td></tr>
-                                <tr><th>کد محصول</th><td>{{ cylinderhandler.code }}</td></tr>
-                                <tr><th>سال تولید</th><td>{{ cylinderhandler.model_Year }}</td></tr>
-                                <tr><th>ظرفیت/kg</th><td>{{cylinderhandler.capacity_Kg }}</tr>
-                                <tr><th>ظرفیت/lbs</th><td>{{cylinderhandler.capacity_Lbs}}</td></tr>
+                                <tr><th>نام محصول</th><td>{{ wheelmotor.name }}</td></tr>
+                                <tr><th>کد محصول</th><td>{{ wheelmotor.code }}</td></tr>
+                                <tr><th>ظرفیت/kg</th><td>{{wheelmotor.capacity_Kg }}</tr>
+                                <tr><th>ظرفیت/lbs</th><td>{{wheelmotor.capacity_Lbs}}</td></tr>
                                 </tbody>
                             </table>
 
                         </div>
+                         <div class="mt-5">
+                            {% if wheelmotor.image1 %}
+                                                                <img class="p-2" src="{{ wheelmotor.image1.url }}"  alt="">
+
+                                {% endif %}
+                                {% if wheelmotor.image2 %}
+                                                                <img class="p-2" src="{{ wheelmotor.image2.url }}"  alt="">
+
+                                {% endif %}
+                                {% if wheelmotor.image3 %}
+                                                                <img class="p-2" src="{{ wheelmotor.image3.url }}"  alt="">
+
+                                {% endif %}
+                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 {% endblock %}

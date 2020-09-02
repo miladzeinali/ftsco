@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block content %}
-    <section class="">
+    <section class="" id="detail">
         <div class=" container">
             <div class="product-headings row d-flex justify-content-lg-start align-items-center mb-4">
                 <div class="product-headings-category p-1">
@@ -27,8 +27,8 @@
 
                 <div class="bloc-product mt-5">
                     <header class="header">
-                        <div class="header-content">
-                            <p class="header-content-text"></p>
+                          <p> {{ rodhandler.name }}</p>
+                        <div class="header-content pt-4">
                             <h1 class="header-content-title">
                                 {{ rodhandler.code }}
                             </h1>
@@ -43,20 +43,31 @@
                         <div class="col-lg-8 order-2 col-md-7 ">
                             <table class="table table-striped ">
                                 <tbody>
-                                <tr><th>نام محصول</th><td>{{ struthandler.name }}</td></tr>
-                                <tr><th>کد محصول</th><td>{{ struthandler.code }}</td></tr>
-                                <tr><th>سال تولید</th><td>{{ struthandler.model_Year }}</td></tr>
-                                <tr><th>ظرفیت/kg</th><td>{{struthandler.capacity_Kg }}</tr>
-                                <tr><th>ظرفیت/lbs</th><td>{{struthandler.capacity_Lbs}}</td></tr>
-                                <tr><th>قطر سیلندر هدف</th><td>mm ({{struthandler.Cylinder_Diameter_mm_min}}/{{struthandler.Cylinder_Diameter_mm_max}})</td></tr>
-                                <tr><th>قطر سیلندر هدف</th><td>in ({{struthandler.Cylinder_Diameter_in_min}}/{{struthandler.Cylinder_Diameter_in_max}})</td></tr>
-                                <tr><th> انتقال به طرفین</th><td>   mm ({{struthandler.sideShift_Mm}})</td></tr>
-                                <tr><th>انتقال به طرفین</th><td> in ({{struthandler.sideShift_In}})</td></tr>
-                                <tr><th>دوران بدنه</th><td>{{struthandler.body_Rotation}}</td></tr>
-                                <tr><th> زاویه گرفتن</th><td>{{struthandler.Handler_tilting}}</td></tr>
+                                <tr><th>نام محصول</th><td>{{ rodhandler.name }}</td></tr>
+                                <tr><th>کد محصول</th><td>{{ rodhandler.code }}</td></tr>
+                                <tr><th>ظرفیت/kg</th><td>{{rodhandler.capacity_Kg }}</tr>
+                                <tr><th>ظرفیت/lbs</th><td>{{rodhandler.capacity_Lbs}}</td></tr>
+                                <tr><th>قطر سیلندر هدف</th><td>mm ({{rodhandler.Cylinder_Diameter_mm_min}}/{{rodhandler.Cylinder_Diameter_mm_max}})</td></tr>
+                                <tr><th>قطر سیلندر هدف</th><td>in ({{rodhandler.Cylinder_Diameter_in_min}}/{{rodhandler.Cylinder_Diameter_in_max}})</td></tr>
                                 </tbody>
                             </table>
 
+                        </div>
+                            <div class="mt-5">
+                            <div class="d-flex justify-content-center">
+                                {% if rodhandler.image1 %}
+                                                                <img class="p-2" src="{{ rodhandler.image1.url }}"  alt="">
+
+                                {% endif %}
+                                {% if rodhandler.image2 %}
+                                                                <img class="p-2" src="{{ rodhandler.image2.url }}"  alt="">
+
+                                {% endif %}
+                                {% if rodhandler.image3 %}
+                                                                <img class="p-2" src="{{ rodhandler.image3.url }}"  alt="">
+
+                                {% endif %}
+                            </div>
                         </div>
                     </div>
                 </div>
