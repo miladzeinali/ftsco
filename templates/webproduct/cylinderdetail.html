@@ -40,8 +40,8 @@
                         <div class="">
                             <div class=" order-1 ">
                                 <div class="d-flex justify-content-center">
-                                    <img class=""
-                                         src="https://adjeygjfyo.cloudimg.io/width/768/x/https://technical-datasheet-api.manitou.com/api/media/8/2/6/c/826c51658cc0ee353a1e108530c2c7f029efd71d_manitou_card_construction_telehandler_MHT10130_main_visual.png"
+                                    <img class="" style="margin: 10px"
+                                         src="{{ cylinderhandler.image.url }}"
                                          alt="MHT-X 10130"
                                          onerror="this.onerror = null;this.src = 'https://manitou.cloud.akeneo.com/media/cache/preview/8/2/6/c/826c51658cc0ee353a1e108530c2c7f029efd71d_manitou_card_construction_telehandler_MHT10130_main_visual.png';">
                                 </div>
@@ -104,9 +104,19 @@
                             </div>
                         <div class=" mt-5">
                             <div class="d-flex justify-content-center">
-                                <img class="p-2" src="{{  cylinderhandler.image1.url }}" alt="">
-                                <img class="p-2" src="{{  cylinderhandler.image1.url }}" alt="">
-                                <img class="p-2" src="{{  cylinderhandler.image1.url }}" alt="">
+                                {% if cylinderhandler.image1 %}
+                                                                <img class="p-2" src="{{ cylinderhandler.image1.url }}"  alt="">
+
+                                {% endif %}
+                                {% if cylinderhandler.image2 %}
+                                                                <img class="p-2" src="{{ cylinderhandler.image2.url }}"  alt="">
+
+                                {% endif %}
+                                {% if cylinderhandler.image3 %}
+                                                                <img class="p-2" src="{{ cylinderhandler.image3.url }}"  alt="">
+
+                                {% endif %}
+
                             </div>
                         </div>
                         </div>

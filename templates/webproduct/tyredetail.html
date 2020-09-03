@@ -8,7 +8,7 @@
         <div class=" container" >
             <div class="product-headings row d-flex justify-content-lg-start align-items-center mb-4">
                 <div class="product-headings-category p-1">
-                    <h3 class="">{{ tyrehandler.name }}</h3>
+                    <h3 class="">{{ tyrehandler.name }} </h3>
                 </div>
                 <h1 class="mr-lg-auto p-1">{{ tyrehandler.code }}</h1>
             </div>
@@ -39,8 +39,9 @@
                     <div class="">
                         <div class=" order-1 ">
                             <div class="d-flex justify-content-center">
-                                <img class="" src="https://adjeygjfyo.cloudimg.io/width/768/x/https://technical-datasheet-api.manitou.com/api/media/8/2/6/c/826c51658cc0ee353a1e108530c2c7f029efd71d_manitou_card_construction_telehandler_MHT10130_main_visual.png" alt="MHT-X 10130" onerror="this.onerror = null;this.src = 'https://manitou.cloud.akeneo.com/media/cache/preview/8/2/6/c/826c51658cc0ee353a1e108530c2c7f029efd71d_manitou_card_construction_telehandler_MHT10130_main_visual.png';">
-                            </div>
+                                <img class="" style="margin: 10px"
+                                         src="{{ tyrehandler.image.url }}"/>
+                                               </div>
                         </div>
                         <div class=" order-2 ">
                             <table class="table table-striped ">
@@ -62,9 +63,18 @@
                         </div>
                          <div class="mt-5">
                             <div class="d-flex justify-content-center">
-                                <img class="p-2" src="{{  tyrehandler.image1.url }}"  alt="">
-                                <img class="p-2" src="{{  tyrehandler.image2.url }}"  alt="">
-                                <img class="p-2" src="{{ tyrehandler.image3.url }}"  alt="">
+                                {% if tyrehandler.image1 %}
+                                                                <img class="p-2" src="{{ tyrehandler.image1.url }}"  alt="">
+
+                                {% endif %}
+                                {% if tyrehandler.image2 %}
+                                                                <img class="p-2" src="{{ tyrehandler.image2.url }}"  alt="">
+
+                                {% endif %}
+                                {% if tyrehandler.image3 %}
+                                                                <img class="p-2" src="{{ tyrehandler.image3.url }}"  alt="">
+
+                                {% endif %}
                             </div>
                         </div>
                     </div>

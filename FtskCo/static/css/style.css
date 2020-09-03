@@ -440,6 +440,10 @@ section {
 .about  .title{
     margin-bottom: 10px;
 }
+.about .s-img{
+    width: 70%;
+    height: 350px;
+}
 .about  .title h3 {
     font-size: 20px;
     /*font-weight: 500;*/
@@ -460,22 +464,7 @@ section {
     background: #dd0000;
     margin: 4px 10px;
 }
-/*.about .content .title h3 {*/
-/*    font-weight: 700;*/
-/*    font-size: 28px;*/
-/*    font-family: "Poppins", sans-serif;*/
-/*    padding-bottom: 5px;*/
-/*    border-bottom: solid 1px red;*/
-/*}*/
-/*.about .content .title h3 ::after{*/
-/*    content: "";*/
-/*    width: 120px;*/
-/*    height: 1px;*/
-/*    display: inline-block;*/
-/*    background: #ffde9e;*/
-/*    margin: 4px 10px;*/
 
-/*}*/
 .about .content ul {
     list-style: none;
     padding: 0;
