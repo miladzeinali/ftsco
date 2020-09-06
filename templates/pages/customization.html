@@ -1,0 +1,30 @@
+<title>سفارشی سازی | فناوران طیف صنعت کویر</title>
+
+{% extends 'pages/base.html' %}
+{% load static %}
+{% block header %}
+    {% include 'partial/_header.html' %}
+{% endblock %}
+
+{% block content %}
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+            <div class="d-flex justify-content-center ">
+                <img src="{% static 'img/hero/customize.jpg' %}" class="img-fluid m-auto s-img" alt="">
+            </div>
+            <div class="row">
+                <div class="col-lg-12 pt-4 content">
+                    <div class="title"> <h3>سفارشی سازی</h3></div>
+                    <p>
+شرکت فناوران طیف صنعت کویر قادر است تمامی دستگاه های موجود در حیطه کاری خود را مجهز به بروز ترین مکانیزم عملکردی از نظر هیدرولیکی و الکترونیکی نماید.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section><!-- End About Section -->
+{% endblock %}
+{% block footer %}
+    {% include 'partial/_footer.html' %}
+{% endblock %}
+
+
