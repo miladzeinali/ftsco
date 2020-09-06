@@ -509,7 +509,7 @@ section {
 
 .services .icon-box .icon {
     margin: 0 auto;
-    width: 120px;
+    /*width: 120px;*/
     height: 50px;
     /*background: #ffce00;*/
     border-radius: 4px;
@@ -518,6 +518,26 @@ section {
     justify-content: center;
     margin-bottom: 20px;
     transition: 0.3s;
+}
+@media (min-width : 1200px) {
+    .services .icon-box .icon {
+        width: 200px;
+    }
+}
+@media (min-width : 767px) and (max-width: 1200px) {
+    .services .icon-box .icon {
+        width: 180px;
+    }
+}
+@media (min-width : 400px) and (max-width: 767px) {
+    .services .icon-box .icon {
+        width: 120px;
+    }
+}
+@media (max-width : 400px) {
+    .services .icon-box .icon {
+        width: 100px;
+    }
 }
 
 .services .icon-box .icon img {
