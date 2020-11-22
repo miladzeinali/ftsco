@@ -1,4 +1,5 @@
-<title>رویداد ها | فناوران طیف صنعت کویر</title>
+
+<title> لوازم جانبی | فناوران طیف صنعت کویر</title>
 
 {% extends 'pages/base.html' %}
 {% load static %}
@@ -6,7 +7,8 @@
     {% include 'partial/_header.html' %}
 {% endblock %}
 {% block content %}
-    {% for Plugin in Plugins %}
+
+    {% for Plugin in plugins %}
 
 
         <div class="history">
@@ -18,7 +20,8 @@
                              class="pro-img"
                              src="{{ Plugin.image.url }}">
                     </div>
-                    <div class="history-content ">
+
+                    <div class="history-content col-lg-8 ">
                         <h2 class="border-bottom ">{{ Plugin.name }}</h2>
                         <p>{{ Plugin.description }}</p>
                     </div>

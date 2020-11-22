@@ -1,3 +1,4 @@
+
 <title>محصولات  | فناوران طیف صنعت کویر</title>
 
 {% extends 'pages/base.html' %}
@@ -18,15 +19,15 @@
             <h2 class="">
                 {{ product.name }}</h2>
             <div class="row">
-                <div class="col-description-1 col-6 ">
+                <div class="col-description-1  ">
+                    <!--<div-->
+                    <!--        class="">-->
+                    <!--    <strong>سال ساخت</strong><strong> : </strong>{{ product.model_Year }}-->
+                    <!--    <br>-->
+                    <!--</div>-->
                     <div
                             class="">
-                        <strong>سال ساخت</strong><strong> : </strong>{{ product.model_Year }}
-                        <br>
-                    </div>
-                    <div
-                            class="">
-                        <strong >ظرفیت (kg/lbs)</strong><strong> : </strong>{{ product.capacity_Kg }}/{{ tyrehandler.capacity_Lbs }}
+                        <strong >ظرفیت (kg)</strong><strong> : </strong>{{ product.capacity_Kg }}
                         <br>
                     </div>
                     <div

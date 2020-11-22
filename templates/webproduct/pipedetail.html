@@ -1,3 +1,4 @@
+
 <title>پایپ هندلر | فناوران طیف صنعت کویر</title>
 
 {% extends 'pages/base.html' %}
@@ -11,7 +12,7 @@
         <div class=" container">
             <div class="product-headings row d-flex justify-content-lg-start align-items-center mb-4">
                 <div class="product-headings-category p-1">
-                    <h3 class="">{{ pipehandler.name }}</h3>
+                    <h3 class="">Pipe Handler</h3>
                 </div>
                 <h1 class="mr-lg-auto p-1">{{ pipehandler.code }}</h1>
             </div>
@@ -31,7 +32,7 @@
 
                 <div class="bloc-product mt-5">
                     <header class="header">
-                         <p> {{ pipehandler.name }}</p>
+                         <!--<p> {{ pipehandler.name }}</p>-->
                         <div class="header-content pt-4">
 
                             <h1 class="header-content-title">
@@ -52,10 +53,10 @@
                                 <tbody>
                                 <tr><th>نام محصول</th><td>{{ pipehandler.name }}</td></tr>
                                 <tr><th>کد محصول</th><td>{{ pipehandler.code }}</td></tr>
-                                <tr><th>سال تولید</th><td>{{ pipehandler.model_Year }}</td></tr>
-                                <tr><th>ظرفیت/kg</th><td>{{pipehandler.capacity_Kg }}</tr>
-                                <tr><th>ظرفیت/lbs</th><td>{{pipehandler.capacity_Lbs}}</td></tr>
-                                <tr><th>حداکثر کنترل فک (mm)</th><td>{{pipehandler.range_diameter_mm}}</td></tr>
+                                <!--<tr><th>سال تولید</th><td>{{ pipehandler.model_Year }}</td></tr>-->
+                                <tr><th>ظرفیت(kg)</th><td>{{pipehandler.capacity_Kg }}</tr>
+                                <tr><th>ظرفیت(lbs)</th><td>{{pipehandler.capacity_Lbs}}</td></tr>
+                                <tr><th>  گستره کاری (mm)</th><td>{{pipehandler.range_diameter_mm}}</td></tr>
                                 </tbody>
                             </table>
 

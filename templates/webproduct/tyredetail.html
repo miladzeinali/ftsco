@@ -1,3 +1,4 @@
+
 <title>تایر هندلر | فناوران طیف صنعت کویر</title>
 
 {% extends 'pages/base.html' %}
@@ -10,7 +11,7 @@
         <div class=" container" >
             <div class="product-headings row d-flex justify-content-lg-start align-items-center mb-4">
                 <div class="product-headings-category p-1">
-                    <h3 class="">{{ tyrehandler.name }} </h3>
+                    <h3 class="">Tyre Handler </h3>
                 </div>
                 <h1 class="mr-lg-auto p-1">{{ tyrehandler.code }}</h1>
             </div>
@@ -30,7 +31,7 @@
                 <div class="bloc-product mt-5">
                     <div class="container">
                     <header class="header">
-                        <p> {{ tyrehandler.name }}</p>
+                        <!--<p> {{ tyrehandler.name }}</p>-->
                         <div class="header-content pt-4">
 
                             <h1 class="header-content-title">
@@ -47,18 +48,18 @@
                         </div>
                         <div class=" order-2 ">
                             <table class="table table-striped ">
-                                <div class="thead text-white"><p class="pr-3 pt-2">{{ cylinderhandler.name }}</p></div>
+                                <div class="thead text-white"><p class="pr-3 pt-2">{{ tyrehandler.name }}</p></div>
                                 <tbody>
                                 <tr><th>نام محصول</th><td>{{ tyrehandler.name }}</td></tr>
                                 <tr><th>کد محصول</th><td>{{ tyrehandler.code }}</td></tr>
-                                <tr><th>سال تولید</th><td>{{ tyrehandler.model_Year }}</td></tr>
-                                <tr><th>ظرفیت/kg</th><td>{{tyrehandler.capacity_Kg }}</tr>
-                                <tr><th>ظرفیت/lbs</th><td>{{tyrehandler.capacity_Lbs}}</td></tr>
-                                <tr><th>باز شدن فک ها(mm)</th><td>{{tyrehandler.OpeningRange_Mm_Min}}/{{ tyrehandler.OpeningRange_Mm_Max }}</td></tr>
-                                <tr><th>باز شدن فک ها(in)</th><td>{{ tyrehandler.OpeningRange_In_Min }}/{{ tyrehandler.OpeningRange_Mm_Max }}</td></tr>
-                                <tr><th> حرکت انتقالی (mm)</th><td>{{tyrehandler.sideShift_Mm}}</td></tr>
-                                <tr><th> حرکت انتقالی (in)</th><td>{{tyrehandler.sideShift_In}}</td></tr>
-                                <tr><th>دوران بدنه</th><td>{{cylinderhandler.body_Rotation}}</td></tr>
+                                <!--<tr><th>سال تولید</th><td>{{ tyrehandler.model_Year }}</td></tr>-->
+                                <tr><th>ظرفیت(kg)</th><td>{{tyrehandler.capacity_Kg }}</tr>
+                                <tr><th>ظرفیت(lbs)</th><td>{{tyrehandler.capacity_Lbs}}</td></tr>
+                                <tr><th>گستره کاری(mm)</th><td>{{tyrehandler.OpeningRange_Mm_Min}}-{{ tyrehandler.OpeningRange_Mm_Max }}</td></tr>
+                                <tr><th>گستره کاری(in)</th><td>{{ tyrehandler.OpeningRange_In_Min }}-{{ tyrehandler.OpeningRange_In_Max }}</td></tr>
+                                <tr><th> حرکت عرضی (mm)</th><td>{{tyrehandler.sideShift_Mm}}</td></tr>
+                                <tr><th> حرکت عرضی (in)</th><td>{{tyrehandler.sideShift_In}}</td></tr>
+                                <tr><th>دوران بدنه</th><td>{{tyrehandler.body_Rotation}}</td></tr>
                                 </tbody>
                             </table>
 
