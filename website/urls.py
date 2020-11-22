@@ -30,5 +30,5 @@ urlpatterns = [
     path('optimization/',views.optimization,name='optimization'),
     path('customization/',views.customization,name='customization'),
     path('supplycomp/',views.supplycomp,name='supplycomp'),
-
+     path('plugins/', views.pluginsrender, name='plugin')
 ]

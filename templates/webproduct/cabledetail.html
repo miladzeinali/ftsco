@@ -10,7 +10,7 @@
         <div class=" container">
             <div class="product-headings row d-flex justify-content-lg-start align-items-center mb-4">
                 <div class="product-headings-category p-1">
-                    <h3 class="">{{ cablehandler.name }}</h3>
+                    <h3 class="">Cable Handler</h3>
                 </div>
                 <h1 class="mr-lg-auto p-1">{{ cablehandler.code }}</h1>
             </div>
@@ -29,10 +29,8 @@
                 </div>
 
                 <div class="bloc-product mt-5">
+                    <div class="container">
                     <header class="header">
-                        <div class="header-content">
-                            <p class="header-content-text"></p>
-                         <p> {{ cablehandler.name }}</p>
                         <div class="header-content pt-4">
                             <h1 class="header-content-title">
                                 {{ cablehandler.code }}
@@ -41,22 +39,24 @@
                     </header>
                     <div class="">
                        <div class="order-1 ">
-                            <div class="">
+                            <div class="d-flex justify-content-center">
                                 <img class="" style="margin: 10px"
                                          src="{{ cablehandler.image.url }}"/>
 
                             </div>
                         </div>
-                        <div class="col-lg-8 col-md-7 order-2 ">
+                        <div class=" order-2 ">
                             <table class="table table-striped ">
+                                 <div class="thead text-white"><p class="pr-3 pt-2">{{ cablehandler.name }}</p>
+                                    </div>
                                 <tbody>
                                 <tr><th>نام محصول</th><td>{{ cablehandler.name }}</td></tr>
                                 <tr><th>کد محصول</th><td>{{ cablehandler.code }}</td></tr>
-                                <tr><th>سال تولید</th><td>{{ cablehandler.model_Year }}</td></tr>
-                                <tr><th>ظرفیت/kg</th><td>{{cablehandler.capacity_Kg }}</tr>
-                                <tr><th>ظرفیت/lbs</th><td>{{cablehandler.capacity_Lbs}}</td></tr>
-                                <tr><th>قطر حلقه کار/mm</th><td>{{cablehandler.Roll_Diameter_mm}}</td></tr>
-                                <tr><th> قطر حلقه کار/in</th><td>{{cablehandler.Roll_Diameter_in}}</td></tr>
+                                <!--<tr><th>سال تولید</th><td>{{ cablehandler.model_Year }}</td></tr>-->
+                                <tr><th>ظرفیت (kg)</th><td>{{cablehandler.capacity_Kg }}</tr>
+                                <tr><th>ظرفیت (lbs)</th><td>{{cablehandler.capacity_Lbs}}</td></tr>
+                                <!--<tr><th>قطر حلقه کار(mm)</th><td>{{cablehandler.Roll_Diameter_mm}}</td></tr>-->
+                                <!--<tr><th> قطر حلقه کار(in)</th><td>{{cablehandler.Roll_Diameter_in}}</td></tr>-->
                                 </tbody>
                             </table>
 
@@ -81,6 +81,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 {% endblock %}

@@ -11,7 +11,9 @@
         <div class=" container">
             <div class="product-headings row d-flex justify-content-lg-start align-items-center mb-4">
                 <div class="product-headings-category p-1">
-                    <h3 class="">{{ cylinderhandler.name }}</h3>
+                    <h3 class="">
+Cylinder Handler
+</h3>
                 </div>
                 <h1 class="mr-lg-auto p-1">{{ cylinderhandler.code }}</h1>
             </div>
@@ -31,7 +33,7 @@
                 <div class="bloc-product mt-5">
                     <div class="container">
                         <header class="header">
-                            <p> {{ cylinderhandler.name }}</p>
+                            <!--<p> {{ cylinderhandler.name }}</p>-->
                             <div class="header-content pt-4">
 
                                 <h1 class="header-content-title">
@@ -61,43 +63,43 @@
                                         <th>کد محصول</th>
                                         <td>{{ cylinderhandler.code }}</td>
                                     </tr>
+                                    <!--<tr>-->
+                                    <!--    <th>سال تولید</th>-->
+                                    <!--    <td>{{ cylinderhandler.model_Year }}</td>-->
+                                    <!--</tr>-->
                                     <tr>
-                                        <th>سال تولید</th>
-                                        <td>{{ cylinderhandler.model_Year }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th>ظرفیت/kg</th>
+                                        <th>ظرفیت(kg)</th>
                                         <td>
                                         {{ cylinderhandler.capacity_Kg }}</tr>
                                     <tr>
-                                        <th>ظرفیت/lbs</th>
+                                        <th>ظرفیت(lbs)</th>
                                         <td>{{ cylinderhandler.capacity_Lbs }}</td>
                                     </tr>
                                     <tr>
-                                        <th>قطر سیلندر هدف</th>
+                                        <th>قطر سیلندر (mm) </th>
                                         <td>
-                                            ({{ cylinderhandler.Cylinder_Diameter_mm_min }}/{{ cylinderhandler.Cylinder_Diameter_mm_max }})
+                                            {{ cylinderhandler.Cylinder_Diameter_mm_min }}-{{ cylinderhandler.Cylinder_Diameter_mm_max }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th>قطر سیلندر هدف</th>
+                                        <th>قطر سیلندر (in)</th>
                                         <td>
-                                            in {{ cylinderhandler.Cylinder_Diameter_in_min }}/{{ cylinderhandler.Cylinder_Diameter_in_max }}</td>
+                                             {{ cylinderhandler.Cylinder_Diameter_in_min }}-{{ cylinderhandler.Cylinder_Diameter_in_max }}</td>
                                     </tr>
                                     <tr>
-                                        <th> انتقال به طرفین</th>
-                                        <td> mm {{ cylinderhandler.sideShift_Mm }}</td>
+                                        <th>  حرکت عرضی (mm)</th>
+                                        <td>  {{ cylinderhandler.sideShift_Mm }}</td>
                                     </tr>
                                     <tr>
-                                        <th>انتقال به طرفین</th>
-                                        <td> in {{ cylinderhandler.sideShift_In }}</td>
+                                        <th>حرکت عرضی(in)</th>
+                                        <td>  {{ cylinderhandler.sideShift_In }}</td>
                                     </tr>
                                     <tr>
                                         <th>دوران بدنه</th>
                                         <td>{{ cylinderhandler.body_Rotation }}</td>
                                     </tr>
                                     <tr>
-                                        <th>درجه کج شدن کنترلر</th>
+                                        <th>  دوران سر </th>
                                         <td>{{ cylinderhandler.Handler_tilting }}</td>
                                     </tr>
                                     </tbody>

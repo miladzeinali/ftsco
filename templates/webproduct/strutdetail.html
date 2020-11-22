@@ -10,7 +10,7 @@
         <div class=" container">
             <div class="product-headings row d-flex justify-content-lg-start align-items-center mb-4">
                 <div class="product-headings-category p-1">
-                    <h3 class="">{{ struthandler.name }}</h3>
+                    <h3 class="">Strut Handler</h3>
                 </div>
                 <h1 class="mr-lg-auto p-1">{{ struthandler.code }}</h1>
             </div>
@@ -29,7 +29,7 @@
 
                 <div class="bloc-product mt-5">
                     <header class="header">
-                         <p> {{ struthandler.name }}</p>
+                         <!--<p> {{ struthandler.name }}</p>-->
                         <div class="header-content pt-4">
 
                             <h1 class="header-content-title">
@@ -50,15 +50,15 @@
                                 <tbody>
                                 <tr><th>نام محصول</th><td>{{ struthandler.name }}</td></tr>
                                 <tr><th>کد محصول</th><td>{{ struthandler.code }}</td></tr>
-                                <tr><th>سال تولید</th><td>{{ struthandler.model_Year }}</td></tr>
-                                <tr><th>ظرفیت/kg</th><td>{{struthandler.capacity_Kg }}</tr>
-                                <tr><th>ظرفیت/lbs</th><td>{{struthandler.capacity_Lbs}}</td></tr>
-                                <tr><th>قطر سیلندر هدف</th><td>mm ({{struthandler.Cylinder_Diameter_mm_min}}/{{struthandler.Cylinder_Diameter_mm_max}})</td></tr>
-                                <tr><th>قطر سیلندر هدف</th><td>in ({{struthandler.Cylinder_Diameter_in_min}}/{{struthandler.Cylinder_Diameter_in_max}})</td></tr>
-                                <tr><th> انتقال به طرفین</th><td>   mm ({{struthandler.sideShift_Mm}})</td></tr>
-                                <tr><th>انتقال به طرفین</th><td> in ({{struthandler.sideShift_In}})</td></tr>
+                                <!--<tr><th>سال تولید</th><td>{{ struthandler.model_Year }}</td></tr>-->
+                                <tr><th>ظرفیت(kg)</th><td>{{struthandler.capacity_Kg }}</tr>
+                                <tr><th>ظرفیت(lbs)</th><td>{{struthandler.capacity_Lbs}}</td></tr>
+                                <tr><th> قطر سیلندر (mm)</th><td> {{struthandler.Cylinder_Diameter_mm_min}}-{{struthandler.Cylinder_Diameter_mm_max}}</td></tr>
+                                <tr><th> قطر سیلندر (in)</th><td> {{struthandler.Cylinder_Diameter_in_min}}-{{struthandler.Cylinder_Diameter_in_max}}</td></tr>
+                                <tr><th> حرکت عرضی (mm)</th><td>    {{struthandler.sideShift_Mm}}</td></tr>
+                                <tr><th>حرکت عرضی(in)</th><td> {{struthandler.sideShift_In}}</td></tr>
                                 <tr><th>دوران بدنه</th><td>{{struthandler.body_Rotation}}</td></tr>
-                                <tr><th> زاویه گرفتن</th><td>{{struthandler.Handler_tilting}}</td></tr>
+                                <tr><th> چرخش محدود </th><td>{{struthandler.Handler_tilting}}</td></tr>
                                 </tbody>
                             </table>
 

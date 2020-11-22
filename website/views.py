@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import TyreHandler, CylinderHandler, StrutHandler,\
     message, post, BeltHandler, Wheelmotor, PipeHandler,\
-    CableHandler,RodHandler
+    CableHandler,RodHandler, plugins
 
 
 # Create your views here.
@@ -116,7 +116,6 @@ def contact(request):
 
 
 def messages(request):
-    print(request.POST)
     name = request.POST['name']
     email = request.POST['email']
     subject = request.POST['subject']
@@ -148,4 +147,7 @@ def customization(request):
 
 def supplycomp(request):
     return render(request,'pages/supply_comp.html',{})
-
+    
+def pluginsrender(request):
+    Plugins = plugins.objects.all().reverse()
+    return render(request, 'webproduct/plugins.html', {'plugins': Plugins})

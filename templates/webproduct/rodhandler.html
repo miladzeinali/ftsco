@@ -10,7 +10,7 @@
         <div class=" container">
             <div class="product-headings row d-flex justify-content-lg-start align-items-center mb-4">
                 <div class="product-headings-category p-1">
-                    <h3 class="">{{ rodhandler.name }}</h3>
+                    <h3 class="">Rod Handler</h3>
                 </div>
                 <h1 class="mr-lg-auto p-1">{{ rodhandler.code }}</h1>
             </div>
@@ -29,30 +29,31 @@
 
                 <div class="bloc-product mt-5">
                     <header class="header">
-                          <p> {{ rodhandler.name }}</p>
                         <div class="header-content pt-4">
                             <h1 class="header-content-title">
                                 {{ rodhandler.code }}
                             </h1>
                         </div>
                     </header>
-                    <div class="row">
-                <div class="col-lg-4 col-md-5 order-1 ">
-                            <div class="">
+                    <div class="">
+                <div class="order-1 ">
+                            <div class="d-flex justify-content-center">
                                 <img class="" style="margin: 10px"
                                          src="{{ rodhandler.image.url }}"/>
 
                             </div>
                         </div>
-                        <div class="col-lg-8 order-2 col-md-7 ">
+                        <div class=" order-2">
                             <table class="table table-striped ">
+                                <div class="thead text-white"><p class="pr-3 pt-2">{{ rodhandler.name }}</p>
+                                    </div>
                                 <tbody>
                                 <tr><th>نام محصول</th><td>{{ rodhandler.name }}</td></tr>
                                 <tr><th>کد محصول</th><td>{{ rodhandler.code }}</td></tr>
-                                <tr><th>ظرفیت/kg</th><td>{{rodhandler.capacity_Kg }}</tr>
-                                <tr><th>ظرفیت/lbs</th><td>{{rodhandler.capacity_Lbs}}</td></tr>
-                                <tr><th>قطر سیلندر هدف</th><td>mm ({{rodhandler.Cylinder_Diameter_mm_min}}/{{rodhandler.Cylinder_Diameter_mm_max}})</td></tr>
-                                <tr><th>قطر سیلندر هدف</th><td>in ({{rodhandler.Cylinder_Diameter_in_min}}/{{rodhandler.Cylinder_Diameter_in_max}})</td></tr>
+                                <tr><th>ظرفیت(kg)</th><td>{{rodhandler.capacity_Kg }}</tr>
+                                <tr><th>ظرفیت(lbs)</th><td>{{rodhandler.capacity_Lbs}}</td></tr>
+                                <tr><th>گستره کاری(mm)</th><td> {{rodhandler.Cylinder_Diameter_mm_min}}-{{rodhandler.Cylinder_Diameter_mm_max}}</td></tr>
+                                <tr><th>گستره کاری (in)</th><td> {{rodhandler.Cylinder_Diameter_in_min}}-{{rodhandler.Cylinder_Diameter_in_max}}</td></tr>
                                 </tbody>
                             </table>
 

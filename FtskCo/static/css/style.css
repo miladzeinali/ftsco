@@ -1450,6 +1450,9 @@ section {
     font-size: 16px;
 }
 
+.product .cta-bloc .product-description {
+    font-size: 13px;
+}
 .bloc-product img {
     width: 350px;
 }
@@ -1520,10 +1523,19 @@ section {
     padding-bottom: 20px;
 }
 
+.history .history-picture .pro-img {
+    /*border-radius: 50%;*/
+    position: relative;
+    width: 300px;
+    height: 300px;
+    padding-bottom: 0px
+}
 .history .history-content {
     float: right;
 }
-
+.history .history-content p {
+    font-size:13px;
+}
 .history .history-picture + .history-content, .history .history-media + .history-content {
     position: relative;
     min-height: 1px;

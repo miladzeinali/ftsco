@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import TyreHandler,CylinderHandler,StrutHandler,category,message,post,\
-    Wheelmotor,PipeHandler,BeltHandler,RodHandler,CableHandler
+    Wheelmotor,PipeHandler,BeltHandler,RodHandler,CableHandler, plugins
 
 # Register your models here.
 class TyreHandlerAdmin(admin.ModelAdmin):
@@ -46,6 +46,10 @@ class messageAdmin(admin.ModelAdmin):
 class postAdmin(admin.ModelAdmin):
     list_display = ('id','title')
     search_fields = ('id','title')
+    
+class pluginsAdmin(admin.ModelAdmin):
+    list_display = ('id','name')
+    search_fields = ('id','name')
 
 admin.site.register(TyreHandler,TyreHandlerAdmin)
 admin.site.register(CylinderHandler,CylinderHandlerAdmin)
@@ -58,3 +62,4 @@ admin.site.register(BeltHandler,BeltHandlerAdmin)
 admin.site.register(category,CategoryAdmin)
 admin.site.register(message,messageAdmin)
 admin.site.register(post,postAdmin)
+admin.site.register(plugins,pluginsAdmin)
