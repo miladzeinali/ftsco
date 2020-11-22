@@ -136,12 +136,14 @@ section {
 .header-bottom {
     background: #dd0000;
 }
+
 @media (min-width: 990px ) {
-    .header-bottom  {
+    .header-bottom {
         height: 89px;
     }
 
 }
+
 @media (min-width: 990px ) {
     .header-bottom .logo img {
         width: 100px;
@@ -243,10 +245,12 @@ section {
     transition: 0.3s;
     text-transform: capitalize;
 }
-.main-header .main-menu ul li a  i {
+
+.main-header .main-menu ul li a i {
     position: absolute;
     top: 38px;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     /* line 75, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_headerMenu.scss */
     .main-header .main-menu ul li a {
@@ -430,21 +434,24 @@ section {
 
 }
 
-.about .content  h3 {
+.about .content h3 {
     font-weight: 700;
     font-size: 28px;
     font-family: "Poppins", sans-serif;
     padding-bottom: 5px;
     /*border-bottom: solid 1px red;*/
 }
-.about  .title{
+
+.about .title {
     margin-bottom: 10px;
 }
-.about .s-img{
+
+.about .s-img {
     width: 70%;
     height: 350px;
 }
-.about  .title h3 {
+
+.about .title h3 {
     font-size: 20px;
     /*font-weight: 500;*/
     padding: 0;
@@ -456,7 +463,7 @@ section {
     font-family: "Poppins", sans-serif;
 }
 
-.about  .title h3::after {
+.about .title h3::after {
     content: "";
     width: 120px;
     height: 1px;
@@ -469,8 +476,9 @@ section {
     list-style: none;
     padding: 0;
 }
+
 .about .content hr {
- background: #dd0000;
+    background: #dd0000;
 }
 
 .about .content ul li {
@@ -486,12 +494,14 @@ section {
     top: 2px;
     color: #dd0000;
 }
+
 .about .content p {
     text-align: justify;
     font-size: 14px;
-     line-height: 30px;
+    line-height: 30px;
 
 }
+
 .about .content p:last-child {
     margin-bottom: 0;
 }
@@ -519,22 +529,26 @@ section {
     margin-bottom: 20px;
     transition: 0.3s;
 }
-@media (min-width : 1200px) {
+
+@media (min-width: 1200px) {
     .services .icon-box .icon {
         width: 200px;
     }
 }
-@media (min-width : 767px) and (max-width: 1200px) {
+
+@media (min-width: 767px) and (max-width: 1200px) {
     .services .icon-box .icon {
         width: 180px;
     }
 }
-@media (min-width : 400px) and (max-width: 767px) {
+
+@media (min-width: 400px) and (max-width: 767px) {
     .services .icon-box .icon {
         width: 120px;
     }
 }
-@media (max-width : 400px) {
+
+@media (max-width: 400px) {
     .services .icon-box .icon {
         width: 100px;
     }
@@ -567,9 +581,11 @@ section {
     font-size: 14px;
     margin-bottom: 0;
 }
+
 .services .icon-box span {
     font-size: 95px;
 }
+
 .services .icon-box:hover {
     border-color: #fff;
     box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
@@ -619,42 +635,49 @@ section {
     /*border-radius: 50%;*/
     color: #dd0000;
 }
+
 .cta .services-content i {
     font-size: 80px;
     /*border-radius: 50%;*/
     color: #dd0000;
 }
+
 .cta .services-content .icon img {
     /*font-size: 80px;*/
     width: 120px;
     /*background: #ffce00;*/
 }
-.cta .services-content .card-body{
+
+.cta .services-content .card-body {
     font-size: 14px;
     width: 15rem;
     /*background: #ffce00;*/
 }
-.cta .services-content .card-body p{
+
+.cta .services-content .card-body p {
     font-size: 12px;
 }
-@media (min-width: 990px){
- .cta .services-content .services-img img{
-     margin-top: -60px;
- }
+
+@media (min-width: 990px) {
+    .cta .services-content .services-img img {
+        margin-top: -60px;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-    .cta .services-content .services-img{
-     margin-top: 250px;
- }
+    .cta .services-content .services-img {
+        margin-top: 250px;
+    }
 }
-@media (max-width: 768px)and (max-width: 990px){
- .cta .services-content .services-img {
-     position: absolute;
-     margin-top: 200px;
- }
+
+@media (max-width: 768px)and (max-width: 990px) {
+    .cta .services-content .services-img {
+        position: absolute;
+        margin-top: 200px;
+    }
 }
-@media (min-width: 576px) and (max-width: 767px){
+
+@media (min-width: 576px) and (max-width: 767px) {
     .services-content .mt {
         margin-top: auto;
     }
@@ -663,11 +686,13 @@ section {
         font-size: 80px;
     }
 }
+
 @media (min-width: 767px) {
     .services-content .mt {
         margin-top: 300px;
     }
 }
+
 @media (max-width: 576px) {
     .services-content img {
         width: 140px;
@@ -687,17 +712,20 @@ section {
         width: 140px;
     }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 990px) {
     .services-content img {
         width: 180px;
         margin-top: 100px;
     }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
     .services-content .card-body h3 {
-      font-size: 16px;
+        font-size: 16px;
     }
 }
+
 /*--------------------------------------------------------------
 /*!*--------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -954,7 +982,7 @@ section {
     color: #dd0000;
 }
 
-#footer .footer-top .footer-newsletter img{
+#footer .footer-top .footer-newsletter img {
     width: 150px;
     margin-top: 30px;
     background: #fff;
@@ -1385,9 +1413,11 @@ section {
 .tyrehandler .col-description-1 {
     text-align: right;
 }
-.tyrehandler .col-description-1  div{
-   font-size: 14px;
+
+.tyrehandler .col-description-1 div {
+    font-size: 14px;
 }
+
 .tyrehandler .col-description-2 {
     text-align: right;
 }
@@ -1412,9 +1442,11 @@ section {
     text-decoration: none;
     font-size: 16px;
 }
+
 #detail {
     background: #fafafa;
 }
+
 .product-headings {
     background-color: #dd0000;
 }
@@ -1423,29 +1455,36 @@ section {
     color: #fff;
     margin-right: 20px;
 }
+
 .product-headings h1 {
     color: #fff;
     margin-left: 20px;
 }
+
 .product .bloc-product {
-    background:  #ffffff;
+    background: #ffffff;
 }
-.product .bloc-product header .header-content{
-    border-top:  solid 1px black;
-    border-bottom: solid 1px  black;
+
+.product .bloc-product header .header-content {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
 }
+
 .product .bloc-product .header-content .header-content-title {
-  font-size: 50px;
+    font-size: 50px;
     color: #dd0000;
     margin: auto;
 }
+
 .product button {
     background-color: #dd0000;
 }
-.product .cta-bloc span{
+
+.product .cta-bloc span {
     font-size: 15px;
     color: #fff;
 }
+
 .product p {
     font-size: 16px;
 }
@@ -1463,18 +1502,22 @@ section {
 }
 
 .bloc-product .thead {
-   background: #dd0000;
+    background: #dd0000;
     height: 30px;
 }
+
 .bloc-product .thead p {
     font-size: 12px;
 }
+
 .bloc-product table th {
-   font-size: 13px;
+    font-size: 13px;
 }
+
 .bloc-product table td {
-   font-size: 13px;
+    font-size: 13px;
 }
+
 .history .history-year {
     margin-top: 20px;
     text-align: center;
@@ -1518,6 +1561,14 @@ section {
     width: 100%;
     height: auto;
     padding-bottom: 20px;
+}
+
+.history .history-picture .pro-img {
+    border-radius: 50%;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    padding-bottom: 0px
 }
 
 .history .history-content {

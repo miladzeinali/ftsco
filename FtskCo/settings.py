@@ -22,10 +22,12 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '!@0f%1lfqi-(j5d=9z3=($xsm-w_#bje#x=qhaf_)+*6woo-8q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =False
+# DEBUG =False
+#
+# ALLOWED_HOSTS = ['ftskco.com' , 'www.ftskco.com', '127.0.0.1:8000']
+DEBUG =True
 
-ALLOWED_HOSTS = ['ftskco.com' , 'www.ftskco.com', '127.0.0.1:8000']
-
+ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
@@ -74,21 +76,21 @@ WSGI_APPLICATION = 'FtskCo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ftskcoco_ftskco',
-        'USER': 'ftskcoco_milad',
-        'PASSWORD': 'miladz953',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'ftskcoco_ftskco',
+#         'USER': 'ftskcoco_milad',
+#         'PASSWORD': 'miladz953',
+#         'PORT': '',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -126,7 +128,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-STATIC_ROOT = '/home2/ftskcoco/public_html/static'
-MEDIA_ROOT = '/home2/ftskcoco/public_html/media'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# STATIC_ROOT = '/home2/ftskcoco/public_html/static'
+# MEDIA_ROOT = '/home2/ftskcoco/public_html/media'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'FtskCo/static')]

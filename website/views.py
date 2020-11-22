@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
-from .models import TyreHandler, CylinderHandler, StrutHandler,\
-    message, post, BeltHandler, Wheelmotor, PipeHandler,\
-    CableHandler,RodHandler
+from .models import TyreHandler, CylinderHandler, StrutHandler, \
+    message, post, BeltHandler, Wheelmotor, PipeHandler, \
+    CableHandler, RodHandler, plugins
 
 
 # Create your views here.
@@ -46,15 +46,18 @@ def belthandler(request):
     count = len(belthandler)
     return render(request, 'webproduct/listproduct.html', {'products': belthandler, 'count': count})
 
+
 def cablehandler(request):
-    cablehandler= CableHandler.objects.all()
-    count=len(cablehandler)
-    return render(request,'webproduct/listproduct.html',{'products':cablehandler,'count':count})
+    cablehandler = CableHandler.objects.all()
+    count = len(cablehandler)
+    return render(request, 'webproduct/listproduct.html', {'products': cablehandler, 'count': count})
+
 
 def rodhandler(request):
-    rodhandler= RodHandler.objects.all()
-    count=len(rodhandler)
-    return render(request,'webproduct/listproduct.html',{'products':rodhandler,'count':count})
+    rodhandler = RodHandler.objects.all()
+    count = len(rodhandler)
+    return render(request, 'webproduct/listproduct.html', {'products': rodhandler, 'count': count})
+
 
 def productcontrol(request, id, type):
     if type == 'cylinderhandler':
@@ -73,6 +76,7 @@ def productcontrol(request, id, type):
         return rodhandler_detail(request, id)
     elif type == 'cablehandler':
         return cablehandler_detail(request, id)
+
 
 def tyrehandler_detail(request, id):
     tyrehandler = TyreHandler.objects.get(id=id)
@@ -103,13 +107,16 @@ def pipehandler_detail(request, id):
     pipehandler = PipeHandler.objects.get(id=id)
     return render(request, 'webproduct/pipedetail.html', {'pipehandler': pipehandler})
 
-def rodhandler_detail(request,id):
-    rodhandler = RodHandler.objects.get(id=id)
-    return render(request,'webproduct/rodhandler.html',{'rodhandler':rodhandler})
 
-def cablehandler_detail(request,id):
+def rodhandler_detail(request, id):
+    rodhandler = RodHandler.objects.get(id=id)
+    return render(request, 'webproduct/rodhandler.html', {'rodhandler': rodhandler})
+
+
+def cablehandler_detail(request, id):
     cablehandler = CableHandler.objects.get(id=id)
-    return render(request,'webproduct/cabledetail.html',{'cablehandler':cablehandler})
+    return render(request, 'webproduct/cabledetail.html', {'cablehandler': cablehandler})
+
 
 def contact(request):
     return render(request, 'pages/contact.html', {})
@@ -134,18 +141,27 @@ def history(request):
     posts = post.objects.all()
     return render(request, 'pages/posts.html', {'posts': posts})
 
+
 def surety(request):
-    return render(request,'pages/guarantee.html',{})
+    return render(request, 'pages/guarantee.html', {})
+
 
 def repair(request):
-    return render(request,'pages/service_repair.html',{})
+    return render(request, 'pages/service_repair.html', {})
+
 
 def optimization(request):
-    return render(request,'pages/optimization.html',{})
+    return render(request, 'pages/optimization.html', {})
+
 
 def customization(request):
-    return render(request,'pages/customization.html',{})
+    return render(request, 'pages/customization.html', {})
+
 
 def supplycomp(request):
-    return render(request,'pages/supply_comp.html',{})
+    return render(request, 'pages/supply_comp.html', {})
 
+
+def pluginsrender(request):
+    Plugins = plugins.objects.all().reverse()
+    return render(request, 'webproduct/plugins.html', {'plugins': Plugins})
