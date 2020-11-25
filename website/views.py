@@ -2,7 +2,10 @@ from django.shortcuts import render, redirect
 from .models import TyreHandler, CylinderHandler, StrutHandler,\
     message, post, BeltHandler, Wheelmotor, PipeHandler,\
     CableHandler,RodHandler, plugins
-
+import requests
+from django.contrib.gis.geoip2 import GeoIP2
+from django.template import RequestContext
+from django.shortcuts import render
 
 # Create your views here.
 
