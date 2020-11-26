@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'website.apps.WebsiteConfig',
     'ckeditor',
-    'enweb.apps.EnwebConfig'
+    'enweb',
+    'website',
+    'enweb.apps.EnwebConfig',
 ]
 
 MIDDLEWARE = [
