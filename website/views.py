@@ -5,7 +5,7 @@ from .models import TyreHandler, CylinderHandler, StrutHandler,\
 
 
 def home(request):
-    return render(request, 'en-pages/home.html', {})
+    return render(request, 'pages/home.html', {})
 
 
 def tyreHandler(request):
@@ -109,7 +109,7 @@ def cablehandler_detail(request,id):
     return render(request,'webproduct/cabledetail.html',{'cablehandler':cablehandler})
 
 def contact(request):
-    return render(request, 'en-pages/contact.html', {})
+    return render(request, 'pages/contact.html', {})
 
 
 def messages(request):
@@ -123,27 +123,27 @@ def messages(request):
 
 
 def about(request):
-    return render(request, 'en-pages/about.html', {})
+    return render(request, 'pages/about.html', {})
 
 
 def history(request):
     posts = post.objects.all()
-    return render(request, 'en-pages/posts.html', {'posts': posts})
+    return render(request, 'pages/posts.html', {'posts': posts})
 
 def surety(request):
-    return render(request, 'en-pages/guarantee.html', {})
+    return render(request, 'pages/guarantee.html', {})
 
 def repair(request):
-    return render(request, 'en-pages/service_repair.html', {})
+    return render(request, 'pages/service_repair.html', {})
 
 def optimization(request):
-    return render(request, 'en-pages/optimization.html', {})
+    return render(request, 'pages/optimization.html', {})
 
 def customization(request):
-    return render(request, 'en-pages/customization.html', {})
+    return render(request, 'pages/customization.html', {})
 
 def supplycomp(request):
-    return render(request, 'en-pages/supply_comp.html', {})
+    return render(request, 'pages/supply_comp.html', {})
     
 def pluginsrender(request):
     Plugins = plugins.objects.all().reverse()
