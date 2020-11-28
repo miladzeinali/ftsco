@@ -1,0 +1,136 @@
+
+<title>سیلندر هندلر | فناوران طیف صنعت کویر</title>
+
+{% extends 'en-pages/base.html' %}
+{% load static %}
+{% block header %}
+    {% include 'partial/_header.html' %}
+{% endblock %}
+
+{% block content %}
+    <section class="" id="detail">
+        <div class=" container">
+            <div class="product-headings row d-flex justify-content-lg-start align-items-center mb-4">
+                <div class="product-headings-category p-1">
+                    <h3 class="">
+Cylinder Handler
+</h3>
+                </div>
+                <h1 class="mr-lg-auto p-1">{{ cylinderhandler.code }}</h1>
+            </div>
+
+            <div class="product">
+                <div class="cta-bloc row">
+                    <div class="product-description col-lg-8">
+                        {{ cylinderhandler.description|safe }}
+                    </div>
+                    <div class="col-lg-4">
+                        <button type="button" class="btn btn-block mt-5">
+                            <span translate="" class="ng-scope">دانلود کاتالوگ</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bloc-product mt-5">
+                    <div class="container">
+                        <header class="header">
+                            <!--<p> {{ cylinderhandler.name }}</p>-->
+                            <div class="header-content pt-4">
+
+                                <h1 class="header-content-title">
+                                    {{ cylinderhandler.code }}
+                                </h1>
+                            </div>
+                        </header>
+                        <div class="">
+                            <div class=" order-1 ">
+                                <div class="d-flex justify-content-center">
+                                    <img class="" style="margin: 10px"
+                                         src="{{ cylinderhandler.image.url }}"
+                                         alt="MHT-X 10130"
+                                         onerror="this.onerror = null;this.src = 'https://manitou.cloud.akeneo.com/media/cache/preview/8/2/6/c/826c51658cc0ee353a1e108530c2c7f029efd71d_manitou_card_construction_telehandler_MHT10130_main_visual.png';">
+                                </div>
+                            </div>
+                            <div class=" order-2 ">
+                                <table class="table table-striped ">
+                                    <div class="thead text-white"><p class="pr-3 pt-2">{{ cylinderhandler.name }}</p>
+                                    </div>
+                                    <tbody>
+                                    <tr>
+                                        <th>نام محصول</th>
+                                        <td>{{ cylinderhandler.name }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>کد محصول</th>
+                                        <td>{{ cylinderhandler.code }}</td>
+                                    </tr>
+                                    <!--<tr>-->
+                                    <!--    <th>سال تولید</th>-->
+                                    <!--    <td>{{ cylinderhandler.model_Year }}</td>-->
+                                    <!--</tr>-->
+                                    <tr>
+                                        <th>ظرفیت(kg)</th>
+                                        <td>
+                                        {{ cylinderhandler.capacity_Kg }}</tr>
+                                    <tr>
+                                        <th>ظرفیت(lbs)</th>
+                                        <td>{{ cylinderhandler.capacity_Lbs }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>قطر سیلندر (mm) </th>
+                                        <td>
+                                            {{ cylinderhandler.Cylinder_Diameter_mm_min }}-{{ cylinderhandler.Cylinder_Diameter_mm_max }}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>قطر سیلندر (in)</th>
+                                        <td>
+                                             {{ cylinderhandler.Cylinder_Diameter_in_min }}-{{ cylinderhandler.Cylinder_Diameter_in_max }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>  حرکت عرضی (mm)</th>
+                                        <td>  {{ cylinderhandler.sideShift_Mm }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>حرکت عرضی(in)</th>
+                                        <td>  {{ cylinderhandler.sideShift_In }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>دوران بدنه</th>
+                                        <td>{{ cylinderhandler.body_Rotation }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>  دوران سر </th>
+                                        <td>{{ cylinderhandler.Handler_tilting }}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        <div class=" mt-5">
+                            <div class="d-flex justify-content-center">
+                                {% if cylinderhandler.image1 %}
+                                                                <img class="p-2" src="{{ cylinderhandler.image1.url }}"  alt="">
+
+                                {% endif %}
+                                {% if cylinderhandler.image2 %}
+                                                                <img class="p-2" src="{{ cylinderhandler.image2.url }}"  alt="">
+
+                                {% endif %}
+                                {% if cylinderhandler.image3 %}
+                                                                <img class="p-2" src="{{ cylinderhandler.image3.url }}"  alt="">
+
+                                {% endif %}
+
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block footer %}
+    {% include 'partial/_footer.html' %}
+{% endblock %}

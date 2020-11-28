@@ -1,0 +1,63 @@
+<title>تعمیرات | فناوران طیف صنعت کویر</title>
+
+{% extends 'en-pages/base.html' %}
+{% load static %}
+{% block header %}
+    {% include 'partial/_header.html' %}
+{% endblock %}
+
+{% block content %}
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+            <div class="d-flex justify-content-center ">
+                <img src="{% static 'img/hero/repair.jpg' %}"  class="img-fluid m-auto s-img" alt="">
+            </div>
+            <div class="row">
+                <div class="col-lg-12 pt-4 content">
+<div class="title">  <h3>تعمیر و نگهداری</h3></div>
+                    <p>
+                        قرارداد خدمات اولیه براساس هزینه تعمیر و نگهداری مداوم و هزینه تعمیر در محل ، خدمات نگهداری را
+                        متناسب با نیازهای شما ارائه می دهد. سرویس دهی دستگاه شما حداقل یک بار در سال برای حفظ عملکرد آن
+                        در راندمان بهینه ضروری است.
+
+                    </p>
+                    <h4>خدمات ارائه شده:
+                    </h4>
+                    <ul style="font-size: larger">
+                        <li><i class="bx bx-check"></i>
+                            کار و تعمیر در محل
+                        </li>
+                        <li><i class="bx bx-check"></i>
+                            عملیات نگهداری منظم: تکنسین تمام کارهایی را که توسط شرکت توصیه می شود انجام می دهد.
+
+                        </li>
+                        <li><i class="bx bx-check"></i>
+                            بررسی های پیشگیرانه
+
+                        </li>
+                        <li><i class="bx bx-check"></i>
+                            گزارش پایان بازدید: پس از هر بازدید ، تکنسین گزارشی از عملیات بررسی انجام شده را برای شما
+                            تهیه می کند.
+
+                        </li>
+                    </ul>
+                    <h4>
+                        مزایا:
+
+                    </h4>
+                    <ul>
+                        <li><i class="bx bx-check"></i>خدمات مقرون به صرفه.
+                        </li>
+                        <li><i class="bx bx-check"></i>انتخاب مدت زمان و نوع تعهد.
+                        </li>
+                        <li><i class="bx bx-check"></i>امکان برنامه ریزی بازدیدها از قبل.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section><!-- End About Section -->
+{% endblock %}
+{% block footer %}
+    {% include 'partial/_footer.html' %}
+{% endblock %}
