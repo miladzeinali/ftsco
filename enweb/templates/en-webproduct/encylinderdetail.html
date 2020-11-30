@@ -4,7 +4,7 @@
 {% extends 'en-pages/base.html' %}
 {% load static %}
 {% block header %}
-    {% include 'partial/_header.html' %}
+    {% include 'en-partial/_header.html' %}
 {% endblock %}
 
 {% block content %}
@@ -26,7 +26,7 @@ Cylinder Handler
                     </div>
                     <div class="col-lg-4">
                         <button type="button" class="btn btn-block mt-5">
-                            <span translate="" class="ng-scope">دانلود کاتالوگ</span>
+                            <span translate="" class="ng-scope"> Download Catalog</span>
                         </button>
                     </div>
                 </div>
@@ -57,11 +57,11 @@ Cylinder Handler
                                     </div>
                                     <tbody>
                                     <tr>
-                                        <th>نام محصول</th>
+                                        <th> Product Name</th>
                                         <td>{{ cylinderhandler.name }}</td>
                                     </tr>
                                     <tr>
-                                        <th>کد محصول</th>
+                                        <th>code </th>
                                         <td>{{ cylinderhandler.code }}</td>
                                     </tr>
                                     <!--<tr>-->
@@ -69,34 +69,34 @@ Cylinder Handler
                                     <!--    <td>{{ cylinderhandler.model_Year }}</td>-->
                                     <!--</tr>-->
                                     <tr>
-                                        <th>ظرفیت(kg)</th>
+                                        <th>capacity(kg)</th>
                                         <td>
                                         {{ cylinderhandler.capacity_Kg }}</tr>
                                     <tr>
-                                        <th>ظرفیت(lbs)</th>
+                                        <th>capacity(lbs)</th>
                                         <td>{{ cylinderhandler.capacity_Lbs }}</td>
                                     </tr>
                                     <tr>
-                                        <th>قطر سیلندر (mm) </th>
+                                        <th> Cylinder diameter (mm) </th>
                                         <td>
                                             {{ cylinderhandler.Cylinder_Diameter_mm_min }}-{{ cylinderhandler.Cylinder_Diameter_mm_max }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th>قطر سیلندر (in)</th>
+                                        <th> Cylinder diameter (in)</th>
                                         <td>
                                              {{ cylinderhandler.Cylinder_Diameter_in_min }}-{{ cylinderhandler.Cylinder_Diameter_in_max }}</td>
                                     </tr>
                                     <tr>
-                                        <th>  حرکت عرضی (mm)</th>
+                                        <th>   Transverse motion (mm)</th>
                                         <td>  {{ cylinderhandler.sideShift_Mm }}</td>
                                     </tr>
                                     <tr>
-                                        <th>حرکت عرضی(in)</th>
+                                        <th> Transverse motion(in)</th>
                                         <td>  {{ cylinderhandler.sideShift_In }}</td>
                                     </tr>
                                     <tr>
-                                        <th>دوران بدنه</th>
+                                        <th> Body rotation</th>
                                         <td>{{ cylinderhandler.body_Rotation }}</td>
                                     </tr>
                                     <tr>
@@ -132,5 +132,5 @@ Cylinder Handler
     </section>
 {% endblock %}
 {% block footer %}
-    {% include 'partial/_footer.html' %}
+    {% include 'en-partial/_footer.html' %}
 {% endblock %}

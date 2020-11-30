@@ -3,7 +3,7 @@
 {% extends 'en-pages/base.html' %}
 {% load static %}
 {% block header %}
-    {% include 'partial/_header.html' %}
+    {% include 'en-partial/_header.html' %}
 {% endblock %}
 
 {% block content %}
@@ -13,44 +13,39 @@
                 <img src="{% static 'img/hero/repair.jpg' %}"  class="img-fluid m-auto s-img" alt="">
             </div>
             <div class="row">
-                <div class="col-lg-12 pt-4 content">
-<div class="title">  <h3>تعمیر و نگهداری</h3></div>
+                <div class="col-lg-12 pt-4 content" id="Maintenance">
+<div class="title">  <h3>Maintenance</h3></div>
                     <p>
-                        قرارداد خدمات اولیه براساس هزینه تعمیر و نگهداری مداوم و هزینه تعمیر در محل ، خدمات نگهداری را
-                        متناسب با نیازهای شما ارائه می دهد. سرویس دهی دستگاه شما حداقل یک بار در سال برای حفظ عملکرد آن
-                        در راندمان بهینه ضروری است.
+                      The initial service contract provides maintenance services tailored to your needs based on ongoing maintenance costs and on-site repair costs. Servicing your device at least once a year is essential to keep it running at optimal efficiency.
 
                     </p>
-                    <h4>خدمات ارائه شده:
+                    <h4>services rendered:
                     </h4>
                     <ul style="font-size: larger">
                         <li><i class="bx bx-check"></i>
-                            کار و تعمیر در محل
-                        </li>
+	Work and repair on site                        </li>
                         <li><i class="bx bx-check"></i>
-                            عملیات نگهداری منظم: تکنسین تمام کارهایی را که توسط شرکت توصیه می شود انجام می دهد.
+                           	Regular maintenance operations: The technician does all the work recommended by the company.
 
                         </li>
                         <li><i class="bx bx-check"></i>
-                            بررسی های پیشگیرانه
+                            	Preventive checks
 
                         </li>
                         <li><i class="bx bx-check"></i>
-                            گزارش پایان بازدید: پس از هر بازدید ، تکنسین گزارشی از عملیات بررسی انجام شده را برای شما
-                            تهیه می کند.
-
+	End of visit report: After each visit, the technician will prepare a report of the inspection operation performed for you
                         </li>
                     </ul>
                     <h4>
-                        مزایا:
+                        Advantages:
 
                     </h4>
                     <ul>
-                        <li><i class="bx bx-check"></i>خدمات مقرون به صرفه.
+                        <li><i class="bx bx-check"></i>	Affordable service.
                         </li>
-                        <li><i class="bx bx-check"></i>انتخاب مدت زمان و نوع تعهد.
+                        <li><i class="bx bx-check"></i>	Select the duration and type of commitment.
                         </li>
-                        <li><i class="bx bx-check"></i>امکان برنامه ریزی بازدیدها از قبل.
+                        <li><i class="bx bx-check"></i>	Ability to schedule visits in advance.
                         </li>
                     </ul>
                 </div>
@@ -59,5 +54,5 @@
     </section><!-- End About Section -->
 {% endblock %}
 {% block footer %}
-    {% include 'partial/_footer.html' %}
+    {% include 'en-partial/_footer.html' %}
 {% endblock %}

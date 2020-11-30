@@ -3,7 +3,7 @@
 
 {% extends 'en-pages/base.html' %}
 {% block header %}
-    {% include 'partial/_header.html' %}
+    {% include 'en-partial/_header.html' %}
 {% endblock %}
 
 {% block content %}
@@ -24,7 +24,7 @@
                     </div>
                     <div class="col-lg-4">
                         <button type="button" class="btn btn-block mt-5">
-                            <span translate="" class="ng-scope">دانلود کاتالوگ</span>
+                            <span translate="" class="ng-scope"> Download Catalog</span>
                         </button>
                     </div>
                 </div>
@@ -51,11 +51,11 @@
                                  <div class="thead text-white"><p class="pr-3 pt-2">{{ cablehandler.name }}</p>
                                     </div>
                                 <tbody>
-                                <tr><th>نام محصول</th><td>{{ cablehandler.name }}</td></tr>
-                                <tr><th>کد محصول</th><td>{{ cablehandler.code }}</td></tr>
+                                <tr><th> Product Name</th><td>{{ cablehandler.name }}</td></tr>
+                                <tr><th> code</th><td>{{ cablehandler.code }}</td></tr>
                                 <!--<tr><th>سال تولید</th><td>{{ cablehandler.model_Year }}</td></tr>-->
-                                <tr><th>ظرفیت (kg)</th><td>{{cablehandler.capacity_Kg }}</tr>
-                                <tr><th>ظرفیت (lbs)</th><td>{{cablehandler.capacity_Lbs}}</td></tr>
+                                <tr><th>capacity (kg)</th><td>{{cablehandler.capacity_Kg }}</tr>
+                                <tr><th>capacity (lbs)</th><td>{{cablehandler.capacity_Lbs}}</td></tr>
                                 <!--<tr><th>قطر حلقه کار(mm)</th><td>{{cablehandler.Roll_Diameter_mm}}</td></tr>-->
                                 <!--<tr><th> قطر حلقه کار(in)</th><td>{{cablehandler.Roll_Diameter_in}}</td></tr>-->
                                 </tbody>
@@ -87,5 +87,5 @@
     </section>
 {% endblock %}
 {% block footer %}
-    {% include 'partial/_footer.html' %}
+    {% include 'en-partial/_footer.html' %}
 {% endblock %}

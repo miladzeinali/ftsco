@@ -3,7 +3,7 @@
 
 {% extends 'en-pages/base.html' %}
 {% block header %}
-    {% include 'partial/_header.html' %}
+    {% include 'en-partial/_header.html' %}
 {% endblock %}
 
 {% block content %}
@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-lg-4">
                         <button type="button" class="btn btn-block mt-5">
-                            <span translate="" class="ng-scope">دانلود کاتالوگ</span>
+                            <span translate="" class="ng-scope"> Download Catalog</span>
                         </button>
                     </div>
                 </div>
@@ -49,16 +49,16 @@
                             <table class="table table-striped ">
                                  <div class="thead text-white"><p class="pr-3 pt-2">{{ struthandler.name }}</p></div>
                                 <tbody>
-                                <tr><th>نام محصول</th><td>{{ struthandler.name }}</td></tr>
-                                <tr><th>کد محصول</th><td>{{ struthandler.code }}</td></tr>
+                                <tr><th> Product Name</th><td>{{ struthandler.name }}</td></tr>
+                                <tr><th>code </th><td>{{ struthandler.code }}</td></tr>
                                 <!--<tr><th>سال تولید</th><td>{{ struthandler.model_Year }}</td></tr>-->
-                                <tr><th>ظرفیت(kg)</th><td>{{struthandler.capacity_Kg }}</tr>
-                                <tr><th>ظرفیت(lbs)</th><td>{{struthandler.capacity_Lbs}}</td></tr>
-                                <tr><th> قطر سیلندر (mm)</th><td> {{struthandler.Cylinder_Diameter_mm_min}}-{{struthandler.Cylinder_Diameter_mm_max}}</td></tr>
-                                <tr><th> قطر سیلندر (in)</th><td> {{struthandler.Cylinder_Diameter_in_min}}-{{struthandler.Cylinder_Diameter_in_max}}</td></tr>
-                                <tr><th> حرکت عرضی (mm)</th><td>    {{struthandler.sideShift_Mm}}</td></tr>
-                                <tr><th>حرکت عرضی(in)</th><td> {{struthandler.sideShift_In}}</td></tr>
-                                <tr><th>دوران بدنه</th><td>{{struthandler.body_Rotation}}</td></tr>
+                                <tr><th>capacity(kg)</th><td>{{struthandler.capacity_Kg }}</tr>
+                                <tr><th>capacity(lbs)</th><td>{{struthandler.capacity_Lbs}}</td></tr>
+                                <tr><th>  Cylinder diameter (mm)</th><td> {{struthandler.Cylinder_Diameter_mm_min}}-{{struthandler.Cylinder_Diameter_mm_max}}</td></tr>
+                                <tr><th>  Cylinder diameter (in)</th><td> {{struthandler.Cylinder_Diameter_in_min}}-{{struthandler.Cylinder_Diameter_in_max}}</td></tr>
+                                <tr><th>  Transverse motion (mm)</th><td>    {{struthandler.sideShift_Mm}}</td></tr>
+                                <tr><th> Transverse motion(in)</th><td> {{struthandler.sideShift_In}}</td></tr>
+                                <tr><th> Body rotation</th><td>{{struthandler.body_Rotation}}</td></tr>
                                 <tr><th> چرخش محدود </th><td>{{struthandler.Handler_tilting}}</td></tr>
                                 </tbody>
                             </table>
@@ -87,5 +87,5 @@
     </section>
 {% endblock %}
 {% block footer %}
-    {% include 'partial/_footer.html' %}
+    {% include 'en-partial/_footer.html' %}
 {% endblock %}

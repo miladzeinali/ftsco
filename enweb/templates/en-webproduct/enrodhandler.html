@@ -3,7 +3,7 @@
 
 {% extends 'en-pages/base.html' %}
 {% block header %}
-    {% include 'partial/_header.html' %}
+    {% include 'en-partial/_header.html' %}
 {% endblock %}
 
 {% block content %}
@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-lg-4">
                         <button type="button" class="btn btn-block mt-5">
-                            <span translate="" class="ng-scope">دانلود کاتالوگ</span>
+                            <span translate="" class="ng-scope"> Download Catalog</span>
                         </button>
                     </div>
                 </div>
@@ -49,12 +49,12 @@
                                 <div class="thead text-white"><p class="pr-3 pt-2">{{ rodhandler.name }}</p>
                                     </div>
                                 <tbody>
-                                <tr><th>نام محصول</th><td>{{ rodhandler.name }}</td></tr>
-                                <tr><th>کد محصول</th><td>{{ rodhandler.code }}</td></tr>
-                                <tr><th>ظرفیت(kg)</th><td>{{rodhandler.capacity_Kg }}</tr>
-                                <tr><th>ظرفیت(lbs)</th><td>{{rodhandler.capacity_Lbs}}</td></tr>
-                                <tr><th>گستره کاری(mm)</th><td> {{rodhandler.Cylinder_Diameter_mm_min}}-{{rodhandler.Cylinder_Diameter_mm_max}}</td></tr>
-                                <tr><th>گستره کاری (in)</th><td> {{rodhandler.Cylinder_Diameter_in_min}}-{{rodhandler.Cylinder_Diameter_in_max}}</td></tr>
+                                <tr><th>Product Name </th><td>{{ rodhandler.name }}</td></tr>
+                                <tr><th>code </th><td>{{ rodhandler.code }}</td></tr>
+                                <tr><th>capacity(kg)</th><td>{{rodhandler.capacity_Kg }}</tr>
+                                <tr><th>capacity(lbs)</th><td>{{rodhandler.capacity_Lbs}}</td></tr>
+                                <tr><th> Scope of work(mm)</th><td> {{rodhandler.Cylinder_Diameter_mm_min}}-{{rodhandler.Cylinder_Diameter_mm_max}}</td></tr>
+                                <tr><th> Scope of work (in)</th><td> {{rodhandler.Cylinder_Diameter_in_min}}-{{rodhandler.Cylinder_Diameter_in_max}}</td></tr>
                                 </tbody>
                             </table>
 
@@ -82,5 +82,5 @@
     </section>
 {% endblock %}
 {% block footer %}
-    {% include 'partial/_footer.html' %}
+    {% include 'en-partial/_footer.html' %}
 {% endblock %}
