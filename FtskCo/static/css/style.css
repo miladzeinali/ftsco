@@ -27,7 +27,7 @@ form,
 li,
 div,
 strong {
-    font-family: MyFont !important;
+    font-family: MyFont ;
 }
 
 section {
@@ -305,7 +305,32 @@ section {
     font-size: 15px;
     color: #fdfdfd;
 }
+.main-header .language{
+    position: absolute;
+}
+.main-header  .enb {
+background-color: #f0f0f0;
+}
 
+.main-header .language a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+@media (min-width: 990px) {
+    .main-header .language{
+        top: -15px;
+
+    }
+
+}
+@media (max-width: 990px) {
+    .main-header .language{
+        top: -52px;
+        right: 90px;
+    }
+
+}
 /*.main-header .main-menu ul ul.submenu > li > a:hover {*/
 /*    color: #c6a16e;*/
 /*    background: none*/
@@ -1250,12 +1275,27 @@ section {
     background-position: center center;
 }
 
+@media (min-width: 990px) {
 .ftco-animate {
     opacity: 0;
     visibility: hidden;
     margin-right: 400px;
 }
-
+}
+@media (min-width: 768px ) and (max-width: 990px){
+.ftco-animate {
+    opacity: 0;
+    visibility: hidden;
+    margin-right: 250px;
+}
+}
+@media (max-width: 768px) {
+.ftco-animate {
+    opacity: 0;
+    visibility: hidden;
+    margin-right: 190px;
+}
+}
 .testimony-section {
     position: relative;
 }

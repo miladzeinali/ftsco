@@ -10,7 +10,7 @@
                     <div class="row align-items-center">
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2">
-                            <div class="logo">
+                            <div class="logo" style="float:right;">
                                 <a href="{% url 'enweb:home' %}"><img src="{% static 'img/logo/logo1.png' %}" alt=""></a>
                             </div>
                         </div>
@@ -29,7 +29,7 @@
                                             </li>
                                             <li ><a href="" >Services<i class="bx bx-chevron-down "></i></a>
                                                  <ul class="submenu">
-                                                    <li><a href="{% url 'enweb:repair' %}">agreement</a></li>
+                                                    <li><a href="{% url 'enweb:repair' %}">Maintenance</a></li>
                                                     <li><a href="{% url 'enweb:Surety' %}">Warranty</a></li>
                                                     <li><a href="{% url 'enweb:supplycomp' %}">Spare parts</a></li>
                                                     <li><a href="{% url 'enweb:optimization' %}">optimizations</a></li>
@@ -55,7 +55,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-1 col-lg-2">
+    <div class="col-xl-1 col-lg-2">
+                              <button class="btn language enb"><a href="{% url 'website:home' %}">Fa</a></button>
+
+                        </div>
+</div>
+
+</div>
                         </div>
                         <!-- Mobile Menu -->
                         <div class="col-11">
@@ -67,3 +73,4 @@
         </div>
     </div>
 </header>
+
