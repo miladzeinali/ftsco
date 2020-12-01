@@ -307,16 +307,15 @@ section {
 }
 .main-header .language{
     position: absolute;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
 }
 .main-header  .enb {
 background-color: #f0f0f0;
 }
 
-.main-header .language a{
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-}
+
 @media (min-width: 990px) {
     .main-header .language{
         top: -15px;
