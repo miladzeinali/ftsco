@@ -3486,3 +3486,9 @@ Not Found: /favicon.ico
 Not Found: /favicon.ico
 Not Found: /favicon.ico
 Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'mail.ftskco.com'. You may need to add 'mail.ftskco.com' to ALLOWED_HOSTS.
+Bad Request: /wp-includes/css/css.php
+Invalid HTTP_HOST header: 'mail.ftskco.com'. You may need to add 'mail.ftskco.com' to ALLOWED_HOSTS.
+Bad Request: /wp-includes/fonts/css.php
+Not Found: /favicon.ico
+Not Found: /favicon.ico
