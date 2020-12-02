@@ -3460,3 +3460,6 @@ UnicodeEncodeError: 'latin-1' codec can't encode characters in position 10-12: o
 2020-10-20 08:43:27.953072 [10210] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
 2020-11-17 18:11:34.084806 [UID:1261][28559] Child process with pid: 28576 was killed by signal: 15, core dump: 0
 2020-11-20 11:02:19.985468 [UID:1261][29498] packetLen < 0
+2020-11-23 18:11:34.951388 [UID:1261][29457] Child process with pid: 29465 was killed by signal: 15, core dump: 0
+2020-11-24 18:11:38.553480 [UID:1261][6739] Child process with pid: 6779 was killed by signal: 15, core dump: 0
+2020-11-24 18:11:38.553757 [UID:1261][6739] Child process with pid: 6783 was killed by signal: 15, core dump: 0
