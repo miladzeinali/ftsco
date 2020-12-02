@@ -3492,3 +3492,27 @@ Invalid HTTP_HOST header: 'mail.ftskco.com'. You may need to add 'mail.ftskco.co
 Bad Request: /wp-includes/fonts/css.php
 Not Found: /favicon.ico
 Not Found: /favicon.ico
+2020-12-02 11:33:14.622301 [UID:1261][6315] Child process with pid: 6328 was killed by signal: 15, core dump: 0
+2020-12-02 11:33:21.357874 [UID:1261][6315] Child process with pid: 6588 was killed by signal: 15, core dump: 0
+2020-12-02 11:33:25.746679 [UID:1261][6315] Child process with pid: 6705 was killed by signal: 15, core dump: 0
+Traceback (most recent call last):
+  File "/home2/ftskcoco/ftskco/passenger_wsgi.py", line 1, in <module>
+    from FtskCo.wsgi import application
+  File "/home2/ftskcoco/ftskco/FtskCo/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home2/ftskcoco/virtualenv/ftskco/3.7/lib/python3.7/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home2/ftskcoco/virtualenv/ftskco/3.7/lib/python3.7/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/home2/ftskcoco/virtualenv/ftskco/3.7/lib/python3.7/site-packages/django/conf/__init__.py", line 83, in __getattr__
+    self._setup(name)
+  File "/home2/ftskcoco/virtualenv/ftskco/3.7/lib/python3.7/site-packages/django/conf/__init__.py", line 70, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home2/ftskcoco/virtualenv/ftskco/3.7/lib/python3.7/site-packages/django/conf/__init__.py", line 177, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/home2/ftskcoco/virtualenv/ftskco/3.7/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home2/ftskcoco/ftskco/FtskCo/settings.py", line 83
+    }
+    ^
+SyntaxError: invalid syntax
