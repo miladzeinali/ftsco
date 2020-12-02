@@ -1,0 +1,29 @@
+
+<title>تامین قطعات | فناوران طیف صنعت کویر</title>
+
+{% extends 'en-pages/base.html' %}
+{% load static %}
+{% block header %}
+    {% include 'en-partial/_header.html' %}
+{% endblock %}
+
+{% block content %}
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+            <div class="d-flex justify-content-center ">
+                <img src="{% static 'img/hero/supply.jpg' %}" class="img-fluid m-auto s-img" alt="">
+            </div>
+            <div class="row">
+                <div class="col-lg-12 pt-4 content">
+<div class="title"> <h3> Spare part</h3></div>
+                    <p>
+When you need new equipment to maintain the efficiency of your machines, we are at your service. Preventive maintenance can keep your equipment up to date. If you need replacement parts for any of the equipment and devices of FTSK Co., you can contact the company.                    </p>
+                </div>
+            </div>
+        </div>
+    </section><!-- End About Section -->
+{% endblock %}
+{% block footer %}
+    {% include 'en-partial/_footer.html' %}
+{% endblock %}
+

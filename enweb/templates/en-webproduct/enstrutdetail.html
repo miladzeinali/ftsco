@@ -1,0 +1,91 @@
+
+<title>استروت هندلر | فناوران طیف صنعت کویر</title>
+
+{% extends 'en-pages/base.html' %}
+{% block header %}
+    {% include 'en-partial/_header.html' %}
+{% endblock %}
+
+{% block content %}
+    <section class="" id="detail">
+        <div class=" container">
+            <div class="product-headings row d-flex justify-content-lg-start align-items-center mb-4">
+                <div class="product-headings-category p-1">
+                    <h3 class="">Strut Handler</h3>
+                </div>
+                <h1 class="mr-lg-auto p-1">{{ struthandler.code }}</h1>
+            </div>
+
+            <div class="product">
+                <div class="cta-bloc row">
+                    <div class="product-description col-lg-8">
+                        {{ struthandler.Endescription|safe }}
+                    </div>
+                    <div class="col-lg-4">
+                        <button type="button" class="btn btn-block mt-5">
+                            <span translate="" class="ng-scope"> Download Catalog</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bloc-product mt-5">
+                    <header class="header">
+                         <!--<p> {{ struthandler.name }}</p>-->
+                        <div class="header-content pt-4">
+
+                            <h1 class="header-content-title">
+                                {{ struthandler.code }}
+                            </h1>
+                        </div>
+                    </header>
+                    <div class="">
+                <div class="order-1 ">
+                            <div class="d-flex justify-content-center">
+                            <img class="" style="margin: 10px"
+                                         src="{{ struthandler.image.url }}"/>
+                                               </div>
+                        </div>
+                        <div class=" order-2 ">
+                            <table class="table table-striped ">
+                                 <div class="thead text-white"><p class="pr-3 pt-2">{{ struthandler.name }}</p></div>
+                                <tbody>
+                                <tr><th> Product Name</th><td>{{ struthandler.name }}</td></tr>
+                                <tr><th>code </th><td>{{ struthandler.code }}</td></tr>
+                                <!--<tr><th>سال تولید</th><td>{{ struthandler.model_Year }}</td></tr>-->
+                                <tr><th>capacity(kg)</th><td>{{struthandler.capacity_Kg }}</tr>
+                                <tr><th>capacity(lbs)</th><td>{{struthandler.capacity_Lbs}}</td></tr>
+                                <tr><th>  Cylinder diameter (mm)</th><td> {{struthandler.Cylinder_Diameter_mm_min}}-{{struthandler.Cylinder_Diameter_mm_max}}</td></tr>
+                                <tr><th>  Cylinder diameter (in)</th><td> {{struthandler.Cylinder_Diameter_in_min}}-{{struthandler.Cylinder_Diameter_in_max}}</td></tr>
+                                <tr><th>  Transverse motion (mm)</th><td>    {{struthandler.sideShift_Mm}}</td></tr>
+                                <tr><th> Transverse motion(in)</th><td> {{struthandler.sideShift_In}}</td></tr>
+                                <tr><th> Body rotation</th><td>{{struthandler.body_Rotation}}</td></tr>
+                                <tr><th> چرخش محدود </th><td>{{struthandler.Handler_tilting}}</td></tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <div class="mt-5">
+                            <div class="d-flex justify-content-center">
+                               {% if struthandler.image1 %}
+                                                                <img class="p-2" src="{{ struthandler.image1.url }}"  alt="">
+
+                                {% endif %}
+                                {% if struthandler.image2 %}
+                                                                <img class="p-2" src="{{ struthandler.image2.url }}"  alt="">
+
+                                {% endif %}
+                                {% if struthandler.image3 %}
+                                                                <img class="p-2" src="{{ struthandler.image3.url }}"  alt="">
+
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block footer %}
+    {% include 'en-partial/_footer.html' %}
+{% endblock %}

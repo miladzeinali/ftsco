@@ -1,3 +1,4 @@
+
 from django.db import models
 from ckeditor.fields import RichTextField
 
@@ -29,6 +30,7 @@ class TyreHandler(models.Model):
     Design_Type = models.CharField(max_length=15, choices=DesignTypeChoice, default='flat')
     image = models.ImageField(null=True, blank=True, upload_to='tyrehandler/')
     description=models.TextField(max_length=200,null=True,blank=True)
+    Endescription=models.TextField(max_length=200,null=True,blank=True)
     price_Toman = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
     price_Dollar = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
     image1 = models.ImageField(null=True,blank=True,upload_to='tyreHandlerImagesProduct/')
@@ -52,6 +54,7 @@ class CylinderHandler(models.Model):
     Handler_tilting = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
     image = models.ImageField(null=True, blank=True, upload_to='cylinderhandler/')
     description=models.TextField(max_length=200,null=True,blank=True)
+    Endescription=models.TextField(max_length=200,null=True,blank=True)
     price_Toman = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
     price_Dollar = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
     image1 = models.ImageField(null=True, blank=True, upload_to='cylinderhandlerImagesProduct/')
@@ -75,6 +78,7 @@ class StrutHandler(models.Model):
     Handler_tilting=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
     image=models.ImageField(null=True,blank=True,upload_to='struthandler/')
     description=models.TextField(max_length=200,null=True,blank=True)
+    Endescription=models.TextField(max_length=200,null=True,blank=True)
     price_Toman=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
     price_Dollar=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
     image1 = models.ImageField(null=True, blank=True, upload_to='struthandlerImagesProduct/')
@@ -94,6 +98,7 @@ class BeltHandler(models.Model):
     articulation=models.CharField(max_length=5,null=True,blank=True)
     image=models.ImageField(null=True,blank=True,upload_to='belthandler/')
     description=models.TextField(max_length=200,null=True,blank=True)
+    Endescription=models.TextField(max_length=200,null=True,blank=True)
     price_Toman=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
     price_Dollar=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
     image1 = models.ImageField(null=True, blank=True, upload_to='belthandlerImagesProduct/')
@@ -110,6 +115,7 @@ class Wheelmotor(models.Model):
     capacity_Lbs=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
     image=models.ImageField(null=True,blank=True,upload_to='wheelmotor/')
     description=models.TextField(max_length=200,null=True,blank=True)
+    Endescription=models.TextField(max_length=200,null=True,blank=True)
     price_Toman=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
     price_Dollar=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
     image1 = models.ImageField(null=True, blank=True, upload_to='wheelmotorImagesProduct/')
@@ -127,6 +133,7 @@ class PipeHandler(models.Model):
     range_diameter_mm=models.CharField(max_length=5,null=True,blank=True)
     image = models.ImageField(null=True, blank=True, upload_to='wheelmotor/')
     description = models.TextField(max_length=200, null=True, blank=True)
+    Endescription=models.TextField(max_length=200,null=True,blank=True)
     price_Toman = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
     price_Dollar = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
     image1 = models.ImageField(null=True, blank=True, upload_to='pipehandlerImagesProduct/')
@@ -148,6 +155,7 @@ class RodHandler(models.Model):
     range_daimeter=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
     image = models.ImageField(null=True, blank=True, upload_to='rodhandler/')
     description = models.TextField(max_length=200, null=True, blank=True)
+    Endescription=models.TextField(max_length=200,null=True,blank=True)
     price_Toman = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
     price_Dollar = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
     image1 = models.ImageField(null=True, blank=True, upload_to='rodhandlerImagesProduct/')
@@ -166,6 +174,7 @@ class CableHandler(models.Model):
     Roll_Diameter_in=models.PositiveSmallIntegerField(null=True,blank=True,default=0)
     image = models.ImageField(null=True, blank=True, upload_to='cablehandler/')
     description = models.TextField(max_length=200, null=True, blank=True)
+    Endescription=models.TextField(max_length=200,null=True,blank=True)
     price_Toman = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
     price_Dollar = models.PositiveSmallIntegerField(null=True, blank=True, default=0)
     image1 = models.ImageField(null=True, blank=True, upload_to='cablehandlerImagesProduct/')
@@ -181,10 +190,14 @@ class message(models.Model):
 
 class post(models.Model):
     image=models.ImageField(upload_to='post_images')
-    title=models.CharField(max_length=50)
-    text=models.TextField(max_length=300)
+    title=models.CharField(max_length=50, null=True, blank=True)
+    Entitle=models.CharField(max_length=50, null=True, blank=True)
+    text=models.TextField(max_length=300, null=True, blank=True)
+    Entext=models.TextField(max_length=300, null=True, blank=True)
 
 class plugins(models.Model):
-    name = models.CharField(max_length=20)
+    name = models.CharField(max_length=20, null=True, blank=True)
+    Enname = models.CharField(max_length=20, null=True, blank=True)
     description = models.TextField(max_length=200, null=True, blank=True)
+    Endescription = models.TextField(max_length=200, null=True, blank=True)
     image = models.ImageField(null=True, blank=True, upload_to='plugins/')

@@ -3463,3 +3463,26 @@ UnicodeEncodeError: 'latin-1' codec can't encode characters in position 10-12: o
 2020-11-23 18:11:34.951388 [UID:1261][29457] Child process with pid: 29465 was killed by signal: 15, core dump: 0
 2020-11-24 18:11:38.553480 [UID:1261][6739] Child process with pid: 6779 was killed by signal: 15, core dump: 0
 2020-11-24 18:11:38.553757 [UID:1261][6739] Child process with pid: 6783 was killed by signal: 15, core dump: 0
+Invalid HTTP_HOST header: 'ftskco.com'. You may need to add 'ftskco.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'ftskco.com'. You may need to add 'ftskco.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Not Found: /static/img/logo/LOGO.png
+Not Found: /favicon.ico
+Not Found: /static/css/en-font.css
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /static/js/vendor/bootstrap.min.js.map
+Not Found: /xmlrpc.php
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /static/js/vendor/bootstrap.min.js.map
+Not Found: /static/js/vendor/bootstrap.min.js.map
+Not Found: /static/js/vendor/bootstrap.min.js.map
+Not Found: /static/js/vendor/bootstrap.min.js.map
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico

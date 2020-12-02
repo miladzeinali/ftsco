@@ -1,0 +1,58 @@
+<title>تعمیرات | فناوران طیف صنعت کویر</title>
+
+{% extends 'en-pages/base.html' %}
+{% load static %}
+{% block header %}
+    {% include 'en-partial/_header.html' %}
+{% endblock %}
+
+{% block content %}
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+            <div class="d-flex justify-content-center ">
+                <img src="{% static 'img/hero/repair.jpg' %}"  class="img-fluid m-auto s-img" alt="">
+            </div>
+            <div class="row">
+                <div class="col-lg-12 pt-4 content" id="Maintenance">
+<div class="title">  <h3>Maintenance</h3></div>
+                    <p>
+                      The initial service contract provides maintenance services tailored to your needs based on ongoing maintenance costs and on-site repair costs. Servicing your device at least once a year is essential to keep it running at optimal efficiency.
+
+                    </p>
+                    <h4>services rendered:
+                    </h4>
+                    <ul style="font-size: larger">
+                        <li><i class="bx bx-check"></i>
+	Work and repair on site                        </li>
+                        <li><i class="bx bx-check"></i>
+                           	Regular maintenance operations: The technician does all the work recommended by the company.
+
+                        </li>
+                        <li><i class="bx bx-check"></i>
+                            	Preventive checks
+
+                        </li>
+                        <li><i class="bx bx-check"></i>
+	End of visit report: After each visit, the technician will prepare a report of the inspection operation performed for you
+                        </li>
+                    </ul>
+                    <h4>
+                        Advantages:
+
+                    </h4>
+                    <ul>
+                        <li><i class="bx bx-check"></i>	Affordable service.
+                        </li>
+                        <li><i class="bx bx-check"></i>	Select the duration and type of commitment.
+                        </li>
+                        <li><i class="bx bx-check"></i>	Ability to schedule visits in advance.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section><!-- End About Section -->
+{% endblock %}
+{% block footer %}
+    {% include 'en-partial/_footer.html' %}
+{% endblock %}

@@ -1,3 +1,4 @@
+
 from django.urls import path
 from . import views
 
@@ -32,3 +33,4 @@ urlpatterns = [
     path('supplycomp/',views.supplycomp,name='supplycomp'),
      path('plugins/', views.pluginsrender, name='plugin')
 ]
+

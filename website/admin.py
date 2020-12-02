@@ -1,3 +1,4 @@
+
 from django.contrib import admin
 from .models import TyreHandler,CylinderHandler,StrutHandler,category,message,post,\
     Wheelmotor,PipeHandler,BeltHandler,RodHandler,CableHandler, plugins

@@ -4,9 +4,6 @@ from .models import TyreHandler, CylinderHandler, StrutHandler,\
     CableHandler,RodHandler, plugins
 
 
-# Create your views here.
-
-
 def home(request):
     return render(request, 'pages/home.html', {})
 
@@ -134,20 +131,21 @@ def history(request):
     return render(request, 'pages/posts.html', {'posts': posts})
 
 def surety(request):
-    return render(request,'pages/guarantee.html',{})
+    return render(request, 'pages/guarantee.html', {})
 
 def repair(request):
-    return render(request,'pages/service_repair.html',{})
+    return render(request, 'pages/service_repair.html', {})
 
 def optimization(request):
-    return render(request,'pages/optimization.html',{})
+    return render(request, 'pages/optimization.html', {})
 
 def customization(request):
-    return render(request,'pages/customization.html',{})
+    return render(request, 'pages/customization.html', {})
 
 def supplycomp(request):
-    return render(request,'pages/supply_comp.html',{})
+    return render(request, 'pages/supply_comp.html', {})
     
 def pluginsrender(request):
     Plugins = plugins.objects.all().reverse()
     return render(request, 'webproduct/plugins.html', {'plugins': Plugins})
+

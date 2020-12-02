@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Myfont';
     src: url('../font/Yekan.eot');
@@ -26,7 +27,7 @@ form,
 li,
 div,
 strong {
-    font-family: MyFont !important;
+    font-family: MyFont ;
 }
 
 section {
@@ -283,7 +284,7 @@ section {
     position: absolute;
     width: 170px;
     background: #000000;
-    right: 0;
+    /*right: 0;*/
     top: 90%;
     visibility: hidden;
     opacity: 0;
@@ -294,7 +295,6 @@ section {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-
 .main-header .main-menu ul ul.submenu > li {
     margin-left: 7px;
     display: block;
@@ -305,7 +305,31 @@ section {
     font-size: 15px;
     color: #fdfdfd;
 }
+.main-header .language{
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+.main-header  .enb {
+background-color: #f0f0f0;
+}
 
+
+@media (min-width: 990px) {
+    .main-header .language{
+        top: -15px;
+
+    }
+
+}
+@media (max-width: 990px) {
+    .main-header .language{
+        top: -52px;
+        right: 90px;
+    }
+
+}
 /*.main-header .main-menu ul ul.submenu > li > a:hover {*/
 /*    color: #c6a16e;*/
 /*    background: none*/
@@ -425,10 +449,10 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about .row {
-    float: right;
+/*.about .row {*/
+/*    float: right;*/
 
-}
+/*}*/
 
 .about .content  h3 {
     font-weight: 700;
@@ -486,6 +510,33 @@ section {
     top: 2px;
     color: #dd0000;
 }
+.about  #warranty li {
+    padding: 0 0 8px 26px;
+    position: relative;
+    font-size: 14px;
+}
+
+.about  #warranty i {
+    position: absolute;
+    font-size: 20px;
+    right: 1060px;
+    top: 2px;
+    color: #dd0000;
+}
+.about  #Maintenance li {
+    padding: 0 0 8px 26px;
+    position: relative;
+    font-size: 14px;
+}
+
+.about  #Maintenance i {
+    position: absolute;
+    font-size: 20px;
+    right: 1092px;
+    top: 2px;
+    color: #dd0000;
+}
+
 .about .content p {
     text-align: justify;
     font-size: 14px;
@@ -746,7 +797,27 @@ section {
     width: 100%;
     background: #fff;
 }
-
+.contact .info .en-email, .contact .info .en-phone {
+    margin-top: 40px;
+}
+.contact .info .en-address{
+    display: block;
+}
+.contact .info .en-email{
+    display: block;
+}
+.contact .info .en-phone{
+    display: block;
+}
+.contact .info .en-address i{
+    float: left;
+}
+.contact .info .en-email i{
+    float: left;
+}
+.contact .info .en-phone i{
+    float: left;
+}
 .contact .php-email-form .form-group {
     padding-bottom: 8px;
 }
@@ -1203,11 +1274,27 @@ section {
     background-position: center center;
 }
 
+@media (min-width: 990px) {
 .ftco-animate {
     opacity: 0;
     visibility: hidden;
+    margin-right: 400px;
 }
-
+}
+@media (min-width: 768px ) and (max-width: 990px){
+.ftco-animate {
+    opacity: 0;
+    visibility: hidden;
+    margin-right: 250px;
+}
+}
+@media (max-width: 768px) {
+.ftco-animate {
+    opacity: 0;
+    visibility: hidden;
+    margin-right: 190px;
+}
+}
 .testimony-section {
     position: relative;
 }
