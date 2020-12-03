@@ -719,6 +719,11 @@ background-color: #f0f0f0;
         margin-top: 300px;
     }
 }
+@media (min-width: 767px) {
+    .services-content .construction {
+        margin-top: 345px;
+    }
+}
 @media (max-width: 576px) {
     .services-content img {
         width: 140px;
