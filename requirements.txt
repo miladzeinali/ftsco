@@ -3,7 +3,7 @@ Pillow==7.2.0
 asgiref==3.2.10	
 django-ckeditor==5.9.0
 django-js-asset==1.2.2	
-pip==19.0.3	
+pip==19.2	
 pytz==2020.1	
 setuptools==40.8.0	
 sqlparse==0.3.1	
