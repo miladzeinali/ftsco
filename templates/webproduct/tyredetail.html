@@ -1,0 +1,92 @@
+
+<title>تایر هندلر | فناوران طیف صنعت کویر</title>
+
+{% extends 'pages/base.html' %}
+{% block header %}
+    {% include 'partial/_header.html' %}
+{% endblock %}
+
+{% block content %}
+    <section class="" id="detail">
+        <div class=" container" >
+            <div class="product-headings row d-flex justify-content-lg-start align-items-center mb-4">
+                <div class="product-headings-category p-1">
+                    <h3 class="">Tyre Handler </h3>
+                </div>
+                <h1 class="mr-lg-auto p-1">{{ tyrehandler.code }}</h1>
+            </div>
+
+            <div class="product">
+                <div class="cta-bloc row">
+                    <div class="product-description col-lg-8">
+                        {{ tyrehandler.description|safe }}
+                    </div>
+                    <div class="col-lg-4">
+                        <button type="button" class="btn btn-block mt-5">
+                            <span translate="" class="ng-scope">دانلود کاتالوگ</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bloc-product mt-5">
+                    <div class="container">
+                    <header class="header">
+                        <!--<p> {{ tyrehandler.name }}</p>-->
+                        <div class="header-content pt-4">
+
+                            <h1 class="header-content-title">
+                                {{ tyrehandler.code }}
+                            </h1>
+                        </div>
+                    </header>
+                    <div class="">
+                        <div class=" order-1 ">
+                            <div class="d-flex justify-content-center">
+                                <img class="" style="margin: 10px"
+                                         src="{{ tyrehandler.image.url }}"/>
+                                               </div>
+                        </div>
+                        <div class=" order-2 ">
+                            <table class="table table-striped ">
+                                <div class="thead text-white"><p class="pr-3 pt-2">{{ tyrehandler.name }}</p></div>
+                                <tbody>
+                                <tr><th>نام محصول</th><td>{{ tyrehandler.name }}</td></tr>
+                                <tr><th>کد محصول</th><td>{{ tyrehandler.code }}</td></tr>
+                                <!--<tr><th>سال تولید</th><td>{{ tyrehandler.model_Year }}</td></tr>-->
+                                <tr><th>ظرفیت(kg)</th><td>{{tyrehandler.capacity_Kg }}</tr>
+                                <tr><th>ظرفیت(lbs)</th><td>{{tyrehandler.capacity_Lbs}}</td></tr>
+                                <tr><th>گستره کاری(mm)</th><td>{{tyrehandler.OpeningRange_Mm_Min}}-{{ tyrehandler.OpeningRange_Mm_Max }}</td></tr>
+                                <tr><th>گستره کاری(in)</th><td>{{ tyrehandler.OpeningRange_In_Min }}-{{ tyrehandler.OpeningRange_In_Max }}</td></tr>
+                                <tr><th> حرکت عرضی (mm)</th><td>{{tyrehandler.sideShift_Mm}}</td></tr>
+                                <tr><th> حرکت عرضی (in)</th><td>{{tyrehandler.sideShift_In}}</td></tr>
+                                <tr><th>دوران بدنه</th><td>{{tyrehandler.body_Rotation}}</td></tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                         <div class="mt-5">
+                            <div class="d-flex justify-content-center">
+                                {% if tyrehandler.image1 %}
+                                                                <img class="p-2" src="{{ tyrehandler.image1.url }}"  alt="">
+
+                                {% endif %}
+                                {% if tyrehandler.image2 %}
+                                                                <img class="p-2" src="{{ tyrehandler.image2.url }}"  alt="">
+
+                                {% endif %}
+                                {% if tyrehandler.image3 %}
+                                                                <img class="p-2" src="{{ tyrehandler.image3.url }}"  alt="">
+
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+{% endblock %}
+{% block footer %}
+    {% include 'partial/_footer.html' %}
+{% endblock %}

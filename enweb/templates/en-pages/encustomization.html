@@ -1,0 +1,31 @@
+
+<title>سفارشی سازی | فناوران طیف صنعت کویر</title>
+
+{% extends 'en-pages/base.html' %}
+{% load static %}
+{% block header %}
+    {% include 'en-partial/_header.html' %}
+{% endblock %}
+
+{% block content %}
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+            <div class="d-flex justify-content-center ">
+                <img src="{% static 'img/hero/customize.jpg' %}" class="img-fluid m-auto s-img" alt="">
+            </div>
+            <div class="row">
+                <div class="col-lg-12 pt-4 content">
+                    <div class="title"> <h3> Customization</h3></div>
+                    <p>
+All products of this company can be changed and customized according to the needs of industry, mining, agriculture, etc. If the scope of work you want is not in accordance with the product, by contacting the business unit and contacting the technicians related to each department in the shortest possible time and with the highest quality of the product you want can be produced and presented according to a specific user.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section><!-- End About Section -->
+{% endblock %}
+{% block footer %}
+    {% include 'en-partial/_footer.html' %}
+{% endblock %}
+
+
