@@ -1,5 +1,4 @@
-
-{% load static %}
+ {% load static %}
 <!-- Header Start -->
 <header>
     <!-- Header Start -->
@@ -22,13 +21,13 @@
                                         <ul id="navigation">
                                             <li class="active"><a href="{% url 'website:home' %}">خانه</a></li>
                                             <li><a href=""> فناوران طیف صنعت کویر<i class="bx bx-chevron-down "></i></a>
-                                               <ul class="submenu">
+                                                <ul class="submenu">
                                                     <li><a href="{% url 'website:about' %}">درباره ما</a></li>
                                                     <li><a href="{% url 'website:post' %}">رویداد ها</a></li>
                                                 </ul>
                                             </li>
-                                            <li ><a href="" >خدمات<i class="bx bx-chevron-down "></i></a>
-                                                 <ul class="submenu">
+                                            <li><a href="">خدمات<i class="bx bx-chevron-down "></i></a>
+                                                <ul class="submenu">
                                                     <li><a href="{% url 'website:repair' %}">تعمیر و نگهداری</a></li>
                                                     <li><a href="{% url 'website:Surety' %}">گارانتی</a></li>
                                                     <li><a href="{% url 'website:supplycomp' %}">تامین قطعات</a></li>
@@ -49,6 +48,7 @@
                                                     <li><a href={% url 'website:plugin' %}> لوازم جانبی </a></li>
                                                 </ul>
                                             </li>
+                                            <li><a href="{% url 'website:home' %}">مجله خبری</a></li>
                                             <li><a href="{% url 'website:contact' %}">تماس با ما</a></li>
                                         </ul>
                                     </nav>
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <div class="col-xl-1 col-lg-2">
-                              <a href="{% url 'enweb:home' %}" class=" language ">En</a>
+                            <a href="{% url 'enweb:home' %}" class=" language ">En</a>
 
                         </div>
                         <!-- Mobile Menu -->
