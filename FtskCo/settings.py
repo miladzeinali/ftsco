@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'enweb.apps.EnwebConfig',
     'website.apps.WebsiteConfig',
     'ckeditor',
+    'mag'
 ]
 
 MIDDLEWARE = [

@@ -5,8 +5,7 @@ from .models import TyreHandler, CylinderHandler, StrutHandler,\
 
 
 def home(request):
-    return render(request, 'pages/home.html', {})
-
+    return render(request,'pages/home.html', {})
 
 def tyreHandler(request):
     tyrehandlers = TyreHandler.objects.all()
