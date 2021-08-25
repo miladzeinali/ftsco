@@ -1,0 +1,24 @@
+<title> ارزش ها | فناوران طیف صنعت کویر</title>
+
+{% extends 'pages/base.html' %} {% load static %} {% block header %} {% include 'partial/_header.html' %} {% endblock %} {% block content %}
+<section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+        <div class="d-flex justify-content-center ">
+            <img src="{% static 'img/hero/optimize.jpg' %}" class="img-fluid m-auto s-img" alt="">
+        </div>
+        <div class="row">
+            <div class="col-lg-12 pt-4 content">
+                <div class="title">
+                    <h3> ارزش ها</h3>
+                </div>
+                <p>
+                    ارزش ها و اصول بنیادین شرکت فناوران طیف صنعت کویر:</p>
+                <p> «با تکیه بر دوراندیشی و آینده‌نگری مدیران، توسعه و یادگیری، تعهد، مسئولیت پذیری، پاسخگویی، رعایت اصول اخلاقی و احترام متقابل کارکنان همراه با خردجمعی و کارگروهی، شایسته سالاری، تغییر و بهبود مستمر، نظم و انضباط سازمانی با توجه به کیفیت
+                    مداری و ارایه به موقع خدمات، در کسب و کار خود تلاش می‌کنیم»
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
+{% endblock %} {% block footer %} {% include 'partial/_footer.html' %} {% endblock %}

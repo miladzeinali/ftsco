@@ -31,6 +31,10 @@ urlpatterns = [
     path('optimization/',views.optimization,name='optimization'),
     path('customization/',views.customization,name='customization'),
     path('supplycomp/',views.supplycomp,name='supplycomp'),
-     path('plugins/', views.pluginsrender, name='plugin')
+     path('plugins/', views.pluginsrender, name='plugin'),
+     path('chart/',views.chart,name='chart'),
+     path('statement/',views.statement,name='statement'),
+     path('value/',views.value,name='value'),
+     path('vision/',views.vision,name='vision'),
 ]
 

@@ -148,3 +148,14 @@ def pluginsrender(request):
     Plugins = plugins.objects.all().reverse()
     return render(request, 'webproduct/plugins.html', {'plugins': Plugins})
 
+def chart(request):
+    return render(request, 'pages/chart.html', {})
+
+def statement(request):
+    return render(request, 'pages/statement.html', {})
+
+def value(request):
+    return render(request, 'pages/value.html', {})
+
+def vision(request):
+    return render(request, 'pages/vision.html', {})
