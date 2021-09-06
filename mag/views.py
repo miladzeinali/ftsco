@@ -45,6 +45,9 @@ def mail(request):
     text = request.POST['text']
     Mail.objects.create(name=name,title=title,text=text)
 
+def video(request):
+    return render(request,'mags/video-image.html',)
+
 
 
 

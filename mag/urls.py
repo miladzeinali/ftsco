@@ -11,5 +11,6 @@ urlpatterns = [
     path('exhibition/',views.exhibition,name='exhibition'),
     path('comment/',views.comment,name='comment'),
     path('mail/',views.mail,name='mail'),
+    path('video-img/',views.video,name='video'),
 ]
 

@@ -1,36 +1,31 @@
+<title>
+    کابل هندلر | فناوران طیف صنعت کویر</title>
 
-<title>کابل هندلر | فناوران طیف صنعت کویر</title>
+{% extends 'pages/base.html' %} {% block header %} {% include 'partial/_header.html' %} {% endblock %} {% block content %}
+<section class="" id="detail">
+    <div class=" container">
+        <div class="product-headings row d-flex justify-content-lg-start align-items-center mb-4">
+            <div class="product-headings-category p-1">
+                <h3 class="">Cable Handler</h3>
+            </div>
+            <h1 class="mr-lg-auto p-1">{{ cablehandler.code }}</h1>
+        </div>
 
-{% extends 'pages/base.html' %}
-{% block header %}
-    {% include 'partial/_header.html' %}
-{% endblock %}
-
-{% block content %}
-    <section class="" id="detail">
-        <div class=" container">
-            <div class="product-headings row d-flex justify-content-lg-start align-items-center mb-4">
-                <div class="product-headings-category p-1">
-                    <h3 class="">Cable Handler</h3>
+        <div class="product">
+            <div class="cta-bloc row">
+                <!-- ngIf: productsCtrl.product.description -->
+                <div class="product-description col-lg-8">
+                    {{ cablehandler.description|safe }}
                 </div>
-                <h1 class="mr-lg-auto p-1">{{ cablehandler.code }}</h1>
+                <div class="col-lg-4">
+                    <!-- <button type="button" class="btn btn-block mt-5">
+                            <span translate="" class="ng-scope">دانلود کاتالوگ</span>
+                        </button> -->
+                </div>
             </div>
 
-            <div class="product">
-                <div class="cta-bloc row">
-                    <!-- ngIf: productsCtrl.product.description -->
-                    <div class="product-description col-lg-8">
-                        {{ cablehandler.description|safe }}
-                    </div>
-                    <div class="col-lg-4">
-                        <button type="button" class="btn btn-block mt-5">
-                            <span translate="" class="ng-scope">دانلود کاتالوگ</span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="bloc-product mt-5">
-                    <div class="container">
+            <div class="bloc-product mt-5">
+                <div class="container">
                     <header class="header">
                         <div class="header-content pt-4">
                             <h1 class="header-content-title">
@@ -39,25 +34,36 @@
                         </div>
                     </header>
                     <div class="">
-                       <div class="order-1 ">
+                        <div class="order-1 ">
                             <div class="d-flex justify-content-center">
-                                <img class="" style="margin: 10px"
-                                         src="{{ cablehandler.image.url }}"/>
+                                <img class="" style="margin: 10px" src="{{ cablehandler.image.url }}" />
 
                             </div>
                         </div>
                         <div class=" order-2 ">
                             <table class="table table-striped ">
-                                 <div class="thead text-white"><p class="pr-3 pt-2">{{ cablehandler.name }}</p>
-                                    </div>
+                                <div class="thead text-white">
+                                    <p class="pr-3 pt-2">{{ cablehandler.name }}</p>
+                                </div>
                                 <tbody>
-                                <tr><th>نام محصول</th><td>{{ cablehandler.name }}</td></tr>
-                                <tr><th>کد محصول</th><td>{{ cablehandler.code }}</td></tr>
-                                <!--<tr><th>سال تولید</th><td>{{ cablehandler.model_Year }}</td></tr>-->
-                                <tr><th>ظرفیت (kg)</th><td>{{cablehandler.capacity_Kg }}</tr>
-                                <tr><th>ظرفیت (lbs)</th><td>{{cablehandler.capacity_Lbs}}</td></tr>
-                                <!--<tr><th>قطر حلقه کار(mm)</th><td>{{cablehandler.Roll_Diameter_mm}}</td></tr>-->
-                                <!--<tr><th> قطر حلقه کار(in)</th><td>{{cablehandler.Roll_Diameter_in}}</td></tr>-->
+                                    <tr>
+                                        <th>نام محصول</th>
+                                        <td>{{ cablehandler.name }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>کد محصول</th>
+                                        <td>{{ cablehandler.code }}</td>
+                                    </tr>
+                                    <!--<tr><th>سال تولید</th><td>{{ cablehandler.model_Year }}</td></tr>-->
+                                    <tr>
+                                        <th>ظرفیت (kg)</th>
+                                        <td>{{cablehandler.capacity_Kg }}</tr>
+                                    <tr>
+                                        <th>ظرفیت (lbs)</th>
+                                        <td>{{cablehandler.capacity_Lbs}}</td>
+                                    </tr>
+                                    <!--<tr><th>قطر حلقه کار(mm)</th><td>{{cablehandler.Roll_Diameter_mm}}</td></tr>-->
+                                    <!--<tr><th> قطر حلقه کار(in)</th><td>{{cablehandler.Roll_Diameter_in}}</td></tr>-->
                                 </tbody>
                             </table>
 
@@ -65,17 +71,9 @@
                         <div class="mt-5">
                             <div class="d-flex justify-content-center">
                                 {% if cablehandler.image1 %}
-                                                                <img class="p-2" src="{{ cablehandler.image1.url }}"  alt="">
-
-                                {% endif %}
-                                {% if cablehandler.image2 %}
-                                                                <img class="p-2" src="{{ cablehandler.image2.url }}"  alt="">
-
-                                {% endif %}
-                                {% if cablehandler.image3 %}
-                                                                <img class="p-2" src="{{ cablehandler.image3.url }}"  alt="">
-
-                                {% endif %}
+                                <img class="p-2" src="{{ cablehandler.image1.url }}" alt=""> {% endif %} {% if cablehandler.image2 %}
+                                <img class="p-2" src="{{ cablehandler.image2.url }}" alt=""> {% endif %} {% if cablehandler.image3 %}
+                                <img class="p-2" src="{{ cablehandler.image3.url }}" alt=""> {% endif %}
 
                             </div>
                         </div>
@@ -83,9 +81,6 @@
                 </div>
             </div>
         </div>
-        </div>
-    </section>
-{% endblock %}
-{% block footer %}
-    {% include 'partial/_footer.html' %}
-{% endblock %}
+    </div>
+</section>
+{% endblock %} {% block footer %} {% include 'partial/_footer.html' %} {% endblock %}

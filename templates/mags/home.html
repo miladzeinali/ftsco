@@ -127,7 +127,7 @@
                                 <li><a href="category.html"> ماشین آلات معادن</a></li>
                             </ul>
                         </li>
-                        <li><a href="https://www.aparat.com/v/xmLEe/">فیلم وعکس</a></li>
+                        <li><a href="{% url 'mag:video' %}">فیلم وعکس</a></li>
                     </ul>
                     </li>
 
@@ -1034,7 +1034,7 @@
                             <p class="brand-description">
                                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ...
                             </p>
-                            <a href="about.html" class="btn btn-magz white">صفحه درباره ما <i
+                            <a href="{% url 'website:about' %}" class="btn btn-magz white">صفحه درباره ما <i
 									class="ion-ios-arrow-thin-left"></i></a>
                         </div>
                     </div>
@@ -1221,8 +1221,8 @@
                         <div class="block-body no-margin">
                             <ul class="footer-nav-horizontal">
                                 <li><a href="{% url 'mag:home' %}">خانه</a></li>
-                                <li><a href="contact.html">تماس با ما</a></li>
-                                <li><a href="about.html">در باره ما</a></li>
+                                <li><a href="{% url 'website:contact' %}">تماس با ما</a></li>
+                                <li><a href="{% url 'website:about' %}">در باره ما</a></li>
                             </ul>
                         </div>
                     </div>
