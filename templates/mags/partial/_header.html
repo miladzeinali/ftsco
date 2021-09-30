@@ -1,0 +1,106 @@
+   {% load static %}
+
+  <header class="primary">
+        <div class="firstbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="brand">
+                            <a href=" {% url 'website:home' %}">
+                                <img src="{% static 'img/logo/logo-ftskco.jpg' %}" alt="Magz Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <form class="search" autocomplete="off">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" name="q" class="form-control" placeholder="جستجوی عبارت مورد نظر ...">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-primary">
+											<a class="ion-search text-white" href="{% url 'website:home' %}"></a>
+										</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="help-block mt-2">
+                                <div>محبوب ترین ها : </div>
+                                <ul>
+                                    <li><a href="#">کرونا</a></li>
+                                    <li><a href="#">قیمت ارز</a></li>
+                                    <li><a href="#">فوتبال</a></li>
+                                    <li><a href="#">آلودگی هوا</a></li>
+                                    <li><a href="#">برجام</a></li>
+                                </ul>
+                            </div> -->
+                        </form>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-12 col-sm-12 text-right">
+                        <ul class="nav-icons">
+                            <li><a href="register.html"><i class="ion-person-add"></i>
+									<div>ثبت نام</div>
+								</a></li>
+                            <li><a href="login.html"><i class="ion-person"></i>
+									<div>ورود</div>
+								</a></li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Start nav -->
+        <nav class="menu">
+            <div class="container">
+                <div class="brand">
+                    <a href="#">
+                        <img src="{% static 'img/logo/logo-ftskco.jpg' %}" alt="Magz Logo">
+                    </a>
+                </div>
+                <div class="mobile-toggle">
+                    <a href="#" data-toggle="menu" data-target="#menu-list"><i class="ion-navicon-round"></i></a>
+                </div>
+                <div class="mobile-toggle">
+                    <a href="#" data-toggle="sidebar" data-target="#sidebar"><i class="ion-ios-arrow-left"></i></a>
+                </div>
+                <div id="menu-list">
+                    <ul class="nav-list">
+                        <li class="for-tablet nav-title"><a>فهرست</a></li>
+                        <li class="for-tablet"><a href="login.html">ورود</a></li>
+                        <li class="for-tablet"><a href="register.html">ثبت نام</a></li>
+                        <li><a href="{% url 'mag:home' %}">خانه</a></li>
+                        <li class="dropdown magz-dropdown">
+                            <a href="#">فناوران <i class="ion-ios-arrow-left"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'mag:technology' %}">تکنولوژی</a></li>
+                                <li><a href="{% url 'mag:safety' %}"> ایمنی</a></li>
+                                <li><a href="{% url 'mag:home' %}"> نمایشگاه</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown magz-dropdown">
+                            <a href="#">هندلر <i class="ion-ios-arrow-left"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'website:home' %}">انواع هندلر</a></li>
+                                <li><a href="{% url 'website:home' %}"> معرفی هندلر</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown magz-dropdown">
+                            <a href="{% url 'website:home' %}">  معادن <i class="ion-ios-arrow-left"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'website:home' %}">اخبار</a></li>
+                                <li><a href="{% url 'website:home' %}"> نمایشگاه</a></li>
+                                <li><a href="{% url 'website:home' %}"> انواع معادن</a></li>
+                                <li><a href="{% url 'website:home' %}"> ماشین آلات معادن</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{% url 'mag:video' %}">فیلم وعکس</a></li>
+                    </ul>
+                    </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End nav -->
+    </header>

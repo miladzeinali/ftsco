@@ -10,28 +10,28 @@ def home(request):
     slider = Slider.objects.all()[0:3]
     # newpro = NewsProduct.objects.latest()
     newpro = NewsProduct.objects.all()
-    return render(request,'mags/home.html',{'posts':posts,'news':news,'top':top,'slider':slider,'newspro':newpro})
+    return render(request,'mags/pages/home.html',{'posts':posts,'news':news,'top':top,'slider':slider,'newspro':newpro})
 
 def Detail(request,id):
     post = Post.objects.get(id=id)
     comments = Comment.objects.filter(post=post,approved=True)
-    return render(request,'mags/detail.html',{'post':post,'comments':comments})
+    return render(request,'mags/pages/detail.html',{'post':post,'comments':comments})
 
 def technology(request):
     posts = Post.objects.filter(category='1')
-    return render(request,'mags/technology.html',{'posts':posts})
+    return render(request,'mags/pages/technology.html',{'posts':posts})
 
 def safety(request):
     posts = Post.objects.filter(category='2')
-    return render(request,'mags/safety.html',{'posts':posts})
+    return render(request,'mags/pages/safety.html',{'posts':posts})
 
 def news(request):
     posts = Post.objects.filter(category='3')
-    return render(request,'mags/news.html',{'posts':posts})
+    return render(request,'mags/pages/news.html',{'posts':posts})
 
 def exhibition(request):
     posts = Post.objects.filter(category='4')
-    return render(request,'mags/exhibition.html',{'posts':posts})
+    return render(request,'mags/pages/exhibition.html',{'posts':posts})
 
 def comment(request,id):
     name = request.POST['name']
@@ -46,7 +46,7 @@ def mail(request):
     Mail.objects.create(name=name,title=title,text=text)
 
 def video(request):
-    return render(request,'mags/video-image.html',)
+    return render(request,'mags/pages/video-image.html',)
 
 
 

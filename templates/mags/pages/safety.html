@@ -1,0 +1,81 @@
+  <title>خانه | فناوران طیف صنعت کویر</title>
+
+{% extends 'mags/pages/base.html' %}
+ {% load static %}
+{% block header %}
+    {% include 'mags/partial/_header.html' %}
+{% endblock %}
+
+{% block content %}
+    <section class="category">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 text-left">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ol class="breadcrumb">
+                                <li><a href="{% url 'mag:home' %}">خانه</a></li>
+                                <li><a href="#">دسته بندی</a></li>
+                                <li class="active">ایمنی</li>
+                            </ol>
+                            <h1 class="page-title mt-3">دسته بندی : ایمنی</h1>
+                            <p class="page-subtitle text-large mb-4">نمایش پست ها با دسته بندی <i>ایمنی</i></p>
+                        </div>
+                    </div>
+                    <div class="line mt-1"></div>
+                    <div class="row">
+                        <article class="col-md-12 article-list">
+                            <div class="inner">
+                                <figure>
+                                    <a href="single-post.html">
+                                        <img src="{% static 'mags/images/news/img01.jpg' %}">
+                                    </a>
+                                </figure>
+                                <div class="details">
+                                    <div class="detail text-right d-flex">
+                                        <div class="category">
+                                            <a href="category.html">ایمنی</a>
+                                        </div>
+                                        <!-- <div class="time"><i class="fa fa-clock"></i> اسفند ۹۸</div> -->
+                                    </div>
+                                    <h1 class="pt-0"><a href="single-post.html">ایمنی
+											</a></h1>
+                                    <p>
+                                        ایمنی از مهمترین مباحث مطرح در صنایع است که رعایت جنبه های مختلف آن، محیط کاری مناسبی را از نظر فیزیکی و روحی، در حین کار و پس از آن، برای کلیه شاغلین فراهم می سازد. ایمنی، لازمه هر فعالیت صنعتی است. این مسئله، در صنعت معدن، به علت دشواری های خاص و پیچیده
+                                        آن، اهمیت بیشتری پیدا کرده است. ایمنی در کلیه مراحل یک فعالیت معدنی از قبیل اکتشاف، آتشباری، استخراج، فرآوری، تعمیر و نگهداری، حمل و نقل بروز کرده و ماهیت غیر قابل پیش بینی این صنعت، برخورد به ایمنی در آن را از
+                                        دیگر صنایع، متمایز می سازد. به جهت نیاز به جذب نیروی انسانی کارآمد و سرمایه های داخلی و خارجی، باید شرایط کاری ایمن تامین گردد تا زمینه برای چنین فعالیت هایی، در این بخش، بیش از پیش فراهم گردد. شناخت نوع و احتمال
+                                        وقوع خطرات و برنامه ریزی جهت حذف آنها از جمله مواردی است که جهت ایجاد ایمنی بیشتر، هم در خلال طراحی سیستم و هم در حین بهره برداری از معدن، در نظر گرفته می شود. برای دستیابی به این هدف باید نکات زیر مورد توجه قرار
+                                        گیرد:
+                                    </p>
+
+                                    <p>• کلیه فعالیت های احتمالی که توسط پرسنل انجام می گیرد</p>
+                                    <p>• استفاده از استاندارد های مناسب در تمام مراحل کار</p>
+                                    <p>• توجه به مدیریت خطرات</p>
+                                    <p>• کنترل خطرات موجود در سیستم با اصلاح روشهای مورد استفاده</p>
+                                    <p>• رویکرد ثبت منظم وقایع، جهت طراحی و برنامه ریزی</p>
+                                    <p>• استفاده از روش سیستماتیک تصمیم گیری</p>
+                                    <p>• بازبینی، اصلاح و اعتبار بخشی به روش های مورد استفاده</p>
+                                    <p>دستیابی به اهداف فوق ملزم به رعایت کردن موارد ایمنی میباشد</p>
+
+
+                                    <!-- <footer class="mt-2">
+                                        <a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>145</div>
+										</a>
+                                        <a class="btn btn-primary more" href="single-post.html">
+                                            <div>بیشتر</div>
+                                            <div><i class="ion-ios-arrow-thin-left"></i></div>
+                                        </a>
+                                    </footer> -->
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+   {% endblock %}
+{% block footer %}
+    {% include 'mags/partial/_footer.html' %}
+{% endblock %}
