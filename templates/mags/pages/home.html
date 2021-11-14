@@ -41,15 +41,15 @@
                             <article class="featured">
                                 <div class="overlay"></div>
                                 <figure>
-                                    <img src="{% static 'mags/images/news/img04.jpg' %}" alt="Sample Article">
+                                    <img src="{% static 'mags/images/sliderGif.gif' %}" alt="Sample Article">
                                 </figure>
-                                <div class="details">
+                                <!-- <div class="details">
                                     <div class="category"><a href="category.html">فناوری</a></div>
                                     <h1><a href="single-post.html">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم
 											ایپسوم
 											متن ساختگی با تولید سادگی</a></h1>
                                     <div class="time">۲۶ اسفند ۱۳۹۸</div>
-                                </div>
+                                </div> -->
                             </article>
                         </div>
                         <div class="item">
@@ -121,7 +121,7 @@
                                                 <a class="love" href="#"><i class="ion-android-favorite-outline"></i>
 													<div>{{news.likes}}</div>
 												</a>
-                                                <a class="btn btn-primary more" href="single-post.html">
+                                                <a class="btn btn-primary more" href="{% url 'mag:detail' news.id %}">
                                                     <div>بیشتر</div>
                                                     <div><i class="ion-ios-arrow-thin-left"></i></div>
                                                 </a>
@@ -302,7 +302,7 @@
                                         <a href="#" class="love"><i class="ion-android-favorite-outline"></i>
 											<div>{{top.likes}}</div>
 										</a>
-                                        <a class="btn btn-primary more" href="single-post.html">
+                                        <a class="btn btn-primary more" href="{% url 'mag:detail' news.id %}">
                                             <div>بیشتر</div>
                                             <div><i class="ion-ios-arrow-thin-left"></i></div>
                                         </a>
@@ -357,27 +357,27 @@
                     </aside>
                   
                     <aside id="sponsored">
-                        <h1 class="aside-title">اسپانسر ها</h1>
+                        <h1 class="aside-title"> لینک های مرتبط</h1>
                         <div class="aside-body">
-                            <ul class="sponsored">
+                            <ul class="" style="float: right; list-style: none;">
                                 <li>
-                                    <a href="#">
-                                        <img src="{% static 'mags/images/sponsored.png' %}" alt="Sponsored">
+                                    <a href="http://chadormalu.com/">
+                                        http://chadormalu.com/
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <img src="{% static 'mags/images/sponsored.png' %}" alt="Sponsored">
+                                    <a href="http://chilanonline.com/">
+                                        http://chilanonline.com/
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <img src="{% static 'mags/images/sponsored.png' %}" alt="Sponsored">
+                                    <a href="https://madan24.com/">
+                                        https://madan24.com/
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <img src="{% static 'mags/images/sponsored.png' %}" alt="Sponsored">
+                                    <a href="https://www.nicico.com">
+                                        https://www.nicico.com
                                     </a>
                                 </li>
                             </ul>
