@@ -302,7 +302,7 @@
                                         <a href="#" class="love"><i class="ion-android-favorite-outline"></i>
 											<div>{{top.likes}}</div>
 										</a>
-                                        <a class="btn btn-primary more" href="{% url 'mag:detail' news.id %}">
+                                        <a class="btn btn-primary more" href="{% url 'mag:detail' top.id %}">
                                             <div>بیشتر</div>
                                             <div><i class="ion-ios-arrow-thin-left"></i></div>
                                         </a>
@@ -324,12 +324,12 @@
                             <article class="article-mini">
                                 <div class="inner">
                                     <figure>
-                                        <a href="single-post.html">
+                                        <a href="{% url 'mag:detail' top.id %}">
                                             <img src="{{top.image1.url}}" alt="Sample Article">
                                         </a>
                                     </figure>
                                     <div class="padding">
-                                        <h1><a href="single-post.html">{{top.title}}</a>
+                                        <h1><a href="{% url 'mag:detail' top.id %}">{{top.title}}</a>
                                         </h1>
                                     </div>
                                 </div>
