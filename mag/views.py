@@ -14,8 +14,10 @@ def home(request):
 
 def Detail(request,id):
     post = Post.objects.get(id=id)
+    posts = Post.objects.all()
+    new = posts[0:5]
     comments = Comment.objects.filter(post=post,approved=True)
-    return render(request,'mags/pages/detail.html',{'post':post,'comments':comments})
+    return render(request,'mags/pages/detail.html',{'post':post,'comments':comments,'new':new})
 
 def technology(request):
     posts = Post.objects.filter(category='1')

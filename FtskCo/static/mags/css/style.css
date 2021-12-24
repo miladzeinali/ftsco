@@ -4882,5 +4882,7 @@ blockquote {
 .mfp-bg {
   z-index: 2001;
 }
-
+.links img {
+  width: 270px;
+}
 /*# sourceMappingURL=style.css.map */

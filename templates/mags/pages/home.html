@@ -14,7 +14,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                    <div class="headline">
+                    <!-- <div class="headline">
                         <div class="nav" id="headline-nav">
                             <a class="right carousel-control" role="button" data-slide="next">
                                 <span class="ion-ios-arrow-right" aria-hidden="true"></span>
@@ -28,14 +28,12 @@
                         <div class="owl-carousel owl-theme" id="headline">
                             <div class="item">
                                 <a href="#">
-									لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم <div class="badge">داغ !</div>
+									{{top.title}} <div class="badge">داغ !</div>
 								</a>
                             </div>
-                            <div class="item">
-                                <a href="#">لورم ایپسوم متن ساختگی با تولید سادگی </a>
-                            </div>
+                         
                         </div>
-                    </div>
+                    </div> -->
                     <div class="owl-carousel owl-theme slide" id="featured">
                         <div class="item">
                             <article class="featured">
@@ -358,26 +356,33 @@
                   
                     <aside id="sponsored">
                         <h1 class="aside-title"> لینک های مرتبط</h1>
-                        <div class="aside-body">
+                        <div class="aside-body links">
                             <ul class="" style="float: right; list-style: none;">
-                                <li>
+                                <li >
                                     <a href="http://chadormalu.com/">
-                                        http://chadormalu.com/
+                                        <!-- http://chadormalu.com/ -->
+                                        <img  src="{% static 'mags/images/portal-logo.png' %}" style = "width: 270px;">
                                     </a>
                                 </li>
-                                <li>
+                                <li class="mt-5"> 
                                     <a href="http://chilanonline.com/">
-                                        http://chilanonline.com/
+                                        <!-- http://chilanonline.com/ -->
+                                        <img  src="{% static 'mags/images/MG_5713.jpg' %}" style = "width: 270px;">
+
                                     </a>
                                 </li>
-                                <li>
+                                <li class="mt-5">
                                     <a href="https://madan24.com/">
-                                        https://madan24.com/
+                                        <!-- https://madan24.com/ -->
+                                        <img  src="{% static 'mags/images/madan24.png' %}" style = "width: 270px;">
+
                                     </a>
                                 </li>
-                                <li>
+                                <li class="mt-5">
                                     <a href="https://www.nicico.com">
-                                        https://www.nicico.com
+                                        <!-- https://www.nicico.com -->
+                                        <img  src="{% static 'mags/images/nicico-logo.png' %}" style = "width: 270px;background-color: black;">
+
                                     </a>
                                 </li>
                             </ul>
