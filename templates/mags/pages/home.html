@@ -105,7 +105,7 @@
                                 <article class="article col-md-12">
                                     <div class="inner my-1">
                                         <figure>
-                                            <a href="single-post.html">
+                                            <a href="{% url 'mag:detail' news.id %}">
                                                 <img src="{{news.image1.url}}" alt="Sample Article">
                                             </a>
                                         </figure>
@@ -115,7 +115,7 @@
                                                 </div>
                                                 <div class="category"><a href="category.html">{{news.category.category}}</a></div>
                                             </div>
-                                            <h2><a href="single-post.html">{{news.title}}</a></h2>
+                                            <h2><a href="{% url 'mag:detail' news.id %}">{{news.title}}</a></h2>
                                             <p>{{news.summary}}</p>
                                             <footer>
                                                 <a class="love" href="#"><i class="ion-android-favorite-outline"></i>
