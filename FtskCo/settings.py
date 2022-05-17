@@ -22,9 +22,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '!@0f%1lfqi-(j5d=9z3=($xsm-w_#bje#x=qhaf_)+*6woo-8q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =True
+DEBUG = False
 
-ALLOWED_HOSTS = ['ftskco.com' , 'www.ftskco.com','*']
+ALLOWED_HOSTS = ['ftskco.com' , 'www.ftskco.com']
 
 # Application definition
 
@@ -76,21 +76,21 @@ WSGI_APPLICATION = 'FtskCo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': str(BASE_DIR / "db.sqlite3"),
-    }
-}
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'ftskcoco_ftskco',
-#         'USER': 'ftskcoco_milad',
-#         'PASSWORD': 'miladz953',
-#         'PORT': '',
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': str(BASE_DIR / "db.sqlite3"),
 #     }
 # }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ftskcoco_ftskco',
+        'USER': 'ftskcoco_milad',
+        'PASSWORD': 'miladz953',
+        'PORT': '',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

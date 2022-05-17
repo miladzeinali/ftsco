@@ -1,5 +1,6 @@
 
 
+
   <title>خانه | فناوران طیف صنعت کویر</title>
 
 {% extends 'mags/pages/base.html' %}
@@ -105,6 +106,7 @@
                                 <article class="article col-md-12">
                                     <div class="inner my-1">
                                         <figure>
+
                                             <a href="{% url 'mag:detail' news.id %}">
                                                 <img src="{{news.image1.url}}" alt="Sample Article">
                                             </a>
@@ -115,12 +117,14 @@
                                                 </div>
                                                 <div class="category"><a href="category.html">{{news.category.category}}</a></div>
                                             </div>
+
                                             <h2><a href="{% url 'mag:detail' news.id %}">{{news.title}}</a></h2>
                                             <p>{{news.summary}}</p>
                                             <footer>
                                                 <a class="love" href="#"><i class="ion-android-favorite-outline"></i>
 													<div>{{news.likes}}</div>
 												</a>
+
                                                 <a class="btn btn-primary more" href="{% url 'mag:detail' news.id %}">
                                                     <div>بیشتر</div>
                                                     <div><i class="ion-ios-arrow-thin-left"></i></div>
@@ -294,7 +298,7 @@
                                         </div>
                                         <div class="time">{{top.date}}</div>
                                     </div>
-                                    <h1><a href="single-post.html">{{top.title}}</a>
+                                    <h1><a href="mags/pages/detail.html">{{top.title}}</a>
                                     </h1>
                                     <p>
 {{top.summary}}                                    
@@ -302,6 +306,7 @@
                                         <a href="#" class="love"><i class="ion-android-favorite-outline"></i>
 											<div>{{top.likes}}</div>
 										</a>
+
                                         <a class="btn btn-primary more" href="{% url 'mag:detail' top.id %}">
                                             <div>بیشتر</div>
                                             <div><i class="ion-ios-arrow-thin-left"></i></div>
@@ -324,11 +329,13 @@
                             <article class="article-mini">
                                 <div class="inner">
                                     <figure>
+
                                         <a href="{% url 'mag:detail' top.id %}">
                                             <img src="{{top.image1.url}}" alt="Sample Article">
                                         </a>
                                     </figure>
                                     <div class="padding">
+
                                         <h1><a href="{% url 'mag:detail' top.id %}">{{top.title}}</a>
                                         </h1>
                                     </div>
@@ -337,7 +344,8 @@
                       {% endfor %}
                       {% endif %}
                     </div>
-                </aside>
+                    </aside>
+
                     <aside>
                         <div class="aside-body">
                             <form class="newsletter">
@@ -355,7 +363,6 @@
                             </form>
                         </div>
                     </aside>
-                  
                     <aside id="sponsored">
                         <h1 class="aside-title"> لینک های مرتبط</h1>
                         <div class="aside-body links">
@@ -399,4 +406,5 @@
 {% block footer %}
     {% include 'mags/partial/_footer.html' %}
 {% endblock %}
+
 

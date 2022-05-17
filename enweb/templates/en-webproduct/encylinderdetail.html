@@ -1,5 +1,5 @@
 
-<title>سیلندر هندلر | فناوران طیف صنعت کویر</title>
+<title>Cylinder Handler | FTSKCO</title>
 
 {% extends 'en-pages/base.html' %}
 {% load static %}
@@ -16,7 +16,7 @@
 Cylinder Handler
 </h3>
                 </div>
-                <h1 class="mr-lg-auto p-1">{{ cylinderhandler.code }}</h1>
+                <h1 class="ml-lg-auto p-1">{{ cylinderhandler.code }}</h1>
             </div>
 
             <div class="product">
@@ -61,7 +61,7 @@ Cylinder Handler
                                         <td>{{ cylinderhandler.name }}</td>
                                     </tr>
                                     <tr>
-                                        <th>code </th>
+                                        <th>Code </th>
                                         <td>{{ cylinderhandler.code }}</td>
                                     </tr>
                                     <!--<tr>-->
@@ -69,21 +69,21 @@ Cylinder Handler
                                     <!--    <td>{{ cylinderhandler.model_Year }}</td>-->
                                     <!--</tr>-->
                                     <tr>
-                                        <th>capacity(kg)</th>
+                                        <th>Capacity(kg)</th>
                                         <td>
                                         {{ cylinderhandler.capacity_Kg }}</tr>
                                     <tr>
-                                        <th>capacity(lbs)</th>
+                                        <th>Capacity(lbs)</th>
                                         <td>{{ cylinderhandler.capacity_Lbs }}</td>
                                     </tr>
                                     <tr>
-                                        <th> Cylinder diameter (mm) </th>
+                                        <th> Working range (mm) </th>
                                         <td>
                                             {{ cylinderhandler.Cylinder_Diameter_mm_min }}-{{ cylinderhandler.Cylinder_Diameter_mm_max }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th> Cylinder diameter (in)</th>
+                                        <th> Working range (in)</th>
                                         <td>
                                              {{ cylinderhandler.Cylinder_Diameter_in_min }}-{{ cylinderhandler.Cylinder_Diameter_in_max }}</td>
                                     </tr>
@@ -96,11 +96,11 @@ Cylinder Handler
                                         <td>  {{ cylinderhandler.sideShift_In }}</td>
                                     </tr>
                                     <tr>
-                                        <th> Body rotation</th>
+                                        <th> Body rotation (degree)</th>
                                         <td>{{ cylinderhandler.body_Rotation }}</td>
                                     </tr>
                                     <tr>
-                                        <th>   Head rotation </th>
+                                        <th>   Head rotation (degree) </th>
                                         <td>{{ cylinderhandler.Handler_tilting }}</td>
                                     </tr>
                                     </tbody>
